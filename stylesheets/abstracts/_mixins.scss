@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == medium {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
