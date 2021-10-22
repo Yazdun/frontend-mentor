@@ -20,7 +20,7 @@
     transition: $transition;
 
     @include responsive(medium) {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
     &:hover {
@@ -43,4 +43,7 @@
 .icon--sub {
   color: $clr__gray;
   margin-top: 30px;
+  @include responsive(medium) {
+    font-size: 0.8rem;
+  }
 }
