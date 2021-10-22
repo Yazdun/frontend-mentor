@@ -1,10 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-
-/**
- * Set up a decent box model on the root element
- */
 html {
   box-sizing: border-box;
 }
@@ -21,13 +14,36 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
-a {
-  text-decoration: none;
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  color: $clr__dark-blue;
+}
 
-  @include on-event {
-    text-decoration: underline;
-  }
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $clr__pale-blue;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $clr__pale-blue;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $clr__pale-blue;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $clr__pale-blue;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $clr__pale-blue;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: $clr__pale-blue;
 }

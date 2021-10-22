@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +19,58 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
     <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
+      <div class="container">
+        <section class="showcase">
+          <div class="showcase__text">
+            <h2 class="showcase--title">Ping<span>.</span></h2>
+            <h2 class="showcase--desc">
+              We are launching
+              <span>soon!</span>
+            </h2>
+            <small class="showcase--sub"> Subscribe and get notified </small>
+          </div>
+          <!-- input and error form -->
+          <form name="notification" class="showcase__form">
+            <div class="showcase--input--wrapper">
+              <input
+                type="email"
+                id="email"
+                name="emailAddress"
+                placeholder="Your email address..."
+                class="showcase--input"
+              />
+              <small id="alert" class="showcase--input--alert"></small>
+            </div>
+            <button type="submit" id="submitBtn" class="showcase--btn">
+              Notify me
+            </button>
+          </form>
+        </section>
+        <!-- image container  -->
+        <section class="img__container">
+          <img
+            class="img--bg"
+            src="./images/illustration-dashboard.png"
+            alt="dashboard"
+          />
+        </section>
+        <!-- icon container -->
+        <section class="icon__container">
+          <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <small class="icon--sub"
+            >&copy; Copyright Ping. All rights reserved.
+          </small>
+        </section>
+      </div>
     </div>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>

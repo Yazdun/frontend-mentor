@@ -1,0 +1,139 @@
+.showcase {
+  margin-top: 100px;
+}
+
+.showcase__text {
+  text-align: center;
+}
+
+.showcase--title {
+  text-transform: uppercase;
+  span {
+    color: $clr__blue;
+  }
+}
+
+.showcase--desc {
+  color: $clr__gray;
+  font-weight: 300;
+  margin-top: 40px;
+  line-height: 3rem;
+  span {
+    color: $clr__dark-blue;
+    font-weight: 700;
+  }
+  @include responsive(medium) {
+    font-size: 3rem;
+    line-height: 0.1rem;
+    margin-top: 80px;
+  }
+}
+
+.showcase--sub {
+  font-size: 1.1rem;
+}
+
+.showcase__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
+
+  &.alert {
+    &--error {
+      .showcase--input {
+        border: 2px solid $clr__light-red;
+      }
+      .showcase--input--alert {
+        display: block;
+        color: $clr__light-red;
+      }
+    }
+    &--success {
+      .showcase--input {
+        border: 2px solid $clr__green;
+      }
+      .showcase--input--alert {
+        display: block;
+        color: $clr__green;
+      }
+    }
+  }
+
+  @include responsive(medium) {
+    flex-direction: row;
+    max-width: 600px;
+  }
+}
+
+.showcase--input--wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+
+  @include responsive(medium) {
+    width: 60%;
+  }
+}
+
+.showcase--input--alert {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: none;
+
+  @include responsive(medium) {
+    position: absolute;
+    top: 60px;
+    left: 23px;
+  }
+}
+
+.showcase--input {
+  border-radius: 50px;
+  padding: 15px 45px;
+  font-size: 1.1rem;
+  width: 100%;
+
+  border: 2px solid $clr__pale-blue;
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $clr__blue;
+  }
+
+  @include responsive(medium) {
+    padding: 15px 30px;
+  }
+}
+
+.showcase--btn {
+  padding: 15px;
+  border-radius: 50px;
+  background-color: $clr__blue;
+  border: none;
+  margin-top: 15px;
+  color: white;
+  transition: $transition;
+  box-shadow: rgba(96, 138, 255, 0.3) 0px 10px 25px -5px,
+    rgba(93, 74, 255, 0.04) 0px 10px 10px -5px;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+
+    box-shadow: none;
+  }
+
+  @include responsive(medium) {
+    margin: 0;
+    margin-left: 20px;
+    width: 35%;
+  }
+}

@@ -1,21 +1,22 @@
 <div id="top"></div>
 
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://www.frontendmentor.io/profile/Yazdun">
-    <img src="./images/frontendmentor.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h1 align="center">Frontend mentor solutions</h1>
+<h3 align="center">Ping single column coming soon page challenge</h3>
 
   <p align="center">
-    Hello everyone ! I upload my frontend mentor solutions on this repository, feel free to explore branches and tell me if there are better practices for my solutions
+    Newbie frontend mentor challenge
     <br />
-    <a href="https://github.com/Yazdun/frontend_mentor"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Yazdun/frontend_mentor"><strong>Explore main repo »</strong></a>
     <br />
     <br />
-    <a href="https://yazdun.github.io/frontend_mentor/">View Demo</a>
+    <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
@@ -23,35 +24,12 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About this project
 
-![Preview of the repo's main index.html](./images/screenshot.png)
-I use this repo as a starter template for my challenges and each challenge is on a separate branch. I mainly use `html` `sass` `javascript` for the challenges on this repo
+![Preview of the repo's main index.html](./images/README/d_preview.png)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Here is my solution to Ping challenge ! for the first time I used a sass folder structure to write more readable and cleaner code. I use the architecture provided [here](https://sass-guidelin.es/#architecture) and also you can find this architecture's boilerplate [here](https://github.com/KittyGiraudel/sass-boilerplate)
 
 
 
@@ -61,22 +39,24 @@ I use this repo as a starter template for my challenges and each challenge is on
 * [Sass](https://sass-lang.com/documentation)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Mobile View
 
+![Preview of the repo's main index.html](./images/README/m_preview.png)
+  
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You should be comfortable with sass in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
+>You should be comfortable with sass in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
 
-
-
+<!-- CONTRIBUTING -->
 ## Contributing
 
-If you find any better solution I really encourage you to inform and help me to become a better developer ! contributions are **greatly appreciated**.
+>Thank you for browsing this repo. Any contributions you make are **greatly appreciated**.
 
-
+>If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -84,15 +64,14 @@ If you find any better solution I really encourage you to inform and help me to 
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 <!-- CONTACT -->
 ## Contact
 
-Twitter - [@Yazdun](https://twitter.com/Yazdun) 
-Telegram - [@Yazdun](https://t.me/Yazdun) 
+>Frontend mentor - [@Yazdun](https://www.frontendmentor.io/profile/Yazdun)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+>Twitter - [@Yazdun](https://twitter.com/Yazdun) 
 
-
+>Telegram - [@Yazdun](https://t.me/Yazdun) 
 

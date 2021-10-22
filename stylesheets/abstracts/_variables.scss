@@ -1,5 +1,9 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
-
 $max-width: 1180px !default;
+// colors
+$clr__blue: hsl(223, 87%, 63%);
+$clr__green: hsl(160, 89%, 45%);
+$clr__pale-blue: hsl(223, 100%, 88%);
+$clr__light-red: hsl(354, 100%, 66%);
+$clr__gray: hsl(0, 0%, 59%);
+$clr__dark-blue: hsl(209, 33%, 12%);
+$transition: 0.3s;

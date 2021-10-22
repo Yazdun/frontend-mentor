@@ -1,0 +1,16 @@
+.img__container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin: auto;
+}
+
+.img--bg {
+  width: 100%;
+  max-width: 500px;
+
+  @include responsive(medium) {
+    max-width: 650px;
+  }
+}
