@@ -16,7 +16,7 @@
     <a href="https://github.com/Yazdun/frontend_mentor"><strong>Explore main repo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://yazdun-ping-single-column-coming-soon-page.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
@@ -24,10 +24,9 @@
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-## About this project
 
-![Preview of the repo's main index.html](./images/README/d_preview.png)
+
+![Challenge preview](./images/README/preview.jpg)
 
 Here is my solution to Ping challenge ! for the first time I used a sass folder structure to write more readable and cleaner code. I use the architecture provided [here](https://sass-guidelin.es/#architecture) and also you can find this architecture's boilerplate [here](https://github.com/KittyGiraudel/sass-boilerplate)
 
@@ -39,23 +38,17 @@ Here is my solution to Ping challenge ! for the first time I used a sass folder 
 * [Sass](https://sass-lang.com/documentation)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## Mobile View
-
-![Preview of the repo's main index.html](./images/README/m_preview.png)
-  
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
->You should be comfortable with sass in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
+You should be comfortable with sass in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
->Thank you for browsing this repo. Any contributions you make are **greatly appreciated**.
+Thank you for browsing this repo. Any contributions you make are **greatly appreciated**.
 
->If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
