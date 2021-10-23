@@ -369,11 +369,13 @@ body {
   background-image: url("../../images/pattern-background-mobile.svg");
   color: #1f2f56;
   line-height: 1.5rem;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
   body {
     background-image: url("../../images/pattern-background-desktop.svg");
+    font-size: 18px;
   }
 }
 
@@ -435,8 +437,10 @@ main {
 .card {
   width: 100%;
   background-color: white;
-  max-width: 350px;
+  max-width: 450px;
   border-radius: 20px;
+  -webkit-box-shadow: 0 0.625rem 1.875rem rgba(56, 41, 224, 0.15);
+          box-shadow: 0 0.625rem 1.875rem rgba(56, 41, 224, 0.15);
   overflow: hidden;
 }
 
@@ -449,8 +453,20 @@ main {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .card-body {
+    padding: 30px 38px 60px 38px;
+  }
+}
+
 .card-content__header {
   font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .card-content__header {
+    font-size: 2rem;
+  }
 }
 
 .card-content__desc {
@@ -460,7 +476,7 @@ main {
 
 @media (min-width: 768px) {
   .card-content__desc {
-    font-size: 0.9rem;
+    font-size: 0.98rem;
   }
 }
 
@@ -479,7 +495,7 @@ main {
   font-size: 0.7rem;
   padding: 10px 15px;
   border-radius: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .card-plan__icon {
@@ -521,10 +537,10 @@ main {
   opacity: 0.7;
 }
 
-.card-actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 768px) {
+  .card-plan__desc--change {
+    font-size: 0.92rem;
+  }
 }
 
 .btn-primary {
@@ -537,7 +553,7 @@ main {
   padding: 15px;
   -webkit-box-shadow: 0 15px 15px 5px rgba(56, 41, 224, 0.1);
           box-shadow: 0 15px 15px 5px rgba(56, 41, 224, 0.1);
-  margin: 20px 0;
+  margin: 30px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

@@ -27,8 +27,10 @@ body {
   background-image: url("../../images/pattern-background-mobile.svg");
   color: $clr__dark-blue;
   line-height: 1.5rem;
+  font-size: 16px;
   @include responsive(medium) {
     background-image: url("../../images/pattern-background-desktop.svg");
+    font-size: 18px;
   }
 }
 
