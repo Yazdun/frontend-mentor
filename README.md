@@ -65,6 +65,8 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
+Frontend mentor - [@Yazdun](https://www.frontendmentor.io/profile/Yazdun)
+
 >Twitter - [@Yazdun](https://twitter.com/Yazdun) 
 
 >Telegram - [@Yazdun](https://t.me/Yazdun) 
@@ -74,4 +76,3 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-Click on the @icn-camera icon to take a screen shot.
