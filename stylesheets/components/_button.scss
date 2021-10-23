@@ -1,3 +1,32 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn-primary {
+  width: 100%;
+  border: none;
+  background-color: $clr__bright-blue;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 0.02rem;
+  padding: 15px;
+  box-shadow: 0 15px 15px 5px rgba(56, 41, 224, 0.1);
+  margin: 20px 0;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+.btn-secondary {
+  color: $clr__desaturated-blue;
+  text-decoration: none;
+  font-weight: 900;
+  margin: 20px 0;
+  transition: 0.3s;
+
+  &:hover {
+    color: $clr__dark-blue;
+  }
+}

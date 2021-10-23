@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +12,48 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
+    <link rel="stylesheet" href="./stylesheets/main.css" />
 
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">Order Summary Component</h1>
+      <!-- card section -->
+      <div class="card">
+        <!-- card header -->
+        <div class="card-header">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="card header illustration"
+            class="card-header__img"
+          />
+        </div>
+        <!-- card body -->
+        <div class="card-body">
+          <!-- card content -->
+          <div class="card-content">
+            <h2 class="card-content__header">Order Summary</h2>
+            <p class="card-content__desc">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+          <!-- card plan -->
+          <div class="card-plan">
+            <div class="card-plan__icon">
+              <img src="./images/icon-music.svg" alt="music icon" />
+              <div class="card-plan__desc">
+                <h2 class="card-plan__desc--title">Anual Plan</h2>
+                <p class="card-plan__desc--price">$59.99/year</p>
+              </div>
+            </div>
+            <a href="#" class="card-plan__desc--change">Change</a>
+          </div>
+          <button href="#" class="btn-primary">Proceed to Payment</button>
+          <a href="#" class="btn-secondary">Cancel Order</a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

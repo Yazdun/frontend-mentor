@@ -21,13 +21,40 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
-a {
-  text-decoration: none;
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: $clr__pale-blue no-repeat top/100%;
+  background-image: url("../../images/pattern-background-mobile.svg");
+  color: $clr__dark-blue;
+  line-height: 1.5rem;
+  @include responsive(medium) {
+    background-image: url("../../images/pattern-background-desktop.svg");
+  }
+}
 
-  @include on-event {
-    text-decoration: underline;
+// Screen Reader Class
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  @include responsive(medium) {
+    padding: 0;
   }
 }
