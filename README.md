@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://www.frontendmentor.io/profile/Yazdun">
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
