@@ -1,0 +1,117 @@
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // margin: 40px 0;
+  @include responsive(large) {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.showcase-alert {
+  background-color: $clr__blue;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 6px 50px;
+  margin: 20px 0;
+  line-height: 1.5rem;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 3px, rgba(0, 0, 0, 0.14) 0px 10px 0px;
+}
+
+.showcase-alert__span {
+  font-weight: bold;
+}
+
+.showcase-form {
+  width: 100%;
+  max-width: 550px;
+  background-color: white;
+  padding: 25px;
+  color: black;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 3px, rgba(0, 0, 0, 0.14) 0px 10px 0px;
+
+  @include responsive(medium) {
+    padding: 40px;
+  }
+}
+
+.showcase-form__input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid $clr__grayish-blue;
+  transition: 0.3s;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $clr__dark-blue;
+  }
+
+  &.alert {
+    border: 2px solid $clr__red;
+    background: url("../../images/icon-error.svg") no-repeat;
+    background-position: 95% center;
+
+    & + .form_error {
+      display: flex;
+    }
+  }
+}
+
+.btn-submit {
+  border: none;
+  background-color: $clr__green;
+  padding: 18px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-bottom: 3px solid $clr__dark-green;
+  margin-top: 20px;
+
+  width: 100%;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.showcase-form__subtitle {
+  color: $clr__grayish-blue;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  //   max-width: 40px;
+}
+
+.showcase-form__subtitle--link {
+  color: $clr__red;
+  font-weight: 600;
+  transition: 0.3s;
+
+  &:hover {
+    color: $clr__dark-blue;
+    cursor: pointer;
+  }
+}
+
+.form_error {
+  display: none;
+  margin-top: 10px;
+  color: $clr__red;
+  font-size: 0.9rem;
+  text-align: right !important;
+  justify-content: flex-end;
+}

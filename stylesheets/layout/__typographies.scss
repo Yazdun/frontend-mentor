@@ -1,0 +1,27 @@
+.typographies {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 100px;
+  @include responsive(large) {
+    width: 50%;
+    text-align: left;
+    padding-right: 50px;
+    margin: 0;
+  }
+}
+
+.typographies-title {
+  line-height: 2.5rem;
+  @include responsive(large) {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
+
+.typographies-desc {
+  line-height: 1.6rem;
+  @include responsive(large) {
+    line-height: 1.8rem;
+  }
+}

@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +14,90 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">Intro component with sign up form</h1>
+      <div class="container">
+        <!-- text -->
+        <div class="typographies">
+          <h1 class="typographies-title">Learn to code by watching others</h1>
+          <p class="typographies-desc">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <!-- showcase -->
+        <div class="showcase">
+          <!-- showcase alert -->
+          <div class="showcase-alert">
+            <p class="showcase-alert__text">
+              <span class="showcase-alert__span"> Try it free 7 days </span>
+              then $20/mo. thereafter
+            </p>
+          </div>
+
+          <!-- showcase form -->
+          <form id="form" class="showcase-form" novalidate>
+            <input
+              id="firstName"
+              class="showcase-form__input"
+              name="name"
+              type="text"
+              placeholder="First Name"
+              title="Input your First name"
+              required
+            />
+            <div class="form_error"><em>First Name cannot be empty</em></div>
+            <input
+              id="lastName"
+              class="showcase-form__input"
+              name="lastName"
+              type="text"
+              placeholder="Last Name"
+              title="Input your Last name"
+              required
+            />
+            <div class="form_error"><em>Last Name cannot be empty</em></div>
+            <input
+              id="email"
+              class="showcase-form__input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              title="Input your email"
+              required
+            />
+            <div class="form_error">
+              <em>Looks like this is not an email</em>
+            </div>
+            <input
+              id="password"
+              class="showcase-form__input"
+              name="password"
+              type="password"
+              placeholder="Password"
+              title="Input any password"
+              required
+            />
+            <div class="form_error"><em>Password cannot be empty</em></div>
+            <input
+              id="formSubmit"
+              class="btn-submit"
+              name="submit"
+              type="submit"
+              value="Claim your free trial"
+            />
+            <p class="showcase-form__subtitle">
+              By clicking the button, you are agreeing to our
+              <a class="showcase-form__subtitle--link">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
