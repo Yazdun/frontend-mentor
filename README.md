@@ -13,10 +13,10 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"><strong>Explore main repo »</strong></a>
+    <a href="https://github.com/Yazdun/frontend_mentor"><strong>Explore main repo »</strong></a>
     <br />
     <br />
-    <a href="yazdun-intro-component-with-sign-up-form.netlify.app" target="_blank">View Demo</a>
+    <a href="https://yazdun-intro-component-with-sign-up-form.netlify.app/" >View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·

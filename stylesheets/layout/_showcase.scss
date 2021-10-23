@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // margin: 40px 0;
   @include responsive(large) {
     width: 50%;
     margin: 0;
@@ -93,7 +92,6 @@
   color: $clr__grayish-blue;
   font-size: 0.8rem;
   line-height: 2rem;
-  //   max-width: 40px;
 }
 
 .showcase-form__subtitle--link {
