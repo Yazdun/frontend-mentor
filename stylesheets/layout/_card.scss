@@ -16,7 +16,7 @@
   text-align: center;
 
   @include responsive(medium) {
-    padding: 30px 38px 60px 38px;
+    padding: 30px 45px 60px 45px;
   }
 }
 
@@ -24,7 +24,7 @@
   font-weight: 900;
 
   @include responsive(medium) {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 

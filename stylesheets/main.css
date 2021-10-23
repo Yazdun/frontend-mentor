@@ -455,7 +455,7 @@ main {
 
 @media (min-width: 768px) {
   .card-body {
-    padding: 30px 38px 60px 38px;
+    padding: 30px 45px 60px 45px;
   }
 }
 
@@ -465,7 +465,7 @@ main {
 
 @media (min-width: 768px) {
   .card-content__header {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -556,6 +556,7 @@ main {
   margin: 30px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-weight: 900;
 }
 
 .btn-primary:hover {
