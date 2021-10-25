@@ -15,7 +15,7 @@ data.forEach((element) => {
 
   //Add content to the DIV
   accordionItem.innerHTML = `
-    <div class="accordion__item--title" id=${element.id}>
+    <div class="accordion__item--title">
         <p class="accordion__item--question">
             ${element.question}
         </p>
