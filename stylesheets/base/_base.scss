@@ -39,7 +39,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Kumbh Sans", sans-serif;
-
+}
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,22 +57,6 @@ img {
   font-family: sans-serif;
   font-weight: 400;
 }
-
-/**
- * Style Broken Images
- * Source: https://bitsofco.de/styling-broken-images/
- * */
-// img::before {
-//   content: "We're sorry, the image below is broken :(";
-//   display: block;
-//   margin-bottom: 0.625rem;
-// }
-
-// img:after {
-//   content: "(url: " attr(src) ")";
-//   display: block;
-//   font-size: 0.75rem;
-// }
 
 // Screen Reader Class
 .sr-only {

@@ -382,6 +382,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,10 +408,6 @@ img {
   font-weight: 400;
 }
 
-/**
- * Style Broken Images
- * Source: https://bitsofco.de/styling-broken-images/
- * */
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;

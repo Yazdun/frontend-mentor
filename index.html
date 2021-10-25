@@ -17,27 +17,30 @@
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <main class="card" aria-hidden="true">
-      <div class="card__container">
-        <div class="card__illustration">
-          <img
-            src="./images/illustration-woman-online-mobile.svg"
-            alt="woman illustration"
-            class="card__img"
-          />
-          <img
-            src="./images/illustration-box-desktop.svg"
-            alt="box illustration"
-            width="200"
-            height="184"
-            class="card__illustration-box"
-          />
+    <main>
+      <div class="card" aria-hidden="true">
+        <h1 class="sr-only">Frontend Mentor FAQ Accordion Card</h1>
+        <div class="card__container">
+          <div class="card__illustration">
+            <img
+              src="./images/illustration-woman-online-mobile.svg"
+              alt="woman illustration"
+              class="card__img"
+            />
+            <img
+              src="./images/illustration-box-desktop.svg"
+              alt="box illustration"
+              width="200"
+              height="184"
+              class="card__illustration-box"
+            />
+          </div>
+          <!-- accordion -->
+          <div class="accordion" id="accordion">
+            <h1 class="accordion__title">FAQ</h1>
+          </div>
+          <!-- end  -->
         </div>
-        <!-- accordion -->
-        <div class="accordion" id="accordion">
-          <h1 class="accordion__title">FAQ</h1>
-        </div>
-        <!-- end  -->
       </div>
     </main>
     <script type="module" src="./javascript/script.js"></script>
