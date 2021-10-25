@@ -1,0 +1,76 @@
+.card {
+  width: 100%;
+  background: white no-repeat;
+  max-width: 330px;
+  border-radius: 20px;
+  background-image: url("../../images/bg-pattern-mobile.svg");
+  background-position: top center;
+  position: relative;
+  box-shadow: 0 30px 40px rgba($clr__dark-blue, 0.4);
+  margin-top: 120px;
+  margin-bottom: 20px;
+
+  @include responsive(large) {
+    background-image: url("../images/bg-pattern-desktop.svg"),
+      url("../images/illustration-woman-online-desktop.svg");
+    background-position: left -565px top 60%, left -80px center;
+    background-size: 100%, 50%;
+    background-repeat: no-repeat;
+    max-width: 950px;
+    min-height: 540px;
+    overflow: visible;
+    margin: 0;
+  }
+}
+
+.card__illustration {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -110px;
+
+  @include responsive(large) {
+    position: relative;
+    top: initial;
+    left: -130px;
+    flex-basis: 100%;
+  }
+}
+
+.card__img {
+  width: 100%;
+  max-width: 244px;
+  @include responsive(large) {
+    display: none;
+  }
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 120px 20px 80px 20px;
+  align-items: center;
+
+  @include responsive(large) {
+    flex-direction: row;
+    padding: 80px 0 0 0;
+  }
+}
+
+.card__illustration-box {
+  display: none;
+
+  @include responsive(large) {
+    display: inline;
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    transition: transform 600ms ease-in-out;
+
+    &:hover {
+      transform: scale(0.8);
+
+      cursor: pointer;
+    }
+  }
+}
