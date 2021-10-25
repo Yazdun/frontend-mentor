@@ -16,7 +16,7 @@
     <a href="https://github.com/Yazdun/frontend_mentor"><strong>Explore main repo »</strong></a>
     <br />
     <br />
-    <a href="yazdun-faq-accordion-card.netlify.app">View Demo</a>
+    <a href="https://yazdun-faq-accordion-card.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
