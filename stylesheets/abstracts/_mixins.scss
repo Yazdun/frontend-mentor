@@ -19,9 +19,9 @@
   }
 }
 
-@mixin responsive($breakpoint) {
+@mixin breakpoint-up($breakpoint) {
   @if $breakpoint == small {
-    @media (max-width: 320px) {
+    @media (min-width: 320px) {
       @content;
     }
   }
@@ -34,6 +34,25 @@
 
   @if $breakpoint == large {
     @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+@mixin breakpoint-down($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == medium {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media (max-width: 1024px) {
       @content;
     }
   }
