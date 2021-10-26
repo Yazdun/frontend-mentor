@@ -4,19 +4,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://www.frontendmentor.io/profile/Yazdun">
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Faq accordion card</h3>
 
   <p align="center">
-    project_description
+    Newbie frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/faq-accordion-card-solution-S1i8GrLKa"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://yazdun-faq-accordion-card.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
