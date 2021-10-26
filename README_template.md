@@ -29,7 +29,7 @@
 
 
 
-![Preview of the repo's main index.html](./images/README/screenshot.jpg)
+![Preview of the solution](./images/README/screenshot.jpg)
 ## 🚀 My Approach 
 
 <br/>
