@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./main.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +12,58 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">Frontend Mentor | Profile card component</h1>
+      <img
+        src="./images/bg-pattern-top.svg"
+        alt="top circle background"
+        class="c1"
+      />
+      <img
+        src="./images/bg-pattern-bottom.svg"
+        alt="bottom circle background"
+        class="c2"
+      />
+      <div class="card">
+        <!-- top card svg background -->
+        <img
+          class="card__top-background"
+          src="./images/bg-pattern-card.svg"
+          alt=""
+        />
+        <!-- top card profile image -->
+        <div class="card__profile-img">
+          <img src="./images/image-victor.jpg" alt="" class="img-profile" />
+        </div>
+        <div class="card__profile-info">
+          <div class="card__profile-info-head">
+            <h3 class="card__profile-info-head-name">Victor Crest</h3>
+            <h3 class="card__profile-info-head-age">26</h3>
+          </div>
+          <h3 class="card__profile-info-head-location">London</h3>
+        </div>
+        <!-- stats -->
+        <div class="card__profile-stats">
+          <!-- followers -->
+          <div class="card__profile-stat">
+            <h3>80K</h3>
+            <p>Followers</p>
+          </div>
+          <!-- likes -->
+          <div class="card__profile-stat">
+            <h3>803K</h3>
+            <p>Likes</p>
+          </div>
+          <!-- photos -->
+          <div class="card__profile-stat">
+            <h3>1.4K</h3>
+            <p>Photos</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
