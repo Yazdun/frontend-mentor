@@ -24,7 +24,7 @@
 </div>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Yazdun/frontend_mentor?label=last%20commit%20to%20main&logo=git&logoColor=white&style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/yazdun/frontend_mentor?color=blueviolet&label=size&logo=github&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/yazdun/frontend_mentor?color=violet&label=size&logo=github&style=for-the-badge)
 [![Frontendmentor URL](https://img.shields.io/twitter/url?color=%234cc9f0&label=frontend%20mentor&logo=frontendmentor&style=for-the-badge&url=https%3A%2F%2Fwww.frontendmentor.io%2Fprofile%2FYazdun)](https://www.frontendmentor.io/profile/Yazdun)
 [![Twitter URL](https://img.shields.io/twitter/url?color=critical&label=codewars&logo=codewars&style=for-the-badge&url=https%3A%2F%2Fwww.codewars.com%2Fusers%2FYazdun)](https://www.codewars.com/users/Yazdun)
 
