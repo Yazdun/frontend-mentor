@@ -13,7 +13,7 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/profile-card-component-p9ScG6Bq3"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-profile-card-component.netlify.app/">View Demo</a>
