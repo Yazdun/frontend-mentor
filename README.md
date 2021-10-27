@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://www.frontendmentor.io/profile/Yazdun">
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -13,7 +13,7 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="https://github.com/Yazdun/frontend_mentor"><strong>Explore main repo »</strong></a>
+    <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-ping-single-column-coming-soon-page.netlify.app/">View Demo</a>
@@ -24,27 +24,48 @@
   </p>
 </div>
 
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-ping-single-column-coming-soon-page.netlify.app%2F)](https://yazdun-ping-single-column-coming-soon-page.netlify.app.netlify.app/)
+![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Yazdun/frontend_mentor/ping-single-column-coming-soon-page?logo=git&logoColor=white&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/yazdun/frontend_mentor?color=violet&label=size&logo=github&style=for-the-badge)
 
+![Preview of the solution](./images/README/preview.jpg)
+## 🚀 My Approach 
 
-![Challenge preview](./images/README/preview.jpg)
+<br/>
 
 Here is my solution to Ping challenge ! for the first time I used a sass folder structure to write more readable and cleaner code. I use the architecture provided [here](https://sass-guidelin.es/#architecture) and also you can find this architecture's boilerplate [here](https://github.com/KittyGiraudel/sass-boilerplate)
 
 
+---
+## 🛠 Built With :
 
-### Built With
+<br/>
 
-* [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [Sass](https://sass-lang.com/documentation)
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-<!-- GETTING STARTED -->
-## Getting Started
+<img align="left" alt="JavaScript" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+<img align="left" alt="HTML5" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img align="left" alt="CSS3" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img align="left" alt="Sass" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+---
+## ⚙️ Getting Started
+
+<br/>
+
 
 You should be comfortable with sass in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
 
-<!-- CONTRIBUTING -->
-## Contributing
+---
+## 🤝 Contributing
+
+<br/>
 
 Thank you for browsing this repo. Any contributions you make are **greatly appreciated**.
 
@@ -57,14 +78,21 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
+---
 
 <!-- CONTACT -->
-## Contact
+## ☎️ Contact
 
->Frontend mentor - [@Yazdun](https://www.frontendmentor.io/profile/Yazdun)
+<br/>
 
->Twitter - [@Yazdun](https://twitter.com/Yazdun) 
+Frontend mentor - [@Yazdun](https://www.frontendmentor.io/profile/Yazdun)
 
->Telegram - [@Yazdun](https://t.me/Yazdun) 
+Twitter - [@Yazdun](https://twitter.com/Yazdun) 
+
+Telegram - [@Yazdun](https://t.me/Yazdun) 
+
+
+
+
+
 
