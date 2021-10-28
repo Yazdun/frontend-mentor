@@ -21,6 +21,20 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: $clr__dark-blue;
+  background-color: $clr__very-light-gray;
+}
+
+main {
+  padding: 0 20px;
+  @include breakpoint-up(medium) {
+    padding: 0;
+  }
+}
+
 /**
  * Screen Reader Class
  * To hide content visually.
@@ -45,10 +59,10 @@ noscript {
   left: 50%;
   z-index: 99;
   border-radius: 1em;
-  background-color: $white;
-  padding: rem(20);
-  width: rem(280);
-  font-size: rem(16);
+  background-color: white;
+  padding: 20px;
+  width: 280px;
+  font-size: 16px;
   transform: translate(-50%, -50%);
 }
 
@@ -91,5 +105,17 @@ img:after {
 .hide-for-desktop {
   @include breakpoint-up("small") {
     display: none;
+  }
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    $dark--bg: #212529;
+    $dark--bg__secondary: #343a40;
+    $dark--txt__primary: #f8f9fa;
+    $dark--txt__secondary: #ced4da;
+    body {
+      background-color: $dark--bg;
+    }
+    .btn__theme {
+      background-color: $dark--bg;
+      color: $dark--txt__primary;
+    }
+    .card {
+      background-color: $dark--bg__secondary;
+      box-shadow: none;
+      box-shadow: none;
+
+      &.cyan {
+        box-shadow: rgb(38, 74, 77) 0px 20px 30px -10px;
+      }
+      &.red {
+        box-shadow: rgb(77, 38, 38) 0px 20px 30px -10px;
+      }
+      &.orange {
+        box-shadow: rgb(77, 61, 38) 0px 20px 30px -10px;
+      }
+      &.blue {
+        box-shadow: rgb(38, 44, 77) 0px 20px 30px -10px;
+      }
+      &:hover {
+        box-shadow: none;
+      }
+    }
+    .card__title {
+      color: $dark--txt__primary;
+    }
+    .card__desc {
+      color: $dark--txt__secondary;
+    }
+    .header {
+      color: $dark--txt__primary;
+    }
+  }
+}

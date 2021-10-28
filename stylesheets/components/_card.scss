@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the card component.
+// -----------------------------------------------------------------------------
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(195, 208, 241, 0.5) 0px 8px 24px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 0.83rem;
+  transition: 0.3s;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(195, 208, 241, 0.2) 0px 8px 24px;
+    .card__icon {
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__desc {
+    margin-top: 18px;
+    line-height: 1.6rem;
+    color: $clr__grayish-blue;
+  }
+
+  &__icon {
+    width: 60px;
+    margin-top: 30px;
+    align-self: flex-end;
+    transition: 0.5s;
+  }
+
+  &.cyan {
+    border-top: 4px solid $clr__cyan;
+  }
+
+  &.red {
+    border-top: 4px solid $clr__red;
+  }
+
+  &.orange {
+    border-top: 4px solid $clr__orange;
+  }
+
+  &.blue {
+    border-top: 4px solid $clr__blue;
+  }
+
+  @include breakpoint-up(medium) {
+    margin: 20px auto;
+  }
+
+  @include breakpoint-up(large) {
+    margin: 0 auto;
+    &:first-of-type {
+      position: relative;
+      top: 50%;
+    }
+    &:last-of-type {
+      position: relative;
+      top: 50%;
+    }
+  }
+}

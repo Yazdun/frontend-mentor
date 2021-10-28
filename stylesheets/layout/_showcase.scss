@@ -1,0 +1,37 @@
+.showcase {
+  margin: 0 auto 100px auto;
+  width: 100%;
+  max-width: 350px;
+
+  @include breakpoint-up(medium) {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint-up(large) {
+    max-width: 1140px;
+    padding: 0 20px;
+    display: grid;
+    grid-gap: 1.8rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "cyan-card red-card blue-card"
+      ". orange-card .";
+    .cyan {
+      grid-area: cyan-card;
+    }
+
+    .red {
+      grid-area: red-card;
+    }
+    .blue {
+      grid-area: blue-card;
+    }
+
+    .orange {
+      grid-area: orange-card;
+    }
+  }
+}

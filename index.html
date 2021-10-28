@@ -2,14 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- displays site properly based on user's device -->
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +20,61 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
+    <link rel="stylesheet" href="./stylesheets/main.css" />
 
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Four card feature section</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <div class="header">
+        <h1 class="header__title">Reliable, efficient delivery</h1>
+        <h1 class="header__title--main">Powered by Technology</h1>
+        <p class="header__desc">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+
+      <div class="showcase">
+        <!-- first card -->
+        <div class="card cyan">
+          <h2 class="card__title">Supervisor</h2>
+          <p class="card__desc">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img class="card__icon" src="./images/icon-supervisor.svg" alt="" />
+        </div>
+        <!-- second card -->
+        <div class="card red">
+          <h2 class="card__title">Team Builder</h2>
+          <p class="card__desc">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img class="card__icon" src="./images/icon-team-builder.svg" alt="" />
+        </div>
+        <!-- third card -->
+        <div class="card orange">
+          <h2 class="card__title">Karma</h2>
+          <p class="card__desc">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img class="card__icon" src="./images/icon-karma.svg" alt="" />
+        </div>
+        <!-- fourth card -->
+        <div class="card blue">
+          <h2 class="card__title">Calculator</h2>
+          <p class="card__desc">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img class="card__icon" src="./images/icon-calculator.svg" alt="" />
+        </div>
+      </div>
+      <!-- theme toggler -->
+      <button class="btn__theme" id="themeToggler">
+        <i class="fas fa-brush"></i>
+        switch theme
+      </button>
+    </main>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
