@@ -24,9 +24,9 @@
   </p>
 </div>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**livesiteurlhere**%2F)](LIVE)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-four-card-feature-section.netlify.app/%2F)](https://yazdun-four-card-feature-section.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/branch_name?logo=git&logoColor=white&style=for-the-badge)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/four-card-feature-section?logo=git&logoColor=white&style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/yazdun/frontend_mentor?color=violet&label=size&logo=github&style=for-the-badge)
 
 ![Preview of the solution](./images/README/screenshot.jpg)
@@ -35,10 +35,6 @@
 <br/>
 
 Here is my solution to four card challenge with dark theme feauture ! I used grid for positioning cards instead of flexbox, I also added some smooth animations to the Icons. 
-
-<br/>
-
-**If your OS is set on dark mode, website will be automatically load on dark-mode theme !**
 
 ---
 ## 🛠 Built With :
