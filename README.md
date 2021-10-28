@@ -13,10 +13,10 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/four-card-feature-section-darkmode-lightmode-feature-iuW_256cW"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://yazdun-four-card-feature-section.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
