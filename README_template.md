@@ -27,7 +27,7 @@
 [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**livesiteurlhere**%2F)](LIVE)
 ![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/branch_name?logo=git&logoColor=white&style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/yazdun/frontend_mentor?color=violet&label=size&logo=github&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Yazdun/frontend_mentor?color=violet&logo=github&style=for-the-badge)
 
 ![Preview of the solution](./images/README/screenshot.jpg)
 ## 🚀 My Approach 
@@ -38,8 +38,6 @@ Here's a blank template to get started
 
 ---
 ## 🛠 Built With :
-
-<br/>
 
 <img align="left" alt="JavaScript" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 <img align="left" alt="HTML5" width="80px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
