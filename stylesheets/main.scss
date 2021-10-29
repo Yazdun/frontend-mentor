@@ -9,14 +9,8 @@
 // 3. Base stuff
 @import "base/base", "base/fonts", "base/typography", "base/helpers";
 
-// 4. Layout-related sections
-@import "layout/header", "layout/footer";
+// 4. Components
+@import "components/card", "components/card-media-query", "components/button";
 
-// 5. Components
-@import "components/card";
-
-// 6. Page-specific styles
-@import "pages/home";
-
-// 7. Themes
-@import "themes/default";
+// 5. Themes
+@import "themes/light";

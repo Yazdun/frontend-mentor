@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+.light-mode {
+  $bg__light--primary: #f2f7ff;
+  $bg__light--secondary: #f8f9fa;
+  $txt__light--primary: #274c77;
+  $txt__light--secondary: #306fb8;
+  $txt__light--transparent: #6c757d;
+  body {
+    background-color: $bg__light--primary;
+    color: $txt__light--primary;
+  }
+
+  .btn__theme {
+    background-color: $bg__light--primary;
+    color: $txt__light--primary;
+  }
+
+  .card {
+    background-color: $bg__light--secondary;
+    box-shadow: rgba(28, 29, 138, 0.2) 0px 60px 40px -7px;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: rgba(28, 29, 138, 0.1) 0px 60px 40px -7px;
+    }
+
+    &__profile {
+      filter: grayscale(100%) brightness(55%) sepia(75%) hue-rotate(-190deg)
+        saturate(500%) contrast(0.8);
+    }
+
+    &__body--header span {
+      color: $txt__light--secondary;
+    }
+
+    &__body--desc {
+      color: $txt__light--transparent;
+    }
+
+    &__body--stats li span {
+      color: $txt__light--transparent;
+    }
+  }
+}

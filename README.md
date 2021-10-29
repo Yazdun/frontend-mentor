@@ -8,10 +8,10 @@
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Stats preview card component</h3>
 
   <p align="center">
-    project_description
+    Newbie frontend mentor
     <br />
     <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />
@@ -27,14 +27,14 @@
 [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**livesiteurlhere**%2F)](LIVE)
 ![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/branch_name?logo=git&logoColor=white&style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/yazdun/frontend_mentor?color=violet&label=size&logo=github&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Yazdun/frontend_mentor?color=violet&logo=github&style=for-the-badge)
 
 ![Preview of the solution](./images/README/screenshot.jpg)
 ## 🚀 My Approach 
 
 <br/>
 
-Here's a blank template to get started
+Here is my solution to stats preview card component with dark / light mode feature ! This page will load dark theme by default, and you can toggle themes by clicking button on the top
 
 ---
 ## 🛠 Built With :
@@ -56,15 +56,13 @@ Here's a blank template to get started
 
 <br/>
 
-You should be comfortable with sass in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
+You should be comfortable with sass and javascript in order to use this repo, you won't need any installation to run the applications, you can clone or fork the repo on your local machine and start using it !
 
 ---
 
 ## 💡 Useful resources and suggestions
 
-<br/>
-
-- some suggestion...
+- Here is a good [**refrence**](https://www.ditdot.hr/en/dark-mode-website-tutorial) if you want to add dark-mode feature to your projects 
 
 ---
 ## 🤝 Contributing

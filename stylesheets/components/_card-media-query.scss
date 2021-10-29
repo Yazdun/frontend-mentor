@@ -1,0 +1,41 @@
+@include breakpoint-up(large) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 900px;
+    max-height: 350px;
+
+    &__profile {
+      background-image: url("../../images/image-header-desktop.jpg");
+      padding-top: percentage(0.8259259259259259);
+      width: 50%;
+    }
+
+    &__body {
+      text-align: left;
+      font-size: 0.9rem;
+      width: 50%;
+      padding: 0 60px;
+      align-self: center;
+    }
+
+    &__body--desc {
+      padding: 0;
+      font-size: 0.9rem;
+    }
+
+    &__body--stats {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 300px;
+      //   font-size: 0.4rem;
+      & li {
+        font-size: 1.3rem;
+      }
+      & li span {
+        font-size: 0.63rem;
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -481,7 +482,7 @@ img:after {
 
 .card {
   background-color: #1b1938;
-  margin: 40px 0;
+  margin: 100px 0;
   width: 100%;
   max-width: 330px;
   border-radius: 10px;
@@ -490,8 +491,8 @@ img:after {
 
 .card__profile {
   background-image: url("../../images/image-header-mobile.jpg");
-  -webkit-filter: hue-rotate(-142deg) invert(0.08) opacity(0.39) saturate(0);
-          filter: hue-rotate(-142deg) invert(0.08) opacity(0.39) saturate(0);
+  -webkit-filter: grayscale(100%) brightness(40%) sepia(75%) hue-rotate(-128deg) saturate(720%) contrast(0.8);
+          filter: grayscale(100%) brightness(40%) sepia(75%) hue-rotate(-128deg) saturate(720%) contrast(0.8);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -512,6 +513,7 @@ img:after {
 .card__body--desc {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.4rem;
+  padding: 0 20px;
 }
 
 .card__body--stats {
@@ -529,10 +531,11 @@ img:after {
   text-transform: uppercase;
   font-size: 1.4rem;
   margin: 20px 0;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .card__body--stats li span {
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 200;
   margin-top: 7px;
   letter-spacing: 0.1rem;
@@ -542,5 +545,112 @@ img:after {
 
 .card__body--stats {
   padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    max-width: 900px;
+    max-height: 350px;
+  }
+  .card__profile {
+    background-image: url("../../images/image-header-desktop.jpg");
+    padding-top: 82.59259%;
+    width: 50%;
+  }
+  .card__body {
+    text-align: left;
+    font-size: 0.9rem;
+    width: 50%;
+    padding: 0 60px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .card__body--desc {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  .card__body--stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+  }
+  .card__body--stats li {
+    font-size: 1.3rem;
+  }
+  .card__body--stats li span {
+    font-size: 0.63rem;
+  }
+}
+
+.btn__theme {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Shadows Into Light Two", "Inter", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #090b1a;
+  opacity: 0.9;
+  border-radius: 0 0 10px 0;
+}
+
+.btn__theme:hover {
+  cursor: pointer;
+}
+
+.light-mode body {
+  background-color: #f2f7ff;
+  color: #274c77;
+}
+
+.light-mode .btn__theme {
+  background-color: #f2f7ff;
+  color: #274c77;
+}
+
+.light-mode .card {
+  background-color: #f8f9fa;
+  -webkit-box-shadow: rgba(28, 29, 138, 0.2) 0px 60px 40px -7px;
+          box-shadow: rgba(28, 29, 138, 0.2) 0px 60px 40px -7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.light-mode .card:hover {
+  -webkit-box-shadow: rgba(28, 29, 138, 0.1) 0px 60px 40px -7px;
+          box-shadow: rgba(28, 29, 138, 0.1) 0px 60px 40px -7px;
+}
+
+.light-mode .card__profile {
+  -webkit-filter: grayscale(100%) brightness(55%) sepia(75%) hue-rotate(-190deg) saturate(500%) contrast(0.8);
+          filter: grayscale(100%) brightness(55%) sepia(75%) hue-rotate(-190deg) saturate(500%) contrast(0.8);
+}
+
+.light-mode .card__body--header span {
+  color: #306fb8;
+}
+
+.light-mode .card__body--desc {
+  color: #6c757d;
+}
+
+.light-mode .card__body--stats li span {
+  color: #6c757d;
 }
 /*# sourceMappingURL=main.css.map */

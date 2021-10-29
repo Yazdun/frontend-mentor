@@ -1,0 +1,17 @@
+.btn__theme {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Shadows Into Light Two", "Inter", sans-serif;
+  font-size: 1.3rem;
+  color: $txt__white;
+  background-color: $clr__dark-blue;
+  opacity: 0.9;
+  border-radius: 0 0 10px 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
