@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+$font__inter: "Inter", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+$font__lexenda-deca: "Lexend Deca", sans-serif;

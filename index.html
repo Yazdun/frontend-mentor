@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./stylesheets/main.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +12,37 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <div class="card">
+        <div class="card__profile"></div>
+        <div class="card__body">
+          <h1 class="card__body--header">
+            Get <span>insights</span> that help your business grow.
+          </h1>
+          <p class="card__body--desc">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul class="card__body--stats">
+            <li>10k+<span>companies</span></li>
+            <li>314 <span>templates</span></li>
+            <li>12m+ <span>queries</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
+
+<!-- 
+  Get insights that help your business grow.
+
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+
+  10k+ companies
+  314 templates
+  12m+ queries -->
