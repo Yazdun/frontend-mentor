@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+  --bg_light: hsl(0, 0%, 95%);
+  --clr_transparent_white: hsla(0, 0%, 100%, 0.75);
+
+  --clr_orange: hsl(31, 77%, 52%);
+  --clr_cyan: hsl(184, 100%, 22%);
+  --clr_dark_cyan: hsl(179, 100%, 13%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", cursive;
+  background-color: var(--bg_light);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px;
+}
+
+button {
+  border: none;
+  background-color: var(--bg_light);
+  padding: 15px;
+  width: 100%;
+  max-width: 140px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  margin-top: 30px;
+  border: 3px solid var(--bg_light);
+  transition: 0.3s;
+  /* color: rgba(255, 255, 255, 0); */
+}
+
+button:hover {
+  background: transparent;
+  border: 3px solid var(--bg_light);
+  cursor: pointer;
+  color: white;
+}
+
+button:active {
+  transform: translateY(1.3px);
+}
+
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.btn_orange {
+  color: var(--clr_orange);
+}
+.btn_cyan {
+  color: var(--clr_cyan);
+}
+.btn_dark_cyan {
+  color: var(--clr_dark_cyan);
+}
+
+.card {
+  padding: 50px 40px;
+}
+
+.card h1 {
+  color: var(--bg_light);
+  font-family: "Big Shoulders Display", cursive;
+  margin: 20px 0;
+  font-size: 2.3rem;
+}
+
+.card p {
+  color: var(--clr_transparent_white);
+  line-height: 1.8rem;
+}
+
+.card:nth-of-type(1) {
+  background-color: var(--clr_orange);
+}
+.card:nth-of-type(2) {
+  background-color: var(--clr_cyan);
+}
+.card:nth-of-type(3) {
+  background-color: var(--clr_dark_cyan);
+}
+
+@media (min-width: 950px) {
+  main {
+    max-width: 900px;
+    display: flex;
+  }
+}
