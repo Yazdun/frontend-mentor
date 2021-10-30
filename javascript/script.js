@@ -9,6 +9,11 @@ let darkModeState = false;
 // MediaQueryList object
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
+// Checks if user has set theme or not, if not then set theme based on OS preference
+if (useDark && !localStorage.getItem("dark-mode")) {
+  setDarkModeLocalStorage(true);
+}
+
 // Toggles the "dark-mode" class
 function toggleDarkMode(state) {
   document.documentElement.classList.toggle("dark-mode", state);
