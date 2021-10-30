@@ -45,15 +45,24 @@ noscript {
   left: 50%;
   z-index: 99;
   border-radius: 1em;
-  background-color: $white;
   padding: rem(20);
   width: rem(280);
   font-size: rem(16);
   transform: translate(-50%, -50%);
 }
 
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr__light-gray;
+}
+
 ul {
   list-style: none;
+  padding: 0;
 }
 
 img {

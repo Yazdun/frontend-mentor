@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 100px 20px;
+  box-shadow: rgba(75, 75, 172, 0.1) 0px 1px 0px,
+    rgba(95, 95, 226, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
+  @include breakpoint-up(medium) {
+    max-width: 650px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "subscription why-us";
+  }
+}

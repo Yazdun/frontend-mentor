@@ -1,3 +1,17 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+.btn__theme {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Shadows Into Light Two", "Karla", sans-serif;
+  font-size: 1.3rem;
+  //   color: $clr__dark-blue;
+  background-color: $clr__light-gray;
+  opacity: 0.9;
+  border-radius: 0 0 10px 0;
+  &:hover {
+    cursor: pointer;
+  }
+}

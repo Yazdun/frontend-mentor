@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    $dark--bg: #011d27;
+    $dark--bg__secondary: #343a40;
+    $dark--txt__primary: #f8f9fa;
+    $dark--txt__secondary: #ced4da;
+    $dark--green: #184e77;
+    $dark--green-two: #168aad;
+    $dark--green-three: #1a759f;
+    $dark--yellow: #ffb700;
+    $dark--orange: #ff9500;
+
+    body {
+      background-color: $dark--bg;
+    }
+
+    .card:nth-of-type(1) {
+      background-color: $dark--green;
+
+      .card__title {
+        color: $dark--txt__primary;
+      }
+
+      .card__sub {
+        color: $clr__yellow;
+        padding-right: 20px;
+        font-weight: bold;
+      }
+
+      .card__info {
+        color: $dark--txt__secondary;
+      }
+    }
+    .card:nth-of-type(2) {
+      background-color: $dark--green-three;
+    }
+    .card:nth-of-type(3) {
+      background-color: $dark--green-two;
+    }
+
+    .btn {
+      background-color: $dark--yellow;
+
+      &:hover {
+        background-color: $dark--orange;
+      }
+    }
+
+    .wrapper {
+      border-top: 2px solid;
+      border-image: linear-gradient(
+          to right,
+          grey 25%,
+          yellow 25%,
+          yellow 50%,
+          red 50%,
+          red 75%,
+          teal 75%
+        )
+        5;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .btn__theme {
+      background-color: $dark--bg;
+      color: $dark--txt__primary;
+    }
+  }
+}

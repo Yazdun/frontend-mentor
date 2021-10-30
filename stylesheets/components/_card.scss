@@ -1,0 +1,96 @@
+.card {
+  padding: 20px 30px;
+
+  color: $clr__light-gray;
+}
+
+.card__title {
+}
+
+.card:nth-of-type(1) {
+  background-color: white;
+
+  .card__title {
+    color: $clr__cyan;
+  }
+
+  .card__sub {
+    color: $clr__yellow;
+    padding-right: 20px;
+    font-weight: bold;
+  }
+
+  .card__info {
+    color: $clr__grayish-blue;
+    line-height: 1.6rem;
+  }
+}
+
+.card:nth-of-type(2) {
+  background-color: $clr__cyan;
+
+  .card__title {
+  }
+
+  .card__sub {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    margin: 0;
+    font-weight: bold;
+    span {
+      font-size: 1rem;
+      opacity: 0.6;
+      margin-left: 20px;
+    }
+  }
+
+  .card__info {
+    // color: $clr__grayish-blue;
+  }
+}
+
+.card:nth-of-type(3) {
+  background-color: $clr__cyan-light;
+
+  li {
+    margin: 5px 0;
+    opacity: 0.8;
+    // color: $clr__light-gray;
+  }
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 18px;
+  background-color: $clr__yellow;
+  color: $clr__light-gray;
+  font-weight: bold;
+  box-shadow: rgba(163, 163, 202, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 20px 0;
+  transition: 0.3s;
+  &:hover {
+    background-color: $clr__cyan-light;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+@include breakpoint-up(medium) {
+  .card {
+    font-size: 0.9rem;
+  }
+
+  .card:nth-of-type(1) {
+    grid-area: header;
+  }
+  .card:nth-of-type(2) {
+    grid-area: subscription;
+  }
+  .card:nth-of-type(3) {
+    grid-area: why-us;
+  }
+}
