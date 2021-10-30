@@ -13,7 +13,7 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-9h_JnTJzT"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-jaGBBZJud"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-huddle-landing-page.netlify.app/">View Demo</a>
