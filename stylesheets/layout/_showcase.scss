@@ -1,0 +1,133 @@
+.showcase {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+
+  &__content--header {
+    line-height: 2.7rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+  }
+
+  &__content--info {
+    line-height: 1.8rem;
+    opacity: 0.8;
+  }
+
+  &__content--btn {
+    border: none;
+    background-color: white;
+    color: $clr__violet;
+    padding: 18px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $clr__soft-magneta;
+
+      color: rgba(#ffffff, 0.9);
+      transform: translateY(-1px);
+      box-shadow: 0 0.25rem 0.5rem rgba(#000, 0.2);
+    }
+  }
+
+  &__content--icons {
+    display: flex;
+    width: 100%;
+    max-width: 140px;
+    margin: 80px auto;
+    justify-content: space-between;
+
+    i {
+      border-radius: 50%;
+      border: 1px solid white;
+      padding: 8px;
+
+      &:hover {
+        color: $clr__soft-magneta;
+        border-color: currentColor;
+        cursor: pointer;
+        animation-name: boing;
+        animation-duration: 0.75s;
+      }
+
+      &.fa-facebook-f {
+        padding: 8px 11px;
+      }
+    }
+  }
+}
+
+@include breakpoint-up(large) {
+  .showcase {
+    display: flex;
+    max-width: $max-width;
+    margin-top: 80px;
+    // align-items: center;
+    // justify-content: center;
+
+    &__img {
+      //   width: 60%;
+      max-width: 600px;
+      object-fit: contain;
+      //   margin: 0;
+    }
+
+    &__content {
+      text-align: left;
+      //   margin-top: 100px;
+      margin-left: 40px;
+      //   margin: 100px 0;
+    }
+
+    &__content--header {
+      margin-top: 30px;
+      font-size: 2rem;
+      line-height: 3.5rem;
+    }
+
+    &__content--info {
+      font-size: 1.07rem;
+    }
+
+    &__content--icons {
+      position: absolute;
+      right: 70px;
+      bottom: -40px;
+    }
+
+    &__content--btn {
+      //   font-size: 1.2rem;
+      max-width: 210px;
+    }
+  }
+}
+
+@keyframes boing {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

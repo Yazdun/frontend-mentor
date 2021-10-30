@@ -45,19 +45,37 @@ noscript {
   left: 50%;
   z-index: 99;
   border-radius: 1em;
-  background-color: $white;
   padding: rem(20);
   width: rem(280);
   font-size: rem(16);
   transform: translate(-50%, -50%);
 }
 
+body {
+  background: $clr__violet no-repeat top/100%;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("../../images/bg-mobile.svg");
+  color: white;
+  padding: 0 20px;
+
+  @include breakpoint-up(large) {
+    background-image: url("../../images/bg-desktop.svg");
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: $clr__violet no-repeat 100%;
+  }
+}
+
 ul {
   list-style: none;
+  margin: 0;
 }
 
 img {
-  display: block;
+  // display: block;
   max-width: 100%;
   height: auto;
   text-align: center;
@@ -83,13 +101,13 @@ img:after {
 }
 
 .hide-for-mobile {
-  @include breakpoint-down("small") {
+  @include breakpoint-down(medium) {
     display: none;
   }
 }
 
 .hide-for-desktop {
-  @include breakpoint-up("small") {
+  @include breakpoint-up(medium) {
     display: none;
   }
 }

@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +12,55 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+    <link rel="stylesheet" href="./stylesheets/main.css" />
 
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <header class="header">
+        <img src="./images/logo.svg" alt="" class="header__logo" />
+      </header>
+      <div class="showcase">
+        <img
+          src="./images/illustration-mockups.svg"
+          alt=""
+          class="showcase__img"
+        />
+        <div class="showcase__content">
+          <h1 class="showcase__content--header">
+            Build The Community Your Fans Will Love
+          </h1>
+          <p class="showcase__content--info">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="showcase__content--btn">Register</button>
+          <div class="showcase__content--icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
+
+<!-- Build The Community Your Fans Will Love
+
+Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+Create connections with your users as you engage in genuine discussion. 
+
+Register -->
