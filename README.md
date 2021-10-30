@@ -13,7 +13,7 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-9h_JnTJzT"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-huddle-landing-page.netlify.app/">View Demo</a>
@@ -56,7 +56,7 @@ You should be comfortable with sass in order to use this repo, you won't need an
 
 <br/>
 
-- I used this [rep](https://github.com/yunusugm/huddle-landing-page-with-single-introductory-section-master)'s hover selectors for my button and icons
+- I used this [repo](https://github.com/yunusugm/huddle-landing-page-with-single-introductory-section-master)'s hover selectors for my button and icons
 
 ---
 ## 🤝 Contributing
