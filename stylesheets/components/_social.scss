@@ -1,0 +1,83 @@
+.social {
+  display: none;
+  position: absolute;
+  background-color: $clr__dark-grayish-blue;
+  bottom: -80px;
+  height: 80px;
+  width: 100%;
+  color: $clr__grayish-blue;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: 0.5s;
+
+  &__txt {
+    letter-spacing: 0.4rem;
+  }
+
+  @include breakpoint-up(large) {
+    height: 3.5rem;
+    bottom: 120px;
+    right: -70px;
+    width: 280px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    opacity: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: $clr__dark-grayish-blue;
+      position: absolute;
+      bottom: -10px;
+      right: 125px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.social__icons {
+  color: white;
+  font-size: 1.4rem;
+  margin: auto;
+
+  i {
+    margin: 0 5px;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    margin: 0;
+  }
+}
+
+.active {
+  display: flex;
+  bottom: 0;
+  opacity: 1;
+
+  @include breakpoint-up(large) {
+    bottom: 5.8rem;
+  }
+}
+
+.fa-heart {
+  color: red;
+  margin-left: auto;
+  font-size: 1.4rem;
+  transition: 0.3s;
+
+  &:active {
+    transform: scale(1.5);
+  }
+
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

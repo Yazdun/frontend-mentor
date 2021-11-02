@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+@media (prefers-color-scheme: dark) {
+  $dark-primary: #264653;
+  $dark-secondary: #e0e0e0;
+
+  .dark-mode {
+    body {
+      background-color: $dark-primary;
+    }
+
+    .card {
+      background-color: $dark-secondary;
+    }
+
+    .btn__theme {
+      background-color: $dark-primary;
+      color: $clr__light-grayish-blue;
+    }
+
+    .fa-share {
+      background-color: $dark-secondary;
+      color: $dark-primary;
+    }
+
+    .card__share--profile--info span {
+      color: $clr__desaturated-dark-blue;
+    }
+
+    .social {
+      background-color: white;
+      color: $dark-primary;
+
+      i {
+        color: $dark-primary;
+      }
+
+      .fa-heart {
+        color: $clr__light-red;
+      }
+
+      @include breakpoint-up(large) {
+        &::before {
+          background: white;
+        }
+      }
+    }
+  }
+}

@@ -45,11 +45,22 @@ noscript {
   left: 50%;
   z-index: 99;
   border-radius: 1em;
-  background-color: $white;
   padding: rem(20);
   width: rem(280);
   font-size: rem(16);
   transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: $clr__light-grayish-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 25px;
+  font-size: 13px;
+  color: $clr__dark-grayish-blue;
 }
 
 ul {
@@ -89,7 +100,7 @@ img:after {
 }
 
 .hide-for-desktop {
-  @include breakpoint-up("small") {
+  @include breakpoint-up(large) {
     display: none;
   }
 }
