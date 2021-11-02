@@ -16,7 +16,7 @@
     <a href="https://www.frontendmentor.io/solutions/article-preview-component-41sLYvr4q"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://yazdun-article-preview-component.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
@@ -24,7 +24,7 @@
   </p>
 </div>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-article-preview-component.netlify.app/%2F)]([LIVE](https://yazdun-article-preview-component.netlify.app/))
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-article-preview-component.netlify.app/%2F)](https://yazdun-article-preview-component.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/article-preview-component?logo=git&logoColor=white&style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yazdun/frontend_mentor?color=violet&logo=github&style=for-the-badge)
