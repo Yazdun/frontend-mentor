@@ -8,15 +8,15 @@
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Base apparel coming soon</h3>
 
   <p align="center">
-    project_description
+    Newbie frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/base-apparel-coming-soon-kjrBqgJTi"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://yazdun-base-apparel-coming-soon.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
@@ -24,9 +24,9 @@
   </p>
 </div>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**livesiteurlhere**%2F)](LIVE)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-base-apparel-coming-soon.netlify.app/%2F)](https://yazdun-base-apparel-coming-soon.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/branch_name?logo=git&logoColor=white&style=for-the-badge)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/yazdun/frontend_mentor/base-apparel-coming-soon?logo=git&logoColor=white&style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yazdun/frontend_mentor?color=violet&logo=github&style=for-the-badge)
 
 ![Preview of the solution](./images/README/screenshot.jpg)
