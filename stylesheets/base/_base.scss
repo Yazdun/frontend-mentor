@@ -60,7 +60,7 @@ body {
   overflow-x: hidden;
 
   @include breakpoint-up(large) {
-    background: url("../../images/bg-pattern-desktop.svg");
+    // background: url("../../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -79,6 +79,14 @@ main {
     width: 40%;
     max-width: 800px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .bg__desktop {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 80%;
+    max-height: 100vh;
   }
 }
 
