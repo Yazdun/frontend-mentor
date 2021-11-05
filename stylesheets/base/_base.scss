@@ -45,11 +45,41 @@ noscript {
   left: 50%;
   z-index: 99;
   border-radius: 1em;
-  background-color: $white;
   padding: rem(20);
   width: rem(280);
   font-size: rem(16);
   transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  min-height: 100vh;
+  font-size: 16px;
+  color: $clr__dark-grayish-red;
+  overflow-x: hidden;
+
+  @include breakpoint-up(large) {
+    background: url("../../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+main {
+  @include breakpoint-up(large) {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+  }
+  .img__hero {
+    object-fit: cover;
+    width: 40%;
+    max-width: 800px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
 }
 
 ul {
@@ -66,30 +96,14 @@ img {
   font-weight: 400;
 }
 
-/**
- * Style Broken Images
- * Source: https://bitsofco.de/styling-broken-images/
- * */
-img::before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 0.625rem;
-}
-
-img:after {
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 0.75rem;
-}
-
 .hide-for-mobile {
-  @include breakpoint-down("small") {
+  @include breakpoint-down(large) {
     display: none;
   }
 }
 
 .hide-for-desktop {
-  @include breakpoint-up("small") {
+  @include breakpoint-up(large) {
     display: none;
   }
 }

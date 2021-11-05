@@ -1,0 +1,51 @@
+.alert {
+  position: absolute;
+  top: 130px;
+  opacity: 0;
+  background-color: $clr__whitesmoke;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 0.8rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
+
+.neutral {
+  top: 90px;
+  opacity: 1;
+}
+
+.success {
+  color: $clr__success;
+  background: $bg__success;
+  top: 90px;
+  opacity: 1;
+}
+.error {
+  color: $clr__error;
+  background: $bg__error;
+  top: 90px;
+  opacity: 1;
+}
+
+.fa-times {
+  transition: 0.3s;
+}
+
+.fa-times:hover {
+  cursor: pointer;
+  color: black;
+}

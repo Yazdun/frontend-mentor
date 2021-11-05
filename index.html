@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./stylesheets/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="icon"
@@ -17,58 +20,56 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">base apparel website</h1>
+      <div class="showcase">
+        <img
+          class="showcase__logo"
+          src="./images/logo.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="showcase__img hide-for-desktop"
+          src="./images/hero-mobile.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="showcase__wrap">
+          <h1 class="showcase__header"><span>We're </span>coming soon</h1>
+          <p class="showcase__info">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form id="submitForm" class="showcase__form">
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Email Address"
+              class="showcase__form--input"
+              aria-required="true"
+            />
+            <button id="btnSubmit" type="submit" class="showcase__form--submit">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+            <div id="alert" class="alert">
+              <p id="txtAlert"></p>
+              <i id="closeAlert" class="fas fa-times"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+      <img
+        src="./images/hero-desktop.jpg"
+        alt=""
+        aria-hidden="true"
+        class="img__hero hide-for-mobile"
+      />
+    </main>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>

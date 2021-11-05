@@ -1,5 +1,15 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
-$max-width: 1180px !default;
+$max-width-large: 1430px;
+$max-width-medium: 500px;
+$clr__whitesmoke: #f5f3f4;
+$clr__success: #247ba0;
+$bg__success: #d8f3dc;
+$clr__error: #85182a;
+$bg__error: #f7cad0;
+$clr__desaturated-red: hsl(0, 36%, 70%);
+$clr__soft-red: hsl(0, 93%, 68%);
+$clr__dark-grayish-red: hsl(0, 6%, 24%);
+$linear__primary: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+$linear__secondary: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
