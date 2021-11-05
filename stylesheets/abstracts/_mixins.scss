@@ -21,7 +21,7 @@
 
 @mixin breakpoint-up($breakpoint) {
   @if $breakpoint == small {
-    @media (min-width: 320px) {
+    @media (min-width: 430px) {
       @content;
     }
   }
@@ -40,7 +40,7 @@
 }
 @mixin breakpoint-down($breakpoint) {
   @if $breakpoint == small {
-    @media (max-width: 320px) {
+    @media (max-width: 430px) {
       @content;
     }
   }

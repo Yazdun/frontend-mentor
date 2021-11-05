@@ -1,3 +1,21 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+  text-align: center;
+  padding: 0 20px;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 100px;
+}
+
+.header__logo {
+  margin: auto;
+}
+
+.header__title {
+  margin-top: 50px;
+}
+
+.header__info {
+  color: $clr--neutral--grayishBlue;
+  line-height: 1.8rem;
+}

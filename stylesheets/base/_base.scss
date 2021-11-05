@@ -45,11 +45,36 @@ noscript {
   left: 50%;
   z-index: 99;
   border-radius: 1em;
-  background-color: $white;
   padding: rem(20);
   width: rem(280);
   font-size: rem(16);
   transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: $clr--neutral--darkGrayishBlue;
+  font-size: 18px;
+}
+
+.top__bg--mobile {
+  width: 100%;
+  top: 0;
+  position: absolute;
+
+  @include breakpoint-up(small) {
+    display: none;
+  }
+}
+
+.top__bg--desktop {
+  width: 100%;
+  top: 0;
+  position: absolute;
+
+  @include breakpoint-down(small) {
+    display: none;
+  }
 }
 
 ul {
@@ -66,30 +91,14 @@ img {
   font-weight: 400;
 }
 
-/**
- * Style Broken Images
- * Source: https://bitsofco.de/styling-broken-images/
- * */
-img::before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 0.625rem;
-}
-
-img:after {
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 0.75rem;
-}
-
 .hide-for-mobile {
-  @include breakpoint-down("small") {
+  @include breakpoint-down(small) {
     display: none;
   }
 }
 
 .hide-for-desktop {
-  @include breakpoint-up("small") {
+  @include breakpoint-up(large) {
     display: none;
   }
 }
