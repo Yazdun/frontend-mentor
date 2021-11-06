@@ -33,8 +33,8 @@ function classHandler(form, className) {
   });
 }
 
-// Here is a function which handles all our alert states for us
-// It recieves 5 params in order to the function
+// alertHandler is a function which handles all our alert states for us
+// It recieves 5 params in order to do the job
 // form => our form which we want to handle it's alerts
 // element => element which we want to add our alert text to it
 // successText => text for our successful alert
@@ -82,6 +82,15 @@ function validateEmail(email) {
 // saves submitted emails so user cant submit a email twice
 let submittedEmails = [];
 
+// creating new instance of alertHandler object
+let alert = new alertHandler(
+  frmAlert,
+  txtAlert,
+  "Thanks for the submission !",
+  "This email is not valid !",
+  "This email is already submitted !"
+);
+
 // function to validate form on submit
 function submitForm() {
   if (submittedEmails.includes(emailInput.value)) {
@@ -96,15 +105,6 @@ function submitForm() {
     }
   }
 }
-
-// creating new instance of alertHandler object
-let alert = new alertHandler(
-  frmAlert,
-  txtAlert,
-  "Thanks for the submission !",
-  "This email is not valid !",
-  "This email is already submitted !"
-);
 
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
