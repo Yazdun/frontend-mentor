@@ -57,6 +57,10 @@ body {
   font-size: 18px;
 }
 
+main {
+  padding: 0;
+}
+
 .top__bg--mobile {
   width: 100%;
   top: 0;
@@ -79,6 +83,13 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+p {
+  line-height: $line--height--info;
+  color: $clr--neutral--grayishBlue;
+  font-size: 1rem;
 }
 
 img {

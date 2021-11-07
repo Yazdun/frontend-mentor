@@ -37,6 +37,11 @@
       @content;
     }
   }
+  @if $breakpoint == xlarge {
+    @media (min-width: 1250px) {
+      @content;
+    }
+  }
 }
 @mixin breakpoint-down($breakpoint) {
   @if $breakpoint == small {
@@ -53,6 +58,11 @@
 
   @if $breakpoint == large {
     @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xlarge {
+    @media (max-width: 1250px) {
       @content;
     }
   }

@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn {
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.7;
+    transform: translateY(2px);
+  }
+}
+
+.btn__primary {
+  background-color: $clr--primary--strongCyan;
+  box-shadow: 0px 3px rgb(36, 160, 141);
+}
+
+.btn__secondary {
+  background-color: $clr--primary--lightBlue;
+  box-shadow: 0px 3px hsla(233, 66%, 60%, 1);
+}
+
+@include breakpoint-up(medium) {
+  .btn {
+    max-width: 220px;
+    margin: 0 5px;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+    &:active {
+      transform: translateY(-4px);
+    }
+  }
+}

@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./stylesheets/main.css" />
 
     <title>Frontend Mentor | Clipboard landing page</title>
@@ -29,6 +37,7 @@
       class="top__bg--desktop"
       aria-hidden="true"
     />
+    <!-- header -->
     <header class="header">
       <img src="./images/logo.svg" alt="" class="header__logo" />
       <h1 class="header__title">A history of everything you copy</h1>
@@ -36,11 +45,48 @@
         Clipboard allows you to track and organize everything you copy.
         Instantly access your clipboard on all your devices.
       </p>
-      <div class="header__buttons">
-        <button class="btn__primary">Download for iOS</button>
-        <button class="btn__secondary">Download for Mac</button>
-      </div>
+      <button class="btn btn__primary">Download for iOS</button>
+      <button class="btn btn__secondary">Download for Mac</button>
     </header>
+    <main>
+      <!-- section a -->
+      <section class="section__a">
+        <h2 class="section__a__title">Keep track of your snippets</h2>
+        <p class="section__a__info">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+        <div class="section__a__showcase">
+          <img
+            src="./images/image-computer.png"
+            alt=""
+            aria-hidden="true"
+            class="section__a__showcase--img"
+          />
+          <ul class="section__a__showcase--list">
+            <li>
+              Quick Search
+              <p>
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </li>
+            <li>
+              iCloud Sync
+              <p>Instantly saves and syncs snippets across all your devices.</p>
+            </li>
+            <li>
+              Complete History
+              <p>
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
 <!-- 
