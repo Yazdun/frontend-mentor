@@ -20,49 +20,55 @@
 }
 
 @mixin breakpoint-up($breakpoint) {
-  @if $breakpoint == small {
-    @media (min-width: 430px) {
+  @if $breakpoint == mobile {
+    @media (min-width: 320px) {
       @content;
     }
   }
 
-  @if $breakpoint == medium {
-    @media (min-width: 768px) {
+  @if $breakpoint == tablet {
+    @media (min-width: 481px) {
       @content;
     }
   }
 
-  @if $breakpoint == large {
-    @media (min-width: 1024px) {
+  @if $breakpoint == laptop {
+    @media (min-width: 769px) {
       @content;
     }
   }
-  @if $breakpoint == xlarge {
-    @media (min-width: 1250px) {
+  @if $breakpoint == desktop {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+  @if $breakpoint == wide {
+    @media (min-width: 1201px) {
       @content;
     }
   }
 }
+
 @mixin breakpoint-down($breakpoint) {
-  @if $breakpoint == small {
-    @media (max-width: 430px) {
+  @if $breakpoint == mobile {
+    @media (max-width: 480px) {
       @content;
     }
   }
 
-  @if $breakpoint == medium {
+  @if $breakpoint == tablet {
     @media (max-width: 768px) {
       @content;
     }
   }
 
-  @if $breakpoint == large {
+  @if $breakpoint == laptop {
     @media (max-width: 1024px) {
       @content;
     }
   }
-  @if $breakpoint == xlarge {
-    @media (max-width: 1250px) {
+  @if $breakpoint == desktop {
+    @media (max-width: 1200px) {
       @content;
     }
   }

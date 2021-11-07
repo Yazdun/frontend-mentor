@@ -6,33 +6,28 @@
   margin-top: $mt--large;
   margin-bottom: 300px;
 
-  @include breakpoint-up(large) {
-    max-width: 1400px;
+  @include breakpoint-up(laptop) {
+    max-width: $max--width--large;
+
     padding: 0;
   }
 }
 
 .section__a__info {
-  max-width: $max--width--small;
+  max-width: $max--width--x--small;
   margin: auto;
-
-  @include breakpoint-up(medium) {
-    max-width: $max--width--medium;
-  }
 }
 
 .section__a__showcase {
-  @include breakpoint-up(large) {
+  @include breakpoint-up(laptop) {
     display: flex;
-    text-align: left;
+    margin-top: $mt--low;
     width: 100%;
-    max-width: $max--width--large;
-    margin: $mt--low auto;
+    text-align: left;
     overflow: hidden;
   }
-  @include breakpoint-up(xlarge) {
+  @include breakpoint-up(wide) {
     overflow: visible;
-    justify-content: center;
   }
 }
 
@@ -40,16 +35,15 @@
   margin: auto;
   margin-top: $mt--low;
   width: 100%;
-  max-width: $max--width--medium;
+  max-width: $max--width--x--small;
 
-  @include breakpoint-up(large) {
+  @include breakpoint-up(laptop) {
     margin: 0;
-    position: relative;
-    left: -27px;
-  }
+    max-width: $max--width--small;
 
-  @include breakpoint-up(xlarge) {
-    position: static;
+    position: relative;
+    left: -35px;
+    // margin-right: 90px;
   }
 }
 
@@ -64,17 +58,13 @@
       margin-top: 10px;
     }
   }
-  @include breakpoint-up(large) {
-    max-width: 400px;
-    margin-left: 80px;
+  @include breakpoint-up(laptop) {
+    width: 100%;
+    max-width: 350px;
+    margin-left: 30px;
 
-    li {
-      margin-top: 60px;
-      padding-right: 20px;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
+    li:first-of-type {
+      margin-top: 45px;
     }
   }
 }

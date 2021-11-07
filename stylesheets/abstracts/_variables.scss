@@ -2,15 +2,15 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-$max-width: 1180px !default;
 $clr--primary--strongCyan: hsl(171, 66%, 44%);
 $clr--primary--lightBlue: hsl(233, 100%, 69%);
 $clr--neutral--darkGrayishBlue: hsl(210, 10%, 33%);
 $clr--neutral--grayishBlue: hsl(201, 11%, 66%);
 // max width
-$max--width--small: 500px;
-$max--width--medium: 650px;
-$max--width--large: 1250px;
+$max--width--x--small: 600px;
+$max--width--small: 768px;
+$max--width--medium: 1024px;
+$max--width--large: 1366px;
 // line heights
 $line--height--info: 1.8rem;
 // margin

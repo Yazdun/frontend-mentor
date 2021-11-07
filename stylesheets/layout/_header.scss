@@ -3,7 +3,6 @@
   padding: 0 20px;
   margin: auto;
   width: 100%;
-  max-width: $max--width--small;
   margin-top: $mt--large;
 }
 
@@ -13,14 +12,18 @@
 
 .header__title {
   margin-top: 50px;
+  font-size: 2rem;
 }
 
 .header__info {
   margin-bottom: 50px;
 }
 
-@include breakpoint-up(medium) {
+@include breakpoint-up(laptop) {
   .header {
-    max-width: $max--width--medium;
+    max-width: $max--width--x--small;
+  }
+  .header__title {
+    font-size: 2.2rem;
   }
 }

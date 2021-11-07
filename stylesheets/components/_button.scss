@@ -32,7 +32,7 @@
   box-shadow: 0px 3px hsla(233, 66%, 60%, 1);
 }
 
-@include breakpoint-up(medium) {
+@include breakpoint-up(laptop) {
   .btn {
     max-width: 220px;
     margin: 0 5px;
