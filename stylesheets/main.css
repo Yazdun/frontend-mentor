@@ -597,28 +597,6 @@ main {
   z-index: -1;
 }
 
-.fade-in {
-  opacity: 0;
-  -webkit-transition: opacity 950ms ease-in;
-  transition: opacity 950ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-  -webkit-animation: 1s slideInFromBottomSmooth;
-          animation: 1s slideInFromBottomSmooth;
-}
-
-.slide-in {
-  opacity: 0;
-}
-
-.slide-in.appear {
-  opacity: 1;
-  -webkit-animation: 1s slideInFromLeft;
-          animation: 1s slideInFromLeft;
-}
-
 ul {
   list-style: none;
   padding: 0;
