@@ -17,8 +17,5 @@
 // 5. Components
 @import "components/button", "components/alert";
 
-// 6. Page-specific styles
-@import "pages/home";
-
-// 7. Themes
-@import "themes/default";
+// 6. Themes
+@import "themes/dark";

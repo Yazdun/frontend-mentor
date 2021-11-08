@@ -5,7 +5,6 @@
 
 .footer__wrap {
   max-width: $max--width--medium;
-  //   border: 1px solid black;
   padding: 60px 0;
   margin: auto;
   @include breakpoint-up(desktop) {
@@ -69,8 +68,6 @@
     &:hover {
       cursor: pointer;
       animation-name: boing;
-      //   color: $clr--primary--lightBlue;
-
       animation-duration: 0.75s;
     }
   }

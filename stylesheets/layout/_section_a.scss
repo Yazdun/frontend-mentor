@@ -39,10 +39,8 @@
   @include breakpoint-up(desktop) {
     margin: 0;
     max-width: $max--width--small;
-
     position: relative;
     left: -35px;
-    // margin-right: 90px;
   }
 }
 

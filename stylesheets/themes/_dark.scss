@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+@media (prefers-color-scheme: dark) {
+  $dark-primary: #25292d;
+  $dark-secondary: #e2eafc;
+
+  .dark-mode {
+    body {
+      background-color: $dark-primary;
+      color: white;
+    }
+
+    .btn__theme {
+      color: #fffcd6;
+      .fa-sun {
+        display: none;
+      }
+      .fa-moon {
+        display: flex;
+      }
+    }
+
+    .top__bg--desktop {
+      opacity: 0.7;
+    }
+
+    p {
+      color: $dark-secondary;
+    }
+
+    .alert {
+      background-color: rgba(167, 0, 0, 0.85);
+    }
+
+    .footer {
+      background-color: #1b1e22;
+    }
+
+    .section__c__list--item:hover {
+      .section__c__list--icon {
+        filter: brightness(2);
+      }
+    }
+
+    .section__d__img:hover {
+      filter: brightness(2);
+    }
+  }
+}

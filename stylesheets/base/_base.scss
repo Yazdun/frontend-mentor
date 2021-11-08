@@ -83,6 +83,24 @@ main {
   }
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 950ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  animation: 1s slideInFromBottomSmooth;
+}
+
+.slide-in {
+  opacity: 0;
+}
+.slide-in.appear {
+  opacity: 1;
+  animation: 1s slideInFromLeft;
+}
+
 ul {
   list-style: none;
   padding: 0;

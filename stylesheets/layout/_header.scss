@@ -8,15 +8,18 @@
 
 .header__logo {
   margin: auto;
+  animation: 2s ease logoIntro;
 }
 
 .header__title {
   margin-top: 50px;
   font-size: 2rem;
+  animation: 3s ease reveal;
 }
 
 .header__info {
   margin-bottom: 50px;
+  animation: 3s ease reveal;
 }
 
 @include breakpoint-up(laptop) {
