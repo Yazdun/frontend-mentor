@@ -25,21 +25,14 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body>
-    <img
-      src="./images/bg-header-mobile.png"
-      class="top__bg--mobile hide-for-desktop"
-      alt=""
-      aria-hidden="true"
-    />
-    <img
-      src="./images/bg-header-desktop.png"
-      alt=""
-      class="top__bg--desktop hide-for-mobile"
-      aria-hidden="true"
-    />
     <!-- header -->
     <header class="header">
-      <img src="./images/logo.svg" alt="" class="header__logo" />
+      <img
+        src="./images/logo.svg"
+        role="presentation"
+        alt=""
+        class="header__logo"
+      />
       <h1 class="header__title">A history of everything you copy</h1>
       <p class="header__info">
         Clipboard allows you to track and organize everything you copy.
@@ -62,6 +55,7 @@
             src="./images/image-computer.png"
             alt=""
             aria-hidden="true"
+            role="presentation"
             class="section__a__showcase--img"
           />
           <ul class="section__a__showcase--list">
@@ -86,7 +80,160 @@
           </ul>
         </div>
       </section>
+      <!-- section b -->
+      <section class="section__b">
+        <h2 class="section__b__title">Access Clipboard anywhere</h2>
+        <p class="section__b__info">
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+        <img
+          src="./images/image-devices.png"
+          aria-hidden="true"
+          role="presentation"
+          alt=""
+          class="section__b__img"
+        />
+      </section>
+      <!-- section c -->
+      <section class="section__c">
+        <h2 class="section__c__title">Supercharge your workflow</h2>
+        <p class="section__c__info">
+          We’ve got the tools to boost your productivity.
+        </p>
+        <ul class="section__c__list">
+          <li class="section__c__list--item">
+            <img
+              class="section__c__list--icon icon__blacklist"
+              src="./images/icon-blacklist.svg"
+              role="presentation"
+              alt=""
+              aria-hidden="true"
+            />
+            <p class="section__c__list--title">Create blacklists</p>
+            <p class="section__c__list--info">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </li>
+          <li class="section__c__list--item">
+            <img
+              class="section__c__list--icon"
+              src="./images/icon-text.svg"
+              role="presentation"
+              alt=""
+              aria-hidden="true"
+            />
+
+            <p class="section__c__list--title">Plain text snippets</p>
+            <p class="section__c__list--info">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </li>
+          <li class="section__c__list--item">
+            <img
+              class="section__c__list--icon"
+              src="./images/icon-preview.svg"
+              role="presentation"
+              alt=""
+              aria-hidden="true"
+            />
+            <p class="section__c__list--title">Sneak preview</p>
+            <p class="section__c__list--info">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- section d -->
+      <section class="section__d">
+        <h2 class="sr-only">Companies which uses our services</h2>
+        <img
+          src="./images/logo-google.png"
+          alt="google logo"
+          class="section__d__img"
+        />
+        <img
+          src="./images/logo-ibm.png"
+          alt="google logo"
+          class="section__d__img"
+        />
+        <img
+          src="./images/logo-microsoft.png"
+          alt="microsoft logo"
+          class="section__d__img"
+        />
+        <img src="./images/logo-hp.png" alt="hp logo" class="section__d__img" />
+        <img
+          src="./images/logo-vector-graphics.png"
+          alt="vector graphics logo"
+          class="section__d__img"
+        />
+      </section>
+      <!-- section e -->
+      <section class="section__e">
+        <h2 class="section__e__title">Clipboard for iOS and Mac OS</h2>
+        <p class="section__e__info">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you’re ready to start adding to your clipboard.
+        </p>
+        <button class="btn btn__primary">Download for iOS</button>
+        <button class="btn btn__secondary">Download for Mac</button>
+      </section>
+      <!-- background images -->
+      <img
+        src="./images/bg-header-mobile.png"
+        class="top__bg--mobile hide-for-desktop"
+        role="presentation"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        src="./images/bg-header-desktop.png"
+        alt=""
+        class="top__bg--desktop hide-for-mobile"
+        aria-hidden="true"
+        role="presentation"
+      />
+      <!-- alert -->
+      <div id="alert" class="alert hide">
+        <div class="alert__wrap">
+          <div class="alert__wrap--content">
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="alert__text">
+              Servers are down ! Please try again in few hours
+            </p>
+          </div>
+          <button class="alert__btn--close" id="closeAlert">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
     </main>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <img
+          src="./images/logo.svg"
+          role="presentation"
+          alt=""
+          aria-hidden="true"
+          class="footer__img"
+        />
+        <div class="footer__links">
+          <a href="#">FAQs</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Press Kit</a>
+          <a href="#">Install Guide</a>
+        </div>
+        <div class="footer__icons">
+          <i aria-label="our facebook page" class="fab fa-facebook-square"></i>
+          <i aria-label="our twitter page" class="fab fa-twitter"></i>
+          <i aria-label="our instagram page" class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./javascript/script.js"></script>
   </body>
 </html>
 <!-- 

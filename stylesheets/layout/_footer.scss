@@ -1,3 +1,94 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer {
+  background-color: $clr--neutral--lightGray;
+  margin-top: $mt--large;
+}
+
+.footer__wrap {
+  max-width: $max--width--medium;
+  //   border: 1px solid black;
+  padding: 60px 0;
+  margin: auto;
+  @include breakpoint-up(desktop) {
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__img {
+  width: 100%;
+  max-width: 50px;
+  margin: auto;
+
+  @include breakpoint-up(desktop) {
+    margin: 0;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    margin-top: 35px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+
+    &:hover {
+      color: $clr--primary--lightBlue;
+    }
+  }
+
+  @include breakpoint-up(desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    text-align: left;
+    position: relative;
+    left: -100px;
+    a {
+      margin: 0;
+    }
+  }
+}
+
+.footer__icons {
+  margin: auto;
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  i {
+    font-size: 1.7rem;
+
+    &:hover {
+      cursor: pointer;
+      animation-name: boing;
+      //   color: $clr--primary--lightBlue;
+
+      animation-duration: 0.75s;
+    }
+  }
+
+  @include breakpoint-up(desktop) {
+    margin: 0;
+    max-width: 140px;
+  }
+}
+
+.fa-twitter:hover {
+  color: rgb(77, 160, 238);
+}
+
+.fa-facebook-square:hover {
+  color: rgb(61, 82, 201);
+}
+
+.fa-instagram:hover {
+  color: rgb(255, 100, 126);
+}

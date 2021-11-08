@@ -1,0 +1,16 @@
+.section__b {
+  text-align: center;
+  margin-top: $mt--large;
+  padding: 0 20px;
+}
+
+.section__b__info {
+  max-width: $max--width--x--small;
+  margin: auto;
+}
+
+.section__b__img {
+  margin: $mt--low auto 0 auto;
+  width: 100%;
+  max-width: $max--width--small;
+}

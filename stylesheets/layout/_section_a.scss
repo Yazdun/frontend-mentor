@@ -4,7 +4,6 @@
   margin: auto;
   width: 100%;
   margin-top: $mt--large;
-  margin-bottom: 300px;
 
   @include breakpoint-up(laptop) {
     max-width: $max--width--large;
@@ -19,7 +18,7 @@
 }
 
 .section__a__showcase {
-  @include breakpoint-up(laptop) {
+  @include breakpoint-up(desktop) {
     display: flex;
     margin-top: $mt--low;
     width: 100%;
@@ -37,7 +36,7 @@
   width: 100%;
   max-width: $max--width--x--small;
 
-  @include breakpoint-up(laptop) {
+  @include breakpoint-up(desktop) {
     margin: 0;
     max-width: $max--width--small;
 
@@ -58,10 +57,11 @@
       margin-top: 10px;
     }
   }
-  @include breakpoint-up(laptop) {
+  @include breakpoint-up(desktop) {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     margin-left: 30px;
+    padding-right: 30px;
 
     li:first-of-type {
       margin-top: 45px;

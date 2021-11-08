@@ -1,0 +1,20 @@
+.section__d {
+  margin-top: $mt--large;
+  padding: 0 20px;
+  @include breakpoint-up(desktop) {
+    display: flex;
+    width: 100%;
+    max-width: $max--width--large;
+    margin: $mt--large auto 0 auto;
+  }
+}
+
+.section__d__img {
+  margin: 0 auto 70px auto;
+  object-fit: contain;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(0);
+  }
+}
