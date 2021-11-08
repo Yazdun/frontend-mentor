@@ -13,7 +13,7 @@
   <p align="center">
     Junior frontendmentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/clipboard-landing-page-9u2GHtx8-"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-clipboard-landing-page.netlify.app/">View Demo</a>
