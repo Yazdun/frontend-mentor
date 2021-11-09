@@ -38,22 +38,9 @@ html {
   white-space: nowrap !important;
 }
 
-noscript {
-  display: block;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 99;
-  border-radius: 1em;
-  background-color: $white;
-  padding: rem(20);
-  width: rem(280);
-  font-size: rem(16);
-  transform: translate(-50%, -50%);
-}
-
 ul {
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -66,30 +53,14 @@ img {
   font-weight: 400;
 }
 
-/**
- * Style Broken Images
- * Source: https://bitsofco.de/styling-broken-images/
- * */
-img::before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 0.625rem;
-}
-
-img:after {
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 0.75rem;
-}
-
 .hide-for-mobile {
-  @include breakpoint-down("small") {
+  @include breakpoint-down(tablet) {
     display: none;
   }
 }
 
 .hide-for-desktop {
-  @include breakpoint-up("small") {
+  @include breakpoint-up(laptop) {
     display: none;
   }
 }
