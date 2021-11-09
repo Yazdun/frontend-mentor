@@ -30,8 +30,11 @@
   flex-direction: column;
   text-align: center;
 
-  a {
+  li {
     margin-top: 35px;
+  }
+
+  li a {
     text-decoration: none;
     color: inherit;
     transition: 0.3s;
@@ -48,7 +51,7 @@
     text-align: left;
     position: relative;
     left: -100px;
-    a {
+    li {
       margin: 0;
     }
   }

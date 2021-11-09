@@ -771,15 +771,18 @@ img {
   text-align: center;
 }
 
-.footer__links a {
+.footer__links li {
   margin-top: 35px;
+}
+
+.footer__links li a {
   text-decoration: none;
   color: inherit;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.footer__links a:hover {
+.footer__links li a:hover {
   color: #6173ff;
 }
 
@@ -794,7 +797,7 @@ img {
     position: relative;
     left: -100px;
   }
-  .footer__links a {
+  .footer__links li {
     margin: 0;
   }
 }
@@ -979,7 +982,6 @@ img {
   .section__c__list--item:hover {
     -webkit-transform: scale(1.07);
             transform: scale(1.07);
-    cursor: pointer;
   }
 }
 
@@ -1021,7 +1023,6 @@ img {
      object-fit: contain;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .section__d__img:hover {
