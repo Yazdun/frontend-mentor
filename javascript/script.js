@@ -21,11 +21,14 @@ const classHandler = (className) => {
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", () => {
     classHandler("active");
+    alert.ariaLive = true;
   });
 }
 
 closeAlert.addEventListener("click", () => {
   classHandler("hide");
+  alert.ariaLive = false;
+  console.log(alert.ariaLive);
 });
 
 window.addEventListener("click", (e) => {
@@ -33,6 +36,7 @@ window.addEventListener("click", (e) => {
     // pass
   } else {
     classHandler("hide");
+    alert.ariaLive = false;
   }
 });
 
