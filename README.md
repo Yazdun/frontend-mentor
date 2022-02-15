@@ -23,6 +23,8 @@
   </p>
 </div>
 
+<br/>
+
 ## About this repository
 
 - I use this repository as starter template for my challenges.
