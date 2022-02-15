@@ -24,7 +24,7 @@
   </p>
   
   [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-clipboard-landing-page.netlify.app/%2F)](https://yazdun-clipboard-landing-page.netlify.app/)
-![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=green&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
+![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=orange&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
   
 </div>
 
