@@ -31,7 +31,7 @@
 
 ![Preview of the solution](./images/README/screenshot.jpg)
 
-## 🤝 Contributing
+## Contributing
 
 Thank you for browsing this repo. Any contributions you make are **greatly appreciated**.
 
