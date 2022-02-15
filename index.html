@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="icon"
@@ -17,58 +18,40 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">NFT preview card component</h1>
+      <article>
+        <div class="hero">
+          <img
+            class="img"
+            src="./images/image-equilibrium.jpg"
+            alt="equilibrium"
+          />
+          <img class="overlay" src="./images/icon-view.svg" alt="" />
+        </div>
+        <div>
+          <a class="title" href="#">Equilibrium #3429</a href="#">
+          <p class="desc">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <p class="info">
+            <span class="amount"
+              ><i class="fa-brands fa-ethereum"></i>0.041ETH</span
+            >
+            <span class="time"
+              ><i class="fa-solid fa-clock"></i>3 days left</span
+            >
+          </p>
+          <hr />
+          <div class="profile">
+            <img src="./images/image-avatar.png" alt="Jules Wyvern" />
+            <p>Creation of <span><a href="#">Jules Wyvern</a></span></p>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
