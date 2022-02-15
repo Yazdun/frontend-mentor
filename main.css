@@ -183,7 +183,7 @@ hr {
   white-space: nowrap !important;
 }
 
-/* @media (min-width: 581px) {
+@media (min-width: 581px) {
   article {
     outline: 2.5rem solid var(--clr--bg--outline);
     animation: 1s ease appear;
@@ -218,4 +218,4 @@ hr {
   100% {
     outline: 2.5rem solid var(--clr--bg--outline);
   }
-} */
+}

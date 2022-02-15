@@ -12,7 +12,7 @@
   <p align="center">
     Newbie frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/nft-card-using-plain-css-d35JuU4Lw"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-article-preview-component.netlify.app/">View Demo</a>
