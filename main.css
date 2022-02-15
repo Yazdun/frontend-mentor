@@ -107,10 +107,9 @@ article {
   cursor: pointer;
 }
 
-.title {
+h2 {
   font-size: 1.5rem;
   margin: var(--min--rem) 0;
-  display: block;
 }
 
 .desc {
