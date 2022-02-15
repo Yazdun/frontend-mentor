@@ -7,7 +7,7 @@
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">qr code component</h3>
+<h3 align="center">QR code component</h3>
 
   <p align="center">
     Newbie frontend mentor challenge
