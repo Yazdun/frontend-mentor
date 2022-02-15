@@ -27,7 +27,7 @@
 
 </div>
 
-![Preview of the solution](./images/screenshot.jpg)
+<!-- ![Preview of the solution](./images/screenshot.jpg) -->
 
 ## Contributing
 
