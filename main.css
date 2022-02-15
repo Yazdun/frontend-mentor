@@ -81,7 +81,7 @@ p {
   margin: var(--min--rem);
   color: var(--clr--grayish--blue);
 }
-/* 
+
 @keyframes animate {
   0% {
     transform: translateY(100px) scale(0.7);
@@ -91,4 +91,4 @@ p {
     transform: translateY(0) scale(1);
     opacity: 1;
   }
-} */
+}
