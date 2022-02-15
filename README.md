@@ -4,13 +4,13 @@
 <br />
 <div align="center">
   <a href="https://www.frontendmentor.io/profile/Yazdun">
-    <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
+    <img src="images/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">NFT preview card component</h3>
 
   <p align="center">
-    project_description
+    Newbie frontend mentor challenge
     <br />
     <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />
@@ -27,7 +27,7 @@
 
 </div>
 
-![Preview of the solution](./images/README/screenshot.jpg)
+![Preview of the solution](./images/screenshot.jpg)
 
 ## Contributing
 
