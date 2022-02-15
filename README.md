@@ -7,7 +7,7 @@
     <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">qr-code-component</h3>
+<h3 align="center">qr code component</h3>
 
   <p align="center">
     Newbie frontend mentor challenge
@@ -22,7 +22,7 @@
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**yazdun-qr-code.netlify.app/**%2F)](https://yazdun-qr-code.netlify.app/)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-qr-code.netlify.app/%2F)](https://yazdun-qr-code.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 
 </div>
