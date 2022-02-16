@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://www.frontendmentor.io/profile/Yazdun">
-    <img src="images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
+    <img src="./assets/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">project_title</h3>
@@ -22,12 +22,12 @@
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**livesiteurlhere**%2F)](LIVE)
-![Website](https://img.shields.io/website?down_color=blue&down_message=newbie&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blue&up_message=newbie&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-fylo.netlify.app/%2F)](LIVE)
+![Website](https://img.shields.io/website?down_color=blueviolet&down_message=junior&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blueviolet&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 
 </div>
 
-![Preview of the solution](./images/README/screenshot.jpg)
+![Preview of the solution](./assets/screenshot.jpg)
 
 ## Contributing
 
