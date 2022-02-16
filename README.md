@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://www.frontendmentor.io/profile/Yazdun">
-    <img src="./images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
+    <img src="./assets/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h1 align="center">FEM solutions</h1>
