@@ -1,4 +1,4 @@
-/* @keyframes progress {
+@keyframes progress {
   0% {
     width: 0;
   }
@@ -51,4 +51,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
