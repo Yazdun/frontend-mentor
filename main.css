@@ -88,8 +88,9 @@ button {
   transition: 0.3s;
 }
 
-button object {
+.icon {
   cursor: pointer;
+  /* display: none; */
 }
 
 .info {
@@ -192,6 +193,9 @@ button object {
 
   button:hover {
     transform: translateY(-0.4rem);
+  }
+
+  button {
     cursor: pointer;
   }
 
