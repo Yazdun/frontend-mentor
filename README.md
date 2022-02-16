@@ -12,7 +12,7 @@
   <p align="center">
     Junior frontendmentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/practiced-some-css-animations-on-this-challenge-MYvRzDKDP"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-fylo.netlify.app/">View Demo</a>
