@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr--progress--1: hsl(6, 100%, 80%);
+  --clr--progress--2: hsl(335, 100%, 65%);
+
+  --clr--pale--blue: hsl(243, 100%, 93%);
+  --clr--grayish--blue: hsl(229, 7%, 55%);
+  --clr--dark--blue: hsl(228, 56%, 26%);
+  --clr--transparent--dark--blue: hsl(228, 56%, 18%);
+  --clr--very--dark--blue: hsl(229, 57%, 11%);
+
+  --font--main: "Raleway", sans-serif;
+  --font--size: 14px;
+
+  --min--rem: 1.2rem;
+  --low--rem: 1.8rem;
+  --med--rem: 2.2rem;
+
+  --radius: 0.6rem;
+}
+
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font--main);
+  font-size: var(--font--size);
+  background-color: var(--clr--very--dark--blue);
+  background-image: url("./images/bg-mobile.png");
+  color: var(--clr--pale--blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: var(--min--rem);
+  width: 100%;
+  max-width: 30.25rem;
+  margin: auto;
+}
+
+.logo {
+  background-color: var(--clr--dark--blue);
+  padding: var(--med--rem);
+  border-radius: var(--radius);
+  border-top-right-radius: 6rem;
+}
+
+.buttons {
+  margin-top: var(--low--rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 11rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: var(--clr--very--dark--blue);
+  height: 3rem;
+  width: 3rem;
+  border-radius: var(--radius);
+  transition: 0.3s;
+}
+
+button object {
+  cursor: pointer;
+}
+
+.info {
+  background-color: var(--clr--dark--blue);
+  margin-top: var(--min--rem);
+  padding: var(--med--rem);
+  padding-bottom: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: var(--radius);
+  animation: 2s grow;
+}
+
+.txt span {
+  font-weight: bold;
+}
+
+.progress {
+  width: 100%;
+  background-color: var(--clr--transparent--dark--blue);
+  height: 1.3rem;
+  margin-top: var(--min--rem);
+  margin-bottom: 0.5rem;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.fill {
+  position: absolute;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 50px;
+  width: 81.5%;
+  animation: 2s ease-in-out progress;
+  height: 70%;
+  left: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fill::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  height: 0.67rem;
+  width: 0.67rem;
+  border-radius: 50%;
+  right: 0.1rem;
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+
+.remain {
+  position: absolute;
+  bottom: -2rem;
+  background-color: white;
+  color: var(--clr--very--dark--blue);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: 3s appear;
+}
+
+.remain p {
+  display: flex;
+  align-items: center;
+}
+
+.remain p span {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  margin-left: 0.6rem;
+  color: var(--clr--grayish--blue);
+}
+
+@media (min-width: 780px) {
+  body {
+    background-image: none;
+    background-image: url("./images/bg-desktop.png");
+    background-position: 100% 100%;
+    background-size: 100% 50%;
+  }
+  main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    max-width: 57.25rem;
+  }
+
+  button:hover {
+    transform: translateY(-0.4rem);
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 38%;
+  }
+
+  .info {
+    width: 62%;
+    margin-top: 0;
+    margin-left: 1.4rem;
+    padding: var(--med--rem);
+    text-align: left;
+    align-items: flex-start;
+    animation: none;
+  }
+
+  .remain {
+    bottom: auto;
+    top: -2rem;
+    align-self: flex-end;
+    animation: 3s appear-top;
+  }
+
+  .remain::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 2.1rem solid transparent;
+    border-top: 0;
+    border-right: 2.1rem solid white;
+    right: 0;
+  }
+}

@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./animate.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +12,44 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">Fylo</h1>
+      <div class="logo">
+        <object data="./images/logo.svg" type="image/svg+xml"></object>
+        <div class="buttons">
+          <button>
+            <object
+              data="./images/icon-document.svg"
+              type="image/svg+xml"
+            ></object>
+          </button>
+          <button>
+            <object
+              data="./images/icon-folder.svg"
+              type="image/svg+xml"
+            ></object>
+          </button>
+          <button>
+            <object
+              data="./images/icon-upload.svg"
+              type="image/svg+xml"
+            ></object>
+          </button>
+        </div>
+      </div>
+      <div class="info">
+        <p class="txt">You’ve used <span>815 GB</span> of your storage</p>
+        <div class="progress">
+          <div class="fill"></div>
+        </div>
+        <p class="range"><span>0 GB</span><span>1000 GB</span></p>
+        <div class="remain">
+          <p>185 <span>GB LEFT</span></p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

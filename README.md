@@ -4,37 +4,37 @@
 <br />
 <div align="center">
   <a href="https://www.frontendmentor.io/profile/Yazdun">
-    <img src="./images/README/frontend-mentor-seeklogo.com.svg" alt="Logo" width="80" height="80">
+    <img src="./assets/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h1 align="center">FEM solutions</h1>
+<h3 align="center">Fylo data storage</h3>
 
   <p align="center">
-    I've dedicated this repository to my frontend mentor's solution. I do my best to follow best practices.
+    Junior frontendmentor challenge
     <br />
-    <a href="https://www.frontendmentor.io/profile/Yazdun"><strong>my FEM's profile »</strong></a>
+    <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="https://yazdun.github.io/frontend_mentor/">View Demo</a>
+    <a href="#">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
+
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2F**livesiteurlhere**%2F)](LIVE)
+![Website](https://img.shields.io/website?down_color=blueviolet&down_message=junior&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blueviolet&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
+
 </div>
 
-<br/>
-
-## About this repository
-
-- I use this repository as starter template for my challenges.
-- Each `solution` is on separate `branch`.
-- I try my best to follow best practices and document my codes as best as I can in case anyone wants to use it.
-- There is no **license** ! feel free to use any piece of code you find on this repository.
+![Preview of the solution](./assets/screenshot.jpg)
 
 ## Contributing
 
-If you find any better solution I really encourage you to inform and help me to improve these repository ! contributions are **greatly appreciated**.
+Thank you for browsing this repo. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
