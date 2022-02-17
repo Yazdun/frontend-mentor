@@ -10,6 +10,9 @@
   text-align: center;
   margin: 5rem 0;
 }
+.testimonials article h2 {
+  font-family: var(--font--sec);
+}
 
 .testimonials img {
   transition: 0.3s;
@@ -29,7 +32,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
     margin: 5rem auto;
-    max-width: 100%;
+    max-width: var(--max--width);
   }
   .testimonials article {
     margin: 0;

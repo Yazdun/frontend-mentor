@@ -1,0 +1,59 @@
+.showcase {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.showcase img {
+  max-width: 100%;
+}
+
+.showcase h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: var(--font--sec);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.showcase p {
+  margin: 1rem 0;
+}
+
+.showcase a {
+  border-bottom: 1px solid var(--clr--cyan);
+  padding-bottom: 0.3rem;
+  color: var(--clr--cyan);
+}
+
+.showcase a object {
+  position: relative;
+  bottom: -11px;
+  left: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.3s;
+}
+
+.showcase a:hover object {
+  left: 15px;
+}
+
+@media (min-width: 781px) {
+  .showcase {
+    max-width: var(--max--width);
+    display: flex;
+    align-items: center;
+  }
+
+  .showcase h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  .showcase img {
+    width: 49%;
+    margin-right: 2.5rem;
+  }
+}

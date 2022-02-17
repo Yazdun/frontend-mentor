@@ -20,6 +20,8 @@
   --clr--red: hsl(0, 100%, 63%);
   /* text */
   --clr--white: hsl(0, 0%, 100%);
+  /* width */
+  --max--width: 64rem;
 
   --font--main: "Open Sans", sans-serif;
   --font--sec: "Raleway", sans-serif;
