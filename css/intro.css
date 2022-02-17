@@ -5,6 +5,7 @@ header {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: 100% 50%;
+  animation: 5s intro_background infinite;
 }
 
 header div {
@@ -37,5 +38,17 @@ header button {
 @media (min-width: 581px) {
   header {
     background-image: url("../images/bg-curvy-desktop.svg");
+  }
+}
+
+@keyframes intro_background {
+  0% {
+    background-size: 100% 50%;
+  }
+  50% {
+    background-size: 100% 10%;
+  }
+  100% {
+    background-size: 100% 50%;
   }
 }
