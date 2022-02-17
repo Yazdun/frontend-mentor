@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr--dark--blue--2);
+  color: var(--clr--white);
+  font-family: var(--font--main);
+  font-size: var(--font--size);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  all: unset;
+  transition: 0.3s;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--clr--cyan);
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5rem;
+}

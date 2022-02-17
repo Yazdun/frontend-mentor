@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  max-width: 64rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 3.125rem;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: var(--font--sec);
+  transition: 0.3s;
+  background: linear-gradient(
+    to bottom right,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+.btn:active {
+  transform: scale(1);
+}

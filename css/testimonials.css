@@ -1,0 +1,42 @@
+.testimonials {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.testimonials article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.testimonials img {
+  transition: 0.3s;
+}
+
+.testimonials article:hover img {
+  transform: scale(1.2);
+}
+
+.testimonials article h2 {
+  margin: 2.2rem 0 1rem 0;
+}
+
+@media (min-width: 781px) {
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin: 5rem auto;
+    max-width: 100%;
+  }
+  .testimonials article {
+    margin: 0;
+    padding: 0 2.4rem;
+  }
+  .testimonials img {
+    height: 5rem;
+    object-fit: fill;
+  }
+}
