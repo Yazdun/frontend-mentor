@@ -1,6 +1,7 @@
 .testimonials {
   width: 100%;
   max-width: 30rem;
+  margin: 7rem auto;
 }
 
 .testimonials article {
@@ -31,7 +32,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
-    margin: 5rem auto;
     max-width: var(--max--width);
   }
   .testimonials article {

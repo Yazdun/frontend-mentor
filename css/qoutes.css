@@ -1,0 +1,68 @@
+.quotes {
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 30rem;
+  padding-top: 7rem;
+}
+
+.card {
+  background-color: var(--clr--dark--blue--4);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:nth-of-type(1)::after {
+  content: url("../images/bg-quotes.png");
+  position: absolute;
+  top: -35px;
+  left: -9px;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.card__info img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: fill;
+}
+
+.card__info p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.7rem;
+  font-weight: 700;
+
+  line-height: 1.1rem;
+}
+
+.card__info p span {
+  font-weight: 400;
+}
+
+@media (min-width: 681px) {
+  .quotes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    max-width: var(--max--width);
+  }
+  .card {
+    margin: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .quotes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
