@@ -1,44 +1,44 @@
-.testimonials {
+.advantages {
   width: 100%;
   max-width: 30rem;
   margin: 7rem auto;
 }
 
-.testimonials article {
+.advantages article {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 5rem 0;
 }
-.testimonials article h2 {
+.advantages article h2 {
   font-family: var(--font--sec);
 }
 
-.testimonials img {
+.advantages img {
   transition: 0.3s;
 }
 
-.testimonials article:hover img {
+.advantages article:hover img {
   transform: scale(1.2);
 }
 
-.testimonials article h2 {
+.advantages article h2 {
   margin: 2.2rem 0 1rem 0;
 }
 
 @media (min-width: 781px) {
-  .testimonials {
+  .advantages {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
     max-width: var(--max--width);
   }
-  .testimonials article {
+  .advantages article {
     margin: 0;
     padding: 0 2.4rem;
   }
-  .testimonials img {
+  .advantages img {
     height: 5rem;
     object-fit: fill;
   }

@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/utils.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/intro.css" />
-    <link rel="stylesheet" href="./css/testimonials.css" />
+    <link rel="stylesheet" href="./css/advantages.css" />
     <link rel="stylesheet" href="./css/showcase.css" />
     <link rel="stylesheet" href="./css/qoutes.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>
@@ -43,7 +51,7 @@
           <button class="btn">Get started</button>
         </div>
       </header>
-      <section class="testimonials container" id="testimonials"></section>
+      <section class="advantages container" id="advantages"></section>
       <section class="showcase container">
         <img
           src="./images/illustration-stay-productive.png"
@@ -66,9 +74,59 @@
         </div>
       </section>
       <section class="quotes container" id="quotes"></section>
+      <footer>
+        <div class="container footer">
+          <form action="" novalidate>
+            <h2>Get early access today</h2>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+            <div class="form__actions">
+              <div class="input">
+                <input type="email" placeholder="email@example.com" />
+                <p class="error">please enter a valid email address</p>
+              </div>
+              <button class="btn">get started for free</button>
+            </div>
+          </form>
+          <img src="./images/logo.svg" alt="Fylo" class="footer__log" />
+          <ul class="footer__body">
+            <li class="location">
+              <img src="./images/icon-location.svg" role="presentation" />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </li>
+            <li>
+              <ul id="footerContacts"></ul>
+            </li>
+            <li>
+              <ul id="linksOne"></ul>
+            </li>
+            <li>
+              <ul id="linksTwo"></ul>
+            </li>
+            <li>
+              <ul class="footer__icons">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
     <script src="./js/navbar.js"></script>
-    <script src="./js/testimonials.js"></script>
+    <script src="./js/advantages.js"></script>
     <script src="./js/quotes.js"></script>
+    <script src="./js/footer.js"></script>
   </body>
 </html>

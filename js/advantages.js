@@ -1,4 +1,4 @@
-const testimonials = [
+const advantages = [
   {
     image: "./images/icon-access-anywhere.svg",
     title: "Access your files, anywhere",
@@ -21,7 +21,7 @@ const testimonials = [
   },
 ];
 
-const renderTestimonials = (item) => {
+const renderAdvantages = (item) => {
   return `
     <img src=${item.image} role="presentation" />
     <h2>${item.title}</h2>
@@ -29,8 +29,8 @@ const renderTestimonials = (item) => {
     `;
 };
 
-testimonials.forEach((item) => {
+advantages.forEach((item) => {
   let Article = document.createElement("article");
-  Article.innerHTML = renderTestimonials(item);
-  document.getElementById("testimonials").appendChild(Article);
+  Article.innerHTML = renderAdvantages(item);
+  document.getElementById("advantages").appendChild(Article);
 });
