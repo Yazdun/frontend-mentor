@@ -2,7 +2,7 @@ form {
   background-color: var(--clr--dark--blue--1);
   position: absolute;
   top: -7rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
   left: 1.5rem;
   right: 1.5rem;
   border-radius: 0.8rem;
@@ -14,7 +14,7 @@ form input {
   width: 100%;
   border-radius: 50px;
   padding: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   border: none;
   outline: none;
 }
