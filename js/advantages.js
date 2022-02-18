@@ -23,7 +23,7 @@ const advantages = [
 
 const renderAdvantages = (item) => {
   return `
-    <img src=${item.image} role="presentation" />
+    <img src=${item.image} role="presentation" alt="" />
     <h2>${item.title}</h2>
     <p>${item.desc}</p>
     `;
