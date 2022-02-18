@@ -76,21 +76,41 @@
       <section class="quotes container" id="quotes"></section>
       <footer>
         <div class="container footer">
-          <form action="" novalidate>
-            <h2>Get early access today</h2>
-            <p>
-              It only takes a minute to sign up and our free starter tier is
-              extremely generous. If you have any questions, our support team
-              would be happy to help you.
-            </p>
-            <div class="form__actions">
-              <div class="input">
-                <input type="email" placeholder="email@example.com" />
-                <p class="error">please enter a valid email address</p>
+          <form novalidate>
+            <div class="form__success" id="formSuccess">
+              <i class="fa-solid fa-calendar-check"></i>
+              <i class="fa-solid fa-cloud-fog"></i>
+              <h2>Thanks for your registeration 🎉</h2>
+              <p>
+                We've sent your early access key to your email address, enjoy !
+              </p>
+            </div>
+            <div id="formBody" class="form__body">
+              <h2>Get early access today</h2>
+              <p>
+                It only takes a minute to sign up and our free starter tier is
+                extremely generous. If you have any questions, our support team
+                would be happy to help you.
+              </p>
+              <div class="form__actions">
+                <div class="input">
+                  <input
+                    type="email"
+                    id="input"
+                    placeholder="email@example.com"
+                  />
+                  <p id="error" class="error hide">
+                    please enter a valid email address
+                  </p>
+                </div>
+                <button class="btn" id="formSubmit">
+                  get started for free
+                </button>
               </div>
-              <button class="btn">get started for free</button>
             </div>
           </form>
+
+          <!-- footer -->
           <img src="./images/logo.svg" alt="Fylo" class="footer__log" />
           <ul class="footer__body">
             <li class="location">
@@ -127,6 +147,7 @@
     <script src="./js/navbar.js"></script>
     <script src="./js/advantages.js"></script>
     <script src="./js/quotes.js"></script>
+    <script src="./js/form.js"></script>
     <script src="./js/footer.js"></script>
   </body>
 </html>

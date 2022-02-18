@@ -7,10 +7,10 @@
     <img src="./assets/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Fylo dark theme landing page</h3>
 
   <p align="center">
-    project_description
+    Junior frontend mentor challenge
     <br />
     <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />

@@ -39,13 +39,43 @@ form .form__actions div {
 }
 
 .error {
+  top: 5rem;
+  opacity: 0;
+  transition: 0.4s;
   position: absolute;
-  top: 3.5rem;
   color: var(--clr--red);
   left: 1.3rem;
-
   padding: 0;
   margin: 0;
+}
+
+.show {
+  top: 3.5rem;
+  opacity: 1;
+}
+
+.form__success {
+  display: none;
+}
+
+.form__success p {
+  margin-bottom: 0;
+}
+.form__success i {
+  font-size: 3rem;
+  margin-bottom: 0.7rem;
+}
+
+.form__success__active {
+  display: block;
+  animation: 0.7s form_submit;
+}
+
+.form__body {
+  transition: 0.3s;
+}
+.form__body__hide {
+  display: none;
 }
 
 @media (min-width: 650px) {
@@ -55,6 +85,7 @@ form .form__actions div {
     width: 100%;
     max-width: 39rem;
     margin: auto;
+    padding-top: 3rem;
   }
 
   form .form__actions {
@@ -70,5 +101,20 @@ form .form__actions div {
 
   form .btn {
     width: 35%;
+  }
+}
+
+@keyframes form_submit {
+  0% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
