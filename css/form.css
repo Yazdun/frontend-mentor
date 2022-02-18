@@ -85,7 +85,6 @@ form .form__actions div {
     width: 100%;
     max-width: 39rem;
     margin: auto;
-    padding-top: 3rem;
   }
 
   form .form__actions {
@@ -97,6 +96,10 @@ form .form__actions div {
   form .input {
     margin: 0;
     width: 60%;
+  }
+
+  form input {
+    margin-bottom: 0;
   }
 
   form .btn {
