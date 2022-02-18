@@ -23,7 +23,7 @@ const renderQuote = (quote) => {
   return `
       <p>${quote.desc}</p>
       <div class="card__info">
-        <img src=${quote.image} alt=${quote.name} />
+        <img src=${quote.image} alt="${quote.name}" />
         <p>${quote.name}<span>${quote.position}</span></p>
       </div>
       `;
