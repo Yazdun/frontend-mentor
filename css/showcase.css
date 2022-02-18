@@ -3,7 +3,7 @@
   max-width: 30rem;
 }
 
-.showcase img {
+.showcase .illustration {
   max-width: 100%;
 }
 
@@ -25,17 +25,17 @@
   color: var(--clr--cyan);
 }
 
-.showcase a object {
+.showcase a img {
   position: relative;
-  bottom: -11px;
-  left: 10px;
-  width: 1.5rem;
-  height: 1.5rem;
+  bottom: -6px;
+  left: 3px;
+  width: 1.3rem;
+  height: 1.3rem;
   transition: 0.3s;
 }
 
-.showcase a:hover object {
-  left: 15px;
+.showcase a:hover img {
+  left: 12px;
 }
 
 @media (min-width: 781px) {
@@ -52,7 +52,7 @@
     font-size: 1.6rem;
   }
 
-  .showcase img {
+  .showcase .illustration {
     width: 49%;
     margin-right: 2.5rem;
   }
