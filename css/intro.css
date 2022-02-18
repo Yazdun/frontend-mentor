@@ -40,7 +40,7 @@ header button {
     background-image: url("../images/bg-curvy-desktop.svg");
   }
 }
-/* 
+
 @keyframes intro_background {
   0% {
     background-size: 100% 50%;
@@ -51,4 +51,4 @@ header button {
   100% {
     background-size: 100% 50%;
   }
-} */
+}
