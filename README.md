@@ -12,17 +12,17 @@
   <p align="center">
     Junior frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/landing-page-created-with-plain-css-and-javascript-i_k2i59YP"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://yazdun-fylo-dark-theme-landing-page.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-fylo.netlify.app/%2F)](LIVE)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-fylo-dark-theme-landing-page.netlify.app/%2F)](https://yazdun-fylo-dark-theme-landing-page.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blueviolet&down_message=junior&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blueviolet&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 
 </div>
