@@ -13,6 +13,7 @@
   margin: 2rem 0;
   position: relative;
   transition: 0.3s;
+  box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card:nth-of-type(1)::after {
