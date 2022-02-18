@@ -45,7 +45,7 @@ const linksTwo = [
 
 const renderContact = (item) => {
   return ` 
-      <img src=${item.icon} role="presentation" />
+      <img src=${item.icon} role="presentation" alt="" />
       ${item.info}`;
 };
 
