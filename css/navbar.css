@@ -1,5 +1,6 @@
 .nav {
   background-color: var(--clr--dark--blue--1);
+  padding: 2rem 0;
 }
 
 .nav__content {
