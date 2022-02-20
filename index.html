@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./loading.css" />
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
@@ -17,58 +14,40 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend mentor challenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-      }
-
-      .wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      h2:nth-child(2) {
-        font-weight: normal;
-      }
-
-      span {
-        font-weight: 600;
-        color: hsl(223, 87%, 63%);
-      }
-
-      a {
-        text-decoration: none;
-        color: hsl(223, 87%, 63%);
-        transition: 0.3s;
-      }
-
-      a:visited {
-        color: hsl(223, 87%, 63%);
-      }
-
-      a:hover {
-        color: black;
-      }
-    </style>
+    <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h2>Frontend mentor challenges repository</h2>
-      <h2>
-        Created by
-        <a href="https://www.frontendmentor.io/profile/Yazdun" target="_blank"
-          >Yazdun</a
-        >
-        /
-        <a href="https://github.com/Yazdun/frontend_mentor" target="_blank"
-          >Github repo</a
-        >
-      </h2>
-    </div>
+    <main>
+      <h1 class="sr-only">Advice generator app</h1>
+      <div class="lds-ellipsis" id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="card" id="card">
+        <p class="title">advice #<span id="adviceId">117</span></p>
+        <p class="advice" id="adviceText">
+          "It is easy to sit up and take notice, what's difficult is getting up
+          and taking action. "
+        </p>
+        <img
+          src="./images/pattern-divider-mobile.svg"
+          class="devider_mobile"
+          alt=""
+          role="presentation"
+        />
+        <img
+          src="./images/pattern-divider-desktop.svg"
+          class="devider_desktop"
+          alt=""
+          role="presentation"
+        />
+        <button id="btn" class="btn">
+          <img src="./images/icon-dice.svg" alt="" />
+        </button>
+      </div>
+    </main>
+    <script src="./app.js"></script>
   </body>
 </html>

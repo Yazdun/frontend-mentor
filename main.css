@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Manrope", sans-serif;
+  --font--size: 28px;
+
+  --clr--light--cyan: hsl(193, 38%, 86%);
+  --clr--neon--green: hsl(150, 100%, 66%);
+  --clr--grayish--blue: hsl(218, 20%, 24%);
+  --clr--dark--grayish--blue: hsl(220, 22%, 16%);
+}
+
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+body {
+  background-color: var(--clr--dark--grayish--blue);
+  font-family: var(--font);
+  color: var(--clr--light--cyan);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+button {
+  font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  width: 100%;
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr--grayish--blue);
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  position: relative;
+  animation: 0.6s slideFromRight;
+}
+
+.hide {
+  animation: 0.6s slideToLeft;
+  transform: scale(0);
+}
+
+.show {
+  animation: 0.6s slideFromRight;
+}
+
+.title {
+  color: var(--clr--neon--green);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 0.7rem;
+}
+
+.advice {
+  font-size: var(--font--size);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--clr--neon--green);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -2rem;
+  transition: 0.3s linear;
+}
+
+.devider_desktop {
+  display: none;
+  margin: 2rem 0;
+}
+
+.devider_mobile {
+  margin: 2rem 0;
+}
+
+@media (min-width: 500px) {
+  .devider_desktop {
+    display: block;
+  }
+
+  .devider_mobile {
+    display: none;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: rgba(82, 255, 168, 0.7) 0px 7px 29px 0px;
+  }
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(2rem) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(-2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
