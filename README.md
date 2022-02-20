@@ -7,7 +7,7 @@
     <img src="./assets/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">advice generator app</h3>
+<h3 align="center">Advice generator app</h3>
 
   <p align="center">
     Junior frontend mentor challenge
