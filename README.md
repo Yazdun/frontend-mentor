@@ -7,22 +7,22 @@
     <img src="./assets/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">advice generator app</h3>
 
   <p align="center">
-    project_description
+    Junior frontend mentor challenge
     <br />
     <a href="#"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://yazdun-advice-generator-app.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-fylo.netlify.app/%2F)](LIVE)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-advice-generator-app.netlify.app/%2F)](https://yazdun-advice-generator-app.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blueviolet&down_message=junior&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blueviolet&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 
 </div>

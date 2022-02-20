@@ -142,7 +142,7 @@ img {
     box-shadow: rgba(82, 255, 168, 0.7) 0px 7px 29px 0px;
   }
 }
-/* 
+
 @keyframes slideToLeft {
   0% {
     transform: translateX(0) scale(1);
@@ -177,4 +177,4 @@ img {
     transform: translateY(0);
     opacity: 1;
   }
-} */
+}
