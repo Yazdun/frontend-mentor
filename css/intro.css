@@ -12,7 +12,7 @@ header div {
   padding: 2rem;
   text-align: center;
   width: 100%;
-  max-width: 50rem;
+  max-width: 30rem;
   margin: auto;
 }
 
@@ -23,7 +23,7 @@ header img {
 header h1 {
   font-size: 1.5rem;
   font-family: var(--font--sec);
-  line-height: 3.3rem;
+  line-height: 2.3rem;
   margin: 1rem 0;
 }
 
@@ -32,24 +32,12 @@ header p {
 }
 
 header button {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 @media (min-width: 581px) {
   header {
     background-image: url("../images/bg-curvy-desktop.svg");
-  }
-
-  header h1 {
-    font-size: 2.4rem;
-  }
-
-  header p {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    width: 100%;
-    max-width: 40rem;
-    margin: auto;
   }
 }
 
