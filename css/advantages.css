@@ -13,11 +13,6 @@
 }
 .advantages article h2 {
   font-family: var(--font--sec);
-  font-size: 1.5rem;
-}
-
-.advantages article p {
-  font-family: var(--font--sec);
 }
 
 .advantages img {
