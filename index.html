@@ -29,14 +29,12 @@
         <img
           class="showcase__logo"
           src="./images/logo.svg"
-          alt=""
-          aria-hidden="true"
+          alt="base apparel"
         />
         <img
           class="showcase__img hide-for-desktop"
           src="./images/hero-mobile.jpg"
-          alt=""
-          aria-hidden="true"
+          alt="base apparel"
         />
         <div class="showcase__wrap">
           <h1 class="showcase__header"><span>We're </span>coming soon</h1>
@@ -46,22 +44,19 @@
             and our launch deals.
           </p>
           <form id="submitForm" class="showcase__form">
+            <label for="emailInput" class="sr-only">email</label>
             <input
               type="email"
               id="emailInput"
               placeholder="Email Address"
               class="showcase__form--input"
-              aria-required="true"
+              aria-describedby="alert"
+              required
             />
-            <button
-              id="btnSubmit"
-              type="submit"
-              aria-label="Submit Button"
-              class="showcase__form--submit"
-            >
-              <img src="./images/icon-arrow.svg" alt="" />
+            <button id="btnSubmit" type="submit" class="showcase__form--submit">
+              <img src="./images/icon-arrow.svg" alt="Submit" />
             </button>
-            <div id="alert" class="alert">
+            <div id="alert" class="alert" role="alert">
               <p id="txtAlert"></p>
               <i id="closeAlert" class="fas fa-times"></i>
             </div>
