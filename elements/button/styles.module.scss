@@ -2,7 +2,7 @@
   background-color: var(--clr--active);
   border: 1px solid var(--clr--active);
   padding: 12px 20px;
-  border-radius: 7px;
+  border-radius: var(--radius);
   transition: 0.3s;
   text-transform: uppercase;
   font-size: 1.1rem;

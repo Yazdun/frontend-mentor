@@ -14,4 +14,19 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
   background-color: var(--background--2);
+  color: var(--clr--foreground--1);
+}
+
+a {
+  all: unset;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  @include focus-visible;
 }

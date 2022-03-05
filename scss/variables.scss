@@ -10,6 +10,11 @@
   --background--1: hsl(223, 19%, 93%);
   --background--2: hsl(228, 33%, 97%);
   --background--3: hsl(0, 0%, 100%);
+
+  --shadow--1: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+  --radius: 0.438rem;
 }
 
 [data-theme='dark'] {
