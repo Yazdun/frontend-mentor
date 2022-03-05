@@ -6,6 +6,8 @@ import { signupFields } from 'utils'
 export default function Home() {
   const methods = useForm()
 
+  console.log(Object.values(methods.formState.errors))
+
   return (
     <Layout title="Homepage">
       <Container>

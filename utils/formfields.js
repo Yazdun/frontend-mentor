@@ -15,7 +15,7 @@ export const signupFields = [
       },
       pattern: {
         value: /^[a-zA-Z0-9_.-]*$/,
-        message: 'cannot contain symbols and space',
+        message: 'username cannot contain symbols and space',
       },
     },
   },

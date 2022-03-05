@@ -37,7 +37,7 @@ export const Formfield = ({
       {isErr && (
         <div className={s.err}>
           <BsFillExclamationCircleFill />
-          <p>{e.error.message}</p>
+          <p role="alert">{e.error.message}</p>
         </div>
       )}
     </div>
