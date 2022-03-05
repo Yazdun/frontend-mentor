@@ -1,9 +1,13 @@
-import { Container } from 'elements'
+import { Button, Container } from 'elements'
+import { FaReply } from 'react-icons/fa'
 
 export default function Home() {
   return (
     <Container>
-      <h1>hello</h1>
+      <Button>
+        <FaReply />
+        reply
+      </Button>
     </Container>
   )
 }
