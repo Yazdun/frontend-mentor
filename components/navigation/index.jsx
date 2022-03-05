@@ -8,7 +8,7 @@ import { ThemeSwitch } from 'components'
 export const Navigation = () => {
   return (
     <nav className={s.nav}>
-      <Container custom={s.container}>
+      <Container styles={s.container}>
         <Logo />
         <Actions />
       </Container>
@@ -32,7 +32,7 @@ const Actions = () => {
   return (
     <div className={s.actions}>
       <ThemeSwitch />
-      <Link href="/join">
+      <Link href="/signup">
         <a aria-label="create new account">
           <FiUserPlus />
         </a>

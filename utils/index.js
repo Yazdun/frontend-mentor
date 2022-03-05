@@ -1,1 +1,1 @@
-export { signupFields } from './formfields'
+export { username, password, confrimPassword } from './formfields'
