@@ -11,7 +11,7 @@ export const Layout = ({ children, title }) => {
           name="description"
           content="Frontend mentor Interactive comments section, built with nextjs"
         />
-        <title>Comments | {title}</title>
+        <title>Comments App | {title}</title>
       </Head>
       <Navigation />
       <main id="main">{children}</main>

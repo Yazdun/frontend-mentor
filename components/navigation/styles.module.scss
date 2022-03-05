@@ -1,15 +1,23 @@
 .nav {
   box-shadow: var(--shadow--1);
-  display: flex;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
+
+  a {
+    display: flex;
+    width: 2rem;
+  }
 }
 
-.container a {
+.actions {
   display: flex;
-  width: 2rem;
+  align-items: center;
+
+  a {
+    margin-left: 1rem;
+  }
 }

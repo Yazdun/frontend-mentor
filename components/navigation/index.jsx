@@ -3,6 +3,7 @@ import Link from 'next/link'
 import s from './styles.module.scss'
 import { RiChatSmile2Line } from 'react-icons/ri'
 import { FiUserPlus } from 'react-icons/fi'
+import { ThemeSwitch } from 'components'
 
 export const Navigation = () => {
   return (
@@ -29,7 +30,8 @@ const Logo = () => {
 
 const Actions = () => {
   return (
-    <div>
+    <div className={s.actions}>
+      <ThemeSwitch />
       <Link href="/join">
         <a>
           <FiUserPlus />
