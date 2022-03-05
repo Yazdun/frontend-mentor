@@ -1,0 +1,136 @@
+@import '../../scss/functions';
+
+.field {
+  position: relative;
+  padding: 15px 0 0;
+  margin: 1.25rem 0;
+}
+
+.textfield {
+  width: 100%;
+  border: 0;
+  border: 1px solid var(--clr--border);
+  outline: 0;
+  font-size: 1.3rem;
+  color: var(--foreground--1);
+  padding: toRem(15) toRem(10);
+  background: transparent;
+  transition: border-color 0.2s;
+  font-weight: 400;
+  border-radius: var(--radius);
+  transition: 0.3s ease;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .label {
+    font-size: 1.3rem;
+    cursor: text;
+    left: toRem(10);
+    top: toRem(30);
+  }
+
+  &:focus {
+    font-weight: 400;
+    border: 1px solid var(--foreground--1);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow--2);
+    animation: 0.6s sholop;
+
+    ~ .label {
+      position: absolute;
+      top: 6px;
+      display: block;
+      transition: 0.2s;
+      font-size: 0.9rem;
+      color: var(--foreground--1);
+      font-weight: 400;
+    }
+  }
+
+  &:hover {
+    box-shadow: var(--shadow--2);
+  }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: toRem(200);
+  line-height: 2rem;
+}
+
+.label {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.9rem;
+  color: var(--foreground--3);
+  background-color: var(--background--1);
+  padding: 0 toRem(10);
+  border-radius: var(--radius);
+}
+
+.fieldErr {
+  animation: 0.3s shaking;
+
+  .textfield {
+    border: 1px solid var(--clr--danger);
+
+    &:focus {
+      border: 1px solid var(--clr--danger);
+
+      ~ .label {
+        color: var(--clr--danger);
+      }
+    }
+  }
+
+  .label {
+    color: var(--clr--danger);
+  }
+}
+
+.err {
+  color: var(--clr--danger);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin: toRem(10) 0;
+  svg {
+    margin-right: toRem(5);
+  }
+}
+
+@keyframes sholop {
+  0% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

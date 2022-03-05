@@ -12,8 +12,8 @@ export const ThemeSwitch = () => {
   if (!mounted) return null
   return (
     <label className={s.switch}>
-      <span className="sr-only">{theme} mode is active</span>
       <input
+        aria-label={`${theme} theme is active`}
         type="checkbox"
         checked={theme === 'dark'}
         onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}

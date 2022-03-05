@@ -20,7 +20,7 @@ const Logo = () => {
   return (
     <div className={s.logo}>
       <Link href="/">
-        <a>
+        <a aria-label="go to homepage">
           <RiChatSmile2Line />
         </a>
       </Link>
@@ -33,7 +33,7 @@ const Actions = () => {
     <div className={s.actions}>
       <ThemeSwitch />
       <Link href="/join">
-        <a>
+        <a aria-label="create new account">
           <FiUserPlus />
         </a>
       </Link>
