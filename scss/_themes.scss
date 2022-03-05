@@ -1,0 +1,16 @@
+:root {
+  --clr--active: hsl(238, 40%, 52%);
+  --clr--danger: hsl(358, 79%, 66%);
+  --clr--transparent: hsl(239, 57%, 85%);
+  --clr--success: green;
+  --clr--warn: yellow;
+
+  --foreground-1: hsl(212, 24%, 26%);
+  --foreground-2: hsl(211, 10%, 45%);
+  --background-1: hsl(223, 19%, 93%);
+  --background--2: hsl(228, 33%, 97%);
+  --background--3: hsl(0, 0%, 100%);
+}
+
+[data-theme='dark'] {
+}
