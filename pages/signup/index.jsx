@@ -4,14 +4,18 @@ import { username, password } from 'utils'
 import { useRef } from 'react'
 import s from './styles.module.scss'
 import { Avatar } from 'components'
+import { useState } from 'react'
 
 export default function SignUp() {
   const methods = useForm()
+  const [avatar, setAvatar] = useState(1)
 
   return (
     <Layout title="Sign Up">
       <Container>
-        <Avatar />
+        <h1 className="sr-only">join comments app</h1>
+        <Avatar userAvatar={avatar} fn={setAvatar} />
+        <p className="sr-only">fill your info</p>
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(data => console.log(data))}>
             <Formfield {...username} />
