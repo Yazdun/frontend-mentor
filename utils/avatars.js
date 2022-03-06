@@ -14,12 +14,12 @@ export const avatars = [
   },
   {
     source: a3,
-    alt: 'messed up guy',
+    alt: 'happy zombie',
     key: '2fgpyfLHsW',
   },
   {
     source: a4,
-    alt: 'queen',
+    alt: 'samurai',
     key: '2k7nxx2oVb',
   },
   {
@@ -34,22 +34,22 @@ export const avatars = [
   },
   {
     source: a7,
-    alt: 'ninja',
+    alt: 'guy with cool beard',
     key: 'khC6U1Fyd0',
   },
   {
     source: a8,
-    alt: 'girl with big hat',
+    alt: 'bito corleone',
     key: 'ByyH0TYxAK',
   },
   {
     source: a9,
-    alt: 'bito corleone',
+    alt: 'girl with big hat',
     key: 'KFsYG0O54t',
   },
   {
     source: a10,
-    alt: 'guy with cool beard',
+    alt: 'queen',
     key: 'yjp6emK0QA',
   },
   {
@@ -59,7 +59,7 @@ export const avatars = [
   },
   {
     source: a12,
-    alt: 'samurai',
+    alt: 'ninja',
     key: 'A99LA68AGA',
   },
 ]

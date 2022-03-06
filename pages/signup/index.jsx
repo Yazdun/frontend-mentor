@@ -13,11 +13,17 @@ export default function SignUp() {
   return (
     <Layout title="Sign Up">
       <Container>
-        <h1 className="sr-only">join comments app</h1>
+        <h1 className={s.heading}>
+          join <span>comments</span> app
+        </h1>
         <Avatar userAvatar={avatar} fn={setAvatar} />
         <p className="sr-only">fill your info</p>
         <FormProvider {...methods}>
-          <form onSubmit={methods.handleSubmit(data => console.log(data))}>
+          <form
+            onSubmit={methods.handleSubmit(data =>
+              console.log({ ...data, avatar }),
+            )}
+          >
             <Formfield {...username} />
             <Formfield {...password} />
             <Button styles={s.btn}>sign up</Button>

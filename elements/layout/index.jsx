@@ -1,6 +1,6 @@
 import { Navigation } from 'components'
 import Head from 'next/head'
-// import s from './styles.module.scss'
+import s from './styles.module.scss'
 
 export const Layout = ({ children, title }) => {
   return (
@@ -14,7 +14,9 @@ export const Layout = ({ children, title }) => {
         <title>Comments App | {title}</title>
       </Head>
       <Navigation />
-      <main id="main">{children}</main>
+      <main id="main" className={s.main}>
+        {children}
+      </main>
     </>
   )
 }
