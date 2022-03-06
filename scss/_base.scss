@@ -41,6 +41,10 @@ a {
   white-space: nowrap !important;
 }
 
+button:disabled {
+  cursor: not-allowed;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   *,

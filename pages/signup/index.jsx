@@ -3,6 +3,7 @@ import { useForm, FormProvider } from 'react-hook-form'
 import { username, password } from 'utils'
 import { useRef } from 'react'
 import s from './styles.module.scss'
+import { Avatar } from 'components'
 
 export default function SignUp() {
   const methods = useForm()
@@ -10,6 +11,7 @@ export default function SignUp() {
   return (
     <Layout title="Sign Up">
       <Container>
+        <Avatar />
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(data => console.log(data))}>
             <Formfield {...username} />
