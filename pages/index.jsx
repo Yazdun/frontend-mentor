@@ -7,6 +7,12 @@ export default function Home() {
     <Layout title="Homepage">
       <Container>
         <h1>Homepage</h1>
+        <Button>test</Button>
+        <Button danger>test</Button>
+        <Button neutral>test</Button>
+        <Button transparent danger>
+          test
+        </Button>
       </Container>
     </Layout>
   )

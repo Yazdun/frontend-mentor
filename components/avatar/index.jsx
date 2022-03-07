@@ -4,6 +4,7 @@ import s from './styles.module.scss'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 import cn from 'classnames'
 import { avatars } from 'utils'
+import Link from 'next/link'
 
 export const Avatar = ({ fn, userAvatar }) => {
   const [active, setActive] = useState(userAvatar || 1)
@@ -31,6 +32,7 @@ export const Avatar = ({ fn, userAvatar }) => {
                 <Image
                   src={source}
                   placeholder="blur"
+                  quality={100}
                   alt={alt}
                   className={cn(s.img)}
                 />
@@ -44,6 +46,18 @@ export const Avatar = ({ fn, userAvatar }) => {
           )
         })}
       </ul>
+      <p className={s.note}>
+        I got these avatars from{' '}
+        <Link href="https://amritpaldesign.com/">
+          <a
+            target="_blank"
+            aria-label="avatar's source website opens in new tab"
+          >
+            Amritpaldesign
+          </a>
+        </Link>
+        🐨
+      </p>
     </>
   )
 }

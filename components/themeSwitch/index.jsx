@@ -15,7 +15,11 @@ export const ThemeSwitch = () => {
       <input
         aria-label={`${theme} theme is active`}
         type="checkbox"
-        checked={theme === 'dark'}
+        checked={
+          theme === 'dark' ||
+          (theme === 'system' &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        }
         onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       />
       <span className={cn(s.slider, s.round)}></span>

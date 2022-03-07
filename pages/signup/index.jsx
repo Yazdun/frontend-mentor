@@ -1,14 +1,36 @@
 import { Button, Container, Formfield, Layout } from 'elements'
 import { useForm, FormProvider } from 'react-hook-form'
-import { username, password } from 'utils'
-import { useRef } from 'react'
+import { username, password, isError } from 'utils'
 import s from './styles.module.scss'
-import { Avatar } from 'components'
+import { Avatar, Loading } from 'components'
 import { useState } from 'react'
+import { usePost } from 'hooks'
+import { SIGNUP } from 'services'
+import { useAuthActions, useAuthContext } from 'context'
+import Router from 'next/router'
+import { useEffect } from 'react'
 
 export default function SignUp() {
   const methods = useForm()
+  const { setToken } = useAuthActions()
+  const isLoggedIn = useAuthContext()
+  const { postRequest, postLoading } = usePost()
   const [avatar, setAvatar] = useState(1)
+  const [mounted, setMounted] = useState(false)
+
+  const handleData = data => {
+    setToken(data.token)
+    Router.push('/')
+  }
+
+  useEffect(() => {
+    setMounted(true)
+    isLoggedIn && Router.push('/')
+  }, [isLoggedIn])
+
+  if (!mounted) {
+    return <Loading />
+  }
 
   return (
     <Layout title="Sign Up">
@@ -21,12 +43,14 @@ export default function SignUp() {
         <FormProvider {...methods}>
           <form
             onSubmit={methods.handleSubmit(data =>
-              console.log({ ...data, avatar }),
+              postRequest(SIGNUP, { ...data, avatar }, handleData),
             )}
           >
             <Formfield {...username} />
             <Formfield {...password} />
-            <Button styles={s.btn}>sign up</Button>
+            <Button disabled={isError(methods.formState.errors)} styles={s.btn}>
+              sign up
+            </Button>
           </form>
         </FormProvider>
       </Container>

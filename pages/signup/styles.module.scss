@@ -8,7 +8,11 @@
   margin-bottom: 3rem;
 
   span {
-    color: var(--clr--active);
     border-bottom: 3px dashed var(--clr--active);
   }
+}
+
+.avatar {
+  border-radius: 10%;
+  overflow: hidden;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rubik:wght@400;500;700&display=swap');
 
 *,
 *::before,
@@ -16,7 +16,9 @@ body {
 
 a {
   all: unset;
+  border-radius: var(--radius);
   transition: 0.3s;
+
   &:hover {
     cursor: pointer;
   }
