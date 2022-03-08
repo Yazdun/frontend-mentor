@@ -8,6 +8,7 @@ import { FiPower } from 'react-icons/fi'
 import cn from 'classnames'
 import { useAuthActions, useAuthContext } from 'context'
 import Animated from 'react-mount-animation'
+import Router from 'next/router'
 
 const mountAnimation = `
   0% {
@@ -69,7 +70,10 @@ export const Options = () => {
 
           <ul>
             <li>
-              <button className={s.btn}>
+              <button
+                className={s.btn}
+                onClick={() => Router.push('/dashboard')}
+              >
                 dashboard
                 <CgDatabase />
               </button>

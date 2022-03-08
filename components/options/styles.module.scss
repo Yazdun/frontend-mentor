@@ -16,6 +16,7 @@
   width: 100%;
   top: 5rem;
   padding: 1rem;
+  z-index: var(--z-index-options);
 
   @include breakpoint-up(tablet) {
     max-width: 20rem;
@@ -29,7 +30,6 @@
   overflow: hidden;
   width: 100%;
   border: 1px solid var(--clr--border--2);
-
   ul {
     list-style-type: none;
     font-size: 1.3rem;
@@ -41,6 +41,10 @@
     align-self: stretch;
   }
 
+  ul a {
+    // display: inline-block;
+  }
+
   ul .btn {
     padding: 1rem 2rem;
     width: 100%;
@@ -50,6 +54,7 @@
     text-transform: capitalize;
     font-weight: 500;
     cursor: pointer;
+    // display: block;
   }
 
   ul .btn:hover {

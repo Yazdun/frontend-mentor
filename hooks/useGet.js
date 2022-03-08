@@ -3,33 +3,31 @@ import axios from 'axios'
 import '../axios'
 import { useStatusError } from 'context'
 
-export const usePost = () => {
-  const [postLoading, setPostLoading] = useState(false)
-  const [postErrors, setErrors] = useState([])
+export const useGet = () => {
+  const [getLoading, setGetLoading] = useState(false)
+  const [getErrors, setErrors] = useState([])
   const setErrorStatusCode = useStatusError()
 
-  const postRequest = async (url, values, fn) => {
-    setPostLoading(true)
-    setErrors([])
+  const getRequest = async (url, fn) => {
+    setGetLoading(true)
 
     try {
       await axios
-        .post(url, {
-          ...values,
-        })
+        .get(url)
         .then(res => fn(res.data))
-        .then(() => setPostLoading(false))
+        .then(() => setGetLoading(false))
     } catch (error) {
       if (!error.response) {
         setErrorStatusCode('NETWORK')
-        setPostLoading(false)
+        setGetLoading(false)
       } else {
         setErrorStatusCode(error.response.status)
+        setGetLoading(false)
         setErrors(error.response.data.msg.split(','))
-        setPostLoading(false)
+        console.log(error)
       }
     }
   }
 
-  return { postRequest, postLoading, postErrors }
+  return { getRequest, getErrors, getLoading }
 }

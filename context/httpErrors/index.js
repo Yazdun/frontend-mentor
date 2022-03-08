@@ -1,7 +1,6 @@
 import React from 'react'
 import { createContext, useState, useContext } from 'react'
 import { useAuthContext, useAuthActions } from '..'
-import { Error } from '../../pages'
 import { RiSignalWifiErrorLine } from 'react-icons/ri'
 import { MdOutlineWifiTetheringErrorRounded } from 'react-icons/md'
 import { HttpError } from 'components'
@@ -12,8 +11,6 @@ export const StatusErrorProvider = ({ children }) => {
   const { logOut } = useAuthActions()
   const { token } = useAuthContext()
   const [errorStatusCode, setErrorStatusCode] = useState()
-
-  const errorHandler = statusCode => setErrorStatusCode(statusCode)
 
   const renderContent = () => {
     switch (true) {
@@ -45,7 +42,7 @@ export const StatusErrorProvider = ({ children }) => {
   }
 
   return (
-    <StatusErrorContext.Provider value={{ errorHandler, errorStatusCode }}>
+    <StatusErrorContext.Provider value={setErrorStatusCode}>
       {renderContent()}
     </StatusErrorContext.Provider>
   )
