@@ -1,0 +1,33 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: 0.5s appear;
+  text-align: center;
+
+  svg {
+    font-size: 6rem;
+    color: var(--clr--danger);
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

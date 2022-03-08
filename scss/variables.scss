@@ -19,7 +19,8 @@
 
   --radius: 0.438rem;
 
-  --clr--border: #ced4da;
+  --clr--border--1: #dbecfd;
+  --clr--border--2: #e4f2ff;
 }
 
 [data-theme='dark'] {
@@ -31,8 +32,9 @@
 
   --clr--active: hsl(238, 97%, 76%);
   --clr--fantasy: hsl(47, 100%, 63%);
-  --clr--border: #6b7075;
+  --clr--border--1: #6b7075;
+  --clr--border--2: #1f2d42;
 
-  --shadow--1: rgba(11, 34, 59, 0.28) 6px 2px 16px 0px,
-    rgba(0, 0, 0, 0.1) -6px -2px 16px 0px;
+  --shadow--1: rgba(6, 28, 53, 0.28) 6px 2px 16px 0px,
+    rgba(31, 31, 31, 0.3) -6px -2px 16px 0px;
 }

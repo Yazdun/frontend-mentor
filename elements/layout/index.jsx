@@ -1,6 +1,7 @@
 import { Navigation } from 'components'
 import Head from 'next/head'
 import s from './styles.module.scss'
+import { StatusErrorProvider } from 'context'
 
 export const Layout = ({ children, title }) => {
   return (
@@ -15,7 +16,7 @@ export const Layout = ({ children, title }) => {
       </Head>
       <Navigation />
       <main id="main" className={s.main}>
-        {children}
+        <StatusErrorProvider>{children}</StatusErrorProvider>
       </main>
     </>
   )
