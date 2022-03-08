@@ -43,6 +43,12 @@ a {
   white-space: nowrap !important;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 button:disabled {
   cursor: not-allowed;
 }

@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import s from './styles.module.scss'
+import { BiLoaderCircle } from 'react-icons/bi'
 
 export const Button = ({
   danger,
@@ -21,7 +22,14 @@ export const Button = ({
       )}
       disabled={disabled}
     >
-      {children}
+      {loading ? (
+        <>
+          <BiLoaderCircle className={s.loader} />
+          loading
+        </>
+      ) : (
+        children
+      )}
     </button>
   )
 }

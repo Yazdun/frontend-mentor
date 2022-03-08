@@ -4,9 +4,11 @@ import '../axios'
 
 export const usePost = () => {
   const [postLoading, setPostLoading] = useState(false)
+  const [postErrors, setErrors] = useState([])
 
   const postRequest = async (url, values, fn) => {
     setPostLoading(true)
+    setErrors([])
 
     try {
       await axios
@@ -19,11 +21,11 @@ export const usePost = () => {
       if (!error.response) {
         setPostLoading(false)
       } else {
-        console.log(error.response.data.msg)
+        setErrors(error.response.data.msg.split(','))
         setPostLoading(false)
       }
     }
   }
 
-  return { postRequest, postLoading }
+  return { postRequest, postLoading, postErrors }
 }

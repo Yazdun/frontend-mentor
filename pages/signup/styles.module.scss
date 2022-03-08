@@ -16,3 +16,12 @@
   border-radius: 10%;
   overflow: hidden;
 }
+
+.sub {
+  text-align: center;
+
+  a {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../scss/mixins';
+
+.menu {
+  font-size: 2rem;
+  display: flex;
+  margin-left: 1rem;
+  transition: 0.3s;
+  border-radius: var(--radius);
+  cursor: pointer;
+  @include focus-visible;
+}
+
+.wrapper {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  top: 5rem;
+  padding: 1rem;
+
+  @include breakpoint-up(tablet) {
+    max-width: 20rem;
+  }
+}
+
+.popup {
+  box-shadow: var(--shadow--1);
+  background-color: var(--background--1);
+  border-radius: 7%;
+  overflow: hidden;
+  width: 100%;
+  animation: 0.2s appear;
+
+  ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+    align-self: stretch;
+  }
+
+  ul li {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  ul .btn {
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  ul .btn:hover {
+    background-color: var(--background--2);
+  }
+
+  ul .btn:focus-visible {
+    background-color: var(--background--2);
+  }
+}
+
+.logout {
+  color: var(--clr--danger);
+}
+
+.img {
+  border-bottom-left-radius: 20%;
+}
+@keyframes appear {
+  0% {
+    transform: translateY(-20px) scale(0.95);
+    // transform: scale(1.04);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    // transform: scale(1);
+  }
+}

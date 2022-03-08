@@ -1,0 +1,15 @@
+.errors {
+  margin: 2rem 0;
+  color: var(--clr--danger);
+
+  p {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    font-weight: 500;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+  }
+}

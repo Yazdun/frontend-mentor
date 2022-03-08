@@ -37,3 +37,18 @@ export const password = {
     },
   },
 }
+
+export const noValidatePassword = {
+  name: 'password',
+  label: 'password',
+  type: 'password',
+  id: 'password',
+  placeholder: 'enter your password',
+  key: 'XQs7S6FI5L',
+  validation: {
+    required: {
+      value: true,
+      message: 'password is required',
+    },
+  },
+}

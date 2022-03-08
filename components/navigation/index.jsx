@@ -3,7 +3,8 @@ import Link from 'next/link'
 import s from './styles.module.scss'
 import { RiChatSmile2Line } from 'react-icons/ri'
 import { FiUserPlus } from 'react-icons/fi'
-import { ThemeSwitch } from 'components'
+import { Options, ThemeSwitch } from 'components'
+import { useAuthContext } from 'context'
 
 export const Navigation = () => {
   return (
@@ -29,14 +30,19 @@ const Logo = () => {
 }
 
 const Actions = () => {
+  const isLoggedIn = useAuthContext()
   return (
     <div className={s.actions}>
       <ThemeSwitch />
-      <Link href="/signup">
-        <a aria-label="create new account">
-          <FiUserPlus />
-        </a>
-      </Link>
+      {isLoggedIn ? (
+        <Options />
+      ) : (
+        <Link href="/signup">
+          <a aria-label="create new account">
+            <FiUserPlus />
+          </a>
+        </Link>
+      )}
     </div>
   )
 }

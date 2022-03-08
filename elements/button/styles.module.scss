@@ -72,6 +72,10 @@
   }
 }
 
+.loader {
+  font-size: 1.3rem;
+  animation: 2s loading infinite;
+}
 @include breakpoint-up(laptop) {
   .btn {
     &:hover {
@@ -108,5 +112,17 @@
     &:focus-visible {
       box-shadow: 0px 0px 0px 2px var(--foreground--1);
     }
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
