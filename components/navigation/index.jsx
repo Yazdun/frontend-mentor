@@ -30,11 +30,11 @@ const Logo = () => {
 }
 
 const Actions = () => {
-  const isLoggedIn = useAuthContext()
+  const { token } = useAuthContext()
   return (
     <div className={s.actions}>
       <ThemeSwitch />
-      {isLoggedIn ? (
+      {token ? (
         <Options />
       ) : (
         <Link href="/signup">

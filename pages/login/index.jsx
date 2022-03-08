@@ -19,20 +19,21 @@ import Link from 'next/link'
 
 export default function SignUp() {
   const methods = useForm()
-  const { setToken } = useAuthActions()
-  const isLoggedIn = useAuthContext()
+  const { setToken, setAvatar } = useAuthActions()
+  const { token } = useAuthContext()
   const { postRequest, postErrors, postLoading } = usePost()
   const [mounted, setMounted] = useState(false)
 
   const handleData = data => {
     setToken(data.token)
+    setAvatar(data.user.avatar)
     Router.push('/')
   }
 
   useEffect(() => {
     setMounted(true)
-    isLoggedIn && Router.push('/')
-  }, [isLoggedIn])
+    token && Router.push('/')
+  }, [token])
 
   if (!mounted) {
     return <Loading />

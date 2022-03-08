@@ -1,36 +1,53 @@
 import React, { useState, createContext, useEffect, useContext } from 'react'
+import { avatarIsValid } from 'utils'
 
 export const AuthProviderContext = createContext()
 export const AuthProviderContextDispatcher = createContext()
 
-const STORAGE_KEY = {
+const STORAGE_KEYS = {
   TOKEN: 'token',
+  AVATAR: 'avatar',
 }
 
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(false)
+  const [avatar, setAvatar] = useState(false)
 
   useEffect(() => {
     const initialState = () =>
-      JSON.parse(localStorage.getItem(STORAGE_KEY.TOKEN) || false)
+      JSON.parse(localStorage.getItem(STORAGE_KEYS.TOKEN) || false)
+
+    const initialAvatar = () =>
+      JSON.parse(localStorage.getItem(STORAGE_KEYS.AVATAR) || false)
+
     setToken(initialState)
+    setAvatar(initialAvatar)
   }, [])
 
   const logOut = () => {
     localStorage.clear('TOKEN')
+    localStorage.clear('AVATAR')
     window.location.href = '/'
   }
 
   useEffect(() => {
     if (token) {
       const data = JSON.stringify(token)
-      localStorage.setItem(STORAGE_KEY.TOKEN, data)
+      localStorage.setItem(STORAGE_KEYS.TOKEN, data)
     }
-  }, [token])
+
+    if (avatar) {
+      avatarIsValid(avatar)
+        ? localStorage.setItem(STORAGE_KEYS.AVATAR, avatar)
+        : logOut()
+    }
+  }, [token, avatar])
 
   return (
-    <AuthProviderContext.Provider value={token}>
-      <AuthProviderContextDispatcher.Provider value={{ setToken, logOut }}>
+    <AuthProviderContext.Provider value={{ token, avatar }}>
+      <AuthProviderContextDispatcher.Provider
+        value={{ setToken, logOut, setAvatar }}
+      >
         {children}
       </AuthProviderContextDispatcher.Provider>
     </AuthProviderContext.Provider>

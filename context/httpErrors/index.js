@@ -10,15 +10,15 @@ const StatusErrorContext = createContext()
 
 export const StatusErrorProvider = ({ children }) => {
   const { logOut } = useAuthActions()
-  const isLoggedIn = useAuthContext()
-  const [errorStatusCode, setErrorStatusCode] = useState(500)
+  const { token } = useAuthContext()
+  const [errorStatusCode, setErrorStatusCode] = useState()
 
   const errorHandler = statusCode => setErrorStatusCode(statusCode)
 
   const renderContent = () => {
     switch (true) {
       case errorStatusCode === 401:
-        if (isLoggedIn) return logOut()
+        if (token) return logOut()
         return children
 
       case errorStatusCode >= 500:

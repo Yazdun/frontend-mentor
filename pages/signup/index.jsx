@@ -20,16 +20,15 @@ import Link from 'next/link'
 
 export default function SignUp() {
   const methods = useForm()
-  const { setToken } = useAuthActions()
+  const { setToken, setAvatar: updateAvatar } = useAuthActions()
   const { token } = useAuthContext()
   const { postRequest, postErrors, postLoading } = usePost()
-  const [avatar, setAvatar] = useState(1)
+  const [avatar, setAvatar] = useState(0)
   const [mounted, setMounted] = useState(false)
-
-  console.log(token)
 
   const handleData = data => {
     setToken(data.token)
+    updateAvatar(data.user.avatar)
     Router.push('/')
   }
 

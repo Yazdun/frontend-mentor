@@ -6,7 +6,7 @@ import { avatars } from 'utils'
 import { CgDatabase } from 'react-icons/cg'
 import { FiPower } from 'react-icons/fi'
 import cn from 'classnames'
-import { useAuthActions } from 'context'
+import { useAuthActions, useAuthContext } from 'context'
 import Animated from 'react-mount-animation'
 
 const mountAnimation = `
@@ -23,19 +23,25 @@ export const Options = () => {
   const [active, setActive] = useState(false)
   const ref = useRef()
   const { logOut } = useAuthActions()
+  const { avatar } = useAuthContext()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
+
   useEffect(() => {
     const checkIfClickedOutside = e => {
       if (active && ref.current && !ref.current.contains(e.target)) {
         setActive(false)
       }
     }
-
     document.addEventListener('mousedown', checkIfClickedOutside)
-
     return () => {
       document.removeEventListener('mousedown', checkIfClickedOutside)
     }
   }, [active])
+
+  if (!mounted) return null
+
   return (
     <div className={s.options}>
       <button
@@ -54,10 +60,10 @@ export const Options = () => {
           time={0.2}
         >
           <Image
-            src={avatars[5].source}
+            src={avatars[avatar ? avatar : 0].source}
             placeholder="blur"
             quality={100}
-            alt={avatars[1].alt}
+            alt={avatars[avatar ? avatar : 0].alt}
             className={s.img}
           />
 
