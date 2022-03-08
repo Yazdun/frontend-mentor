@@ -39,10 +39,9 @@ export default function SignUp() {
   }
 
   return (
-    <Layout title="Sign Up">
+    <Layout title="Login">
       <Container>
         <h1 className={s.heading}>welcome back</h1>
-
         <p className="sr-only">fill your info</p>
         <FormProvider {...methods}>
           <form

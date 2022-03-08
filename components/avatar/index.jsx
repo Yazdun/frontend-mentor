@@ -49,10 +49,7 @@ export const Avatar = ({ fn, userAvatar }) => {
       <p className={s.note}>
         I got these avatars from{' '}
         <Link href="https://amritpaldesign.com/">
-          <a
-            target="_blank"
-            aria-label="avatar's source website opens in new tab"
-          >
+          <a target="_blank" aria-label="avatar's source website">
             Amritpaldesign
           </a>
         </Link>

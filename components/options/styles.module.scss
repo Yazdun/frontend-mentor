@@ -28,7 +28,6 @@
   border-radius: 7%;
   overflow: hidden;
   width: 100%;
-  animation: 0.2s appear;
 
   ul {
     list-style-type: none;
@@ -67,14 +66,4 @@
 
 .img {
   border-bottom-left-radius: 20%;
-}
-@keyframes appear {
-  0% {
-    transform: translateY(-20px) scale(0.95);
-    // transform: scale(1.04);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-    // transform: scale(1);
-  }
 }
