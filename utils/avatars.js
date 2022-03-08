@@ -54,7 +54,7 @@ export const avatars = [
   },
   {
     source: a11,
-    alt: 'tin tin',
+    alt: 'viking',
     key: 'sFYQmYtzxc',
   },
   {

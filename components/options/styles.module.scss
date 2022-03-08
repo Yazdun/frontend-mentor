@@ -19,7 +19,7 @@
   z-index: var(--z-index-options);
 
   @include breakpoint-up(tablet) {
-    max-width: 20rem;
+    max-width: 20.2rem;
   }
 }
 
@@ -30,6 +30,7 @@
   overflow: hidden;
   width: 100%;
   border: 1px solid var(--clr--border--2);
+  // z-index: var(--z-index-options);
   ul {
     list-style-type: none;
     font-size: 1.3rem;
@@ -39,10 +40,6 @@
   ul li {
     width: 100%;
     align-self: stretch;
-  }
-
-  ul a {
-    // display: inline-block;
   }
 
   ul .btn {
@@ -72,4 +69,35 @@
 
 .img {
   border-bottom-left-radius: 20%;
+}
+
+.header {
+  position: relative;
+
+  .close {
+    position: absolute;
+    opacity: 0;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    z-index: var(--z-index-options-btn);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+
+    &:hover {
+      transform: scale(1.12);
+    }
+
+    &:focus-visible {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    .close {
+      opacity: 1;
+    }
+  }
 }

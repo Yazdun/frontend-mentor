@@ -9,6 +9,7 @@ import cn from 'classnames'
 import { useAuthActions, useAuthContext } from 'context'
 import Animated from 'react-mount-animation'
 import Router from 'next/router'
+import { VscChromeClose } from 'react-icons/vsc'
 
 const mountAnimation = `
   0% {
@@ -22,10 +23,11 @@ const mountAnimation = `
 
 export const Options = () => {
   const [active, setActive] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const [activeAvatar, setActiveAvatar] = useState(avatars[avatar ? avatar : 0])
   const ref = useRef()
   const { logOut } = useAuthActions()
   const { avatar } = useAuthContext()
-  const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
 
@@ -36,10 +38,15 @@ export const Options = () => {
       }
     }
     document.addEventListener('mousedown', checkIfClickedOutside)
+
     return () => {
       document.removeEventListener('mousedown', checkIfClickedOutside)
     }
   }, [active])
+
+  useEffect(() => {
+    setActiveAvatar(avatars[avatar ? avatar : 0])
+  }, [avatar])
 
   if (!mounted) return null
 
@@ -60,13 +67,22 @@ export const Options = () => {
           mountAnim={mountAnimation}
           time={0.2}
         >
-          <Image
-            src={avatars[avatar ? avatar : 0].source}
-            placeholder="blur"
-            quality={100}
-            alt={avatars[avatar ? avatar : 0].alt}
-            className={s.img}
-          />
+          <div className={s.header}>
+            <button
+              aria-label="close menu"
+              className={s.close}
+              onClick={() => setActive(false)}
+            >
+              <VscChromeClose />
+            </button>
+            <Image
+              src={activeAvatar.source}
+              placeholder="blur"
+              quality={100}
+              alt={`${activeAvatar.alt} is your current avatar`}
+              className={s.img}
+            />
+          </div>
 
           <ul>
             <li>

@@ -7,28 +7,34 @@ import {
   Loading,
   RenderErrors,
 } from 'elements'
-import { useGet } from 'hooks/useGet'
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { USER_INFO } from 'services'
+import { UPDATE_USER, USER_INFO } from 'services'
 import { username, isError } from 'utils'
 import { useForm, FormProvider } from 'react-hook-form'
-import { usePost } from 'hooks'
+import { usePatch, useGet } from 'hooks'
 import s from './styles.module.scss'
+import { useAuthActions } from 'context'
 
 export default function Dashboard() {
   const [avatar, setAvatar] = useState(null)
   const [mounted, setMounted] = useState(false)
+  const { setToken, setAvatar: updateAvatar } = useAuthActions()
+
   const methods = useForm()
 
   const { getRequest, getLoading } = useGet()
-  const { postRequest, postLoading } = usePost()
+  const { patchRequest, patchLoading, patchErrors } = usePatch()
 
   const handleData = data => {
     setAvatar(data.user.avatar)
     methods.setValue('username', data.user.username)
   }
 
+  const patchData = data => {
+    setToken(data.token)
+    updateAvatar(data.user.avatar)
+  }
   useEffect(() => {
     getRequest(USER_INFO, handleData)
     setMounted(true)
@@ -45,14 +51,14 @@ export default function Dashboard() {
         <FormProvider {...methods}>
           <form
             onSubmit={methods.handleSubmit(data =>
-              postRequest(SIGNUP, { ...data, avatar }, handleData),
+              patchRequest(UPDATE_USER, { ...data, avatar }, patchData),
             )}
           >
             <Formfield {...username} />
-            {/* <RenderErrors errors={postErrors} /> */}
+            <RenderErrors errors={patchErrors} />
             <Button
-              disabled={isError(methods.formState.errors) || postLoading}
-              loading={postLoading}
+              disabled={isError(methods.formState.errors) || patchLoading}
+              loading={patchLoading}
               styles={s.btn}
             >
               update my info

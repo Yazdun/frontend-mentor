@@ -3,32 +3,34 @@ import axios from 'axios'
 import '../axios'
 import { useStatusError } from 'context'
 
-export const useGet = () => {
-  const [getLoading, setGetLoading] = useState(false)
-  const [getErrors, setErrors] = useState([])
+export const usePatch = () => {
+  const [patchLoading, setPatchLoading] = useState(false)
   const setErrorStatusCode = useStatusError()
+  const [patchErrors, setErrors] = useState([])
 
-  const getRequest = async (url, fn) => {
-    setGetLoading(true)
+  const patchRequest = async (url, values, fn) => {
+    setPatchLoading(true)
     setErrors([])
 
     try {
       await axios
-        .get(url)
+        .patch(url, {
+          ...values,
+        })
         .then(res => fn(res.data))
-        .then(() => setGetLoading(false))
+        .then(() => setPatchLoading(false))
     } catch (error) {
       if (!error.response) {
         setErrorStatusCode('NETWORK')
-        setGetLoading(false)
+        setPatchLoading(false)
       } else {
         setErrorStatusCode(error.response.status)
-        setGetLoading(false)
+        setPatchLoading(false)
         setErrors(error.response.data.msg.split(','))
         console.log(error)
       }
     }
   }
 
-  return { getRequest, getErrors, getLoading }
+  return { patchRequest, patchErrors, patchLoading }
 }
