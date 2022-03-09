@@ -1,11 +1,29 @@
-import { Write } from 'components'
-import { Container, Layout } from 'elements'
+import { Comment, Thread, Write } from 'components'
+import { Container, Layout, Loading } from 'elements'
+import { useGet } from 'hooks'
+import { useEffect, useState } from 'react'
+import { GET_ALL_COMMENTS } from 'services'
 
 export default function Home() {
+  const { getRequest, getLoading } = useGet()
+  const [thread, setThread] = useState([])
+
+  const updateThread = comment => setThread([comment, ...thread])
+
+  const handleData = data => setThread(data.comments)
+  useEffect(() => {
+    getRequest(GET_ALL_COMMENTS, handleData)
+  }, [])
+
+  if (getLoading) {
+    return <Loading />
+  }
+
   return (
     <Layout title="Homepage">
       <Container>
-        <Write />
+        <Thread thread={thread} />
+        <Write updateThread={updateThread} />
       </Container>
     </Layout>
   )

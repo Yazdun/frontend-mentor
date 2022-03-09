@@ -1,6 +1,6 @@
 export const SIGNUP = '/public/auth/signup'
 export const LOGIN = '/public/auth/login'
-export const GET_ALL_COMMENT = '/public/comment'
+export const GET_ALL_COMMENTS = '/public/comment'
 export const CREATE_COMMENT = '/protected/comment/create'
 export const USER_INFO = '/protected/user/'
 export const UPDATE_USER = '/protected/user/update'

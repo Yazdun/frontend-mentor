@@ -30,6 +30,7 @@ export const Formfield = ({
           type={type}
           name={name}
           placeholder={placeholder}
+          aria-placeholder={placeholder}
           {...register(`${name}`, validation)}
         ></textarea>
       ) : (

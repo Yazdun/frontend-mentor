@@ -1,0 +1,48 @@
+@import '../../scss/mixins';
+
+.comment {
+  background-color: var(--background--3);
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  padding: 1rem;
+
+  @include breakpoint-up(laptop) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 0.5rem;
+    color: var(--foreground--2);
+    // padding: 0.3rem;
+  }
+
+  p:first-of-type {
+    margin-bottom: 0.5rem;
+    color: var(--foreground--1);
+    font-weight: 600;
+  }
+}
+
+.img {
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+}
+
+.content {
+  line-height: 1.5rem;
+  color: var(--foreground--2);
+  margin-top: 1.5rem;
+}
+
+.body {
+  width: 100%;
+}

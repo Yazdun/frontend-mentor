@@ -11,7 +11,7 @@ import { AiFillLock } from 'react-icons/ai'
 import { usePost } from 'hooks'
 import { CREATE_COMMENT } from 'services'
 
-export const Write = () => {
+export const Write = ({ updateThread }) => {
   const methods = useForm()
   const { avatar } = useAuthContext()
   const { token } = useAuthContext()
@@ -19,6 +19,7 @@ export const Write = () => {
 
   const handleData = data => {
     methods.reset()
+    updateThread(data.comment)
   }
 
   if (!token) {
@@ -41,6 +42,7 @@ export const Write = () => {
         )}
         className={s.form}
       >
+        <p className="sr-only">use textbox to write a new comment</p>
         <Formfield {...comment} styles={s.textarea} multiline />
         <RenderErrors errors={postErrors} />
 
@@ -50,7 +52,7 @@ export const Write = () => {
               src={avatars[avatar ? avatar : 0].source}
               placeholder="blur"
               quality={100}
-              alt={avatars[avatar ? avatar : 0].alt}
+              alt={`your avatar picture is ${avatars[avatar ? avatar : 0].alt}`}
               className={cn(s.img)}
             />
           </div>
