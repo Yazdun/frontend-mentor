@@ -11,6 +11,8 @@ export const Formfield = ({
   validation,
   label,
   placeholder,
+  multiline,
+  styles,
 }) => {
   const {
     register,
@@ -21,15 +23,25 @@ export const Formfield = ({
   const isErr = isError(e)
 
   return (
-    <div className={cn(s.field, isErr && s.fieldErr)}>
-      <input
-        className={cn(s.textfield)}
-        type={type}
-        id={id}
-        name={name}
-        placeholder={placeholder}
-        {...register(`${name}`, validation)}
-      />
+    <div className={cn(s.field, isErr && s.fieldErr, styles && styles)}>
+      {multiline ? (
+        <textarea
+          className={cn(s.textfield, s.textarea)}
+          type={type}
+          name={name}
+          placeholder={placeholder}
+          {...register(`${name}`, validation)}
+        ></textarea>
+      ) : (
+        <input
+          className={cn(s.textfield)}
+          type={type}
+          id={id}
+          name={name}
+          placeholder={placeholder}
+          {...register(`${name}`, validation)}
+        />
+      )}
 
       <label className={s.label} htmlFor={id}>
         {label}

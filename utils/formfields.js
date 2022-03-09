@@ -44,11 +44,26 @@ export const noValidatePassword = {
   type: 'password',
   id: 'password',
   placeholder: 'enter your password',
-  key: 'XQs7S6FI5L',
+  key: 'u4aDuvkbzq',
   validation: {
     required: {
       value: true,
       message: 'password is required',
+    },
+  },
+}
+
+export const comment = {
+  name: 'content',
+  label: 'add a comment',
+  type: 'text',
+  id: 'content',
+  placeholder: 'write a new comment',
+  key: 'dchQwYeoue',
+  validation: {
+    required: {
+      value: true,
+      message: 'comment is required',
     },
   },
 }

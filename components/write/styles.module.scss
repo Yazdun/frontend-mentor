@@ -1,0 +1,45 @@
+.form {
+  background-color: var(--background--3);
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+.profile {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+}
+
+.textarea {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  label {
+    background-color: var(--background--3);
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth {
+  text-align: center;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  a {
+    font-weight: 600;
+    margin: 0 0.3rem;
+  }
+
+  svg {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+}

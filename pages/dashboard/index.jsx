@@ -14,12 +14,14 @@ import { username, isError } from 'utils'
 import { useForm, FormProvider } from 'react-hook-form'
 import { usePatch, useGet } from 'hooks'
 import s from './styles.module.scss'
-import { useAuthActions } from 'context'
+import { useAuthActions, useAuthContext } from 'context'
+import Router from 'next/router'
 
 export default function Dashboard() {
   const [avatar, setAvatar] = useState(null)
   const [mounted, setMounted] = useState(false)
   const { setToken, setAvatar: updateAvatar } = useAuthActions()
+  const { token } = useAuthContext()
 
   const methods = useForm()
 
@@ -36,7 +38,8 @@ export default function Dashboard() {
     updateAvatar(data.user.avatar)
   }
   useEffect(() => {
-    getRequest(USER_INFO, handleData)
+    !token && Router.push('/')
+    token && getRequest(USER_INFO, handleData)
     setMounted(true)
   }, [])
 
@@ -45,7 +48,7 @@ export default function Dashboard() {
   }
 
   return (
-    <Layout title="dashboard">
+    <Layout title="Dashboard">
       <Container>
         <Avatar userAvatar={avatar} fn={setAvatar} />
         <FormProvider {...methods}>
