@@ -27,10 +27,12 @@ export const Author = ({ author, time }) => {
     <div className={s.header}>
       <div className={s.img}>
         <Image
-          src={avatars[author.avatar].source}
+          src={avatars[author.avatar ? author.avatar : 0].source}
           placeholder="blur"
           quality={100}
-          alt={`user's avatar is ${avatars[author.avatar].alt}`}
+          alt={`user's avatar is ${
+            avatars[author.avatar ? author.avatar : 0].alt
+          }`}
         />
       </div>
       <div>

@@ -52,11 +52,7 @@ export const Comment = ({ comment }) => {
         />
       </div>
       {isReply && (
-        <Write
-          isReply
-          commentId={parent ? parent : commentId}
-          updateThread={updateThread}
-        />
+        <Write isReply commentId={commentId} updateThread={updateThread} />
       )}
       <div className={s.replies}>
         {commentReplies.map(reply => {
