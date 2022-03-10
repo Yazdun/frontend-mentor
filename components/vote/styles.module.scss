@@ -12,10 +12,16 @@
   color: var(--clr--active);
   font-weight: 600;
   margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+
   button {
     display: flex;
     color: var(--foreground--3);
     cursor: pointer;
+    transition: 0.3s;
+    border-radius: var(--radius);
+    @include focus-visible;
   }
 
   @include breakpoint-up(laptop) {
@@ -24,5 +30,53 @@
     height: 7rem;
     margin-top: 0;
     margin-right: 1.5rem;
+  }
+}
+
+.disable {
+  cursor: not-allowed;
+
+  &:hover {
+    .auth {
+      opacity: 1;
+    }
+  }
+}
+
+.auth {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.loading {
+  animation: 1s rotating infinite linear;
+}
+
+.upvoted {
+  color: var(--clr--success--1);
+}
+
+.downvoted {
+  color: var(--clr--danger);
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
   }
 }

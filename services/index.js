@@ -6,5 +6,6 @@ export const USER_INFO = '/protected/user/'
 export const UPDATE_USER = '/protected/user/update'
 export const DELETE_COMMENT = id => `/protected/comment/delete/${id}`
 export const UPDATE_COMMENT = id => `/protected/comment/update/${id}`
-export const VOTE_COMMENT = id => `/protected/comment/vote/${id}`
+export const UPVOTE_COMMENT = id => `/protected/comment/upvote/${id}`
+export const DOWNVOTE_COMMENT = id => `/protected/comment/downvote/${id}`
 export const REPLY_COMMENT = id => `/protected/comment/reply/${id}`
