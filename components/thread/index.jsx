@@ -4,7 +4,7 @@ export const Thread = ({ thread }) => {
   return (
     <>
       {thread.map(comment => {
-        return <Comment key={comment._id} comment={comment} />
+        return <Comment comment={comment} key={comment._id} />
       })}
     </>
   )

@@ -10,6 +10,7 @@ export const Button = ({
   disabled,
   loading,
   children,
+  onClick,
 }) => {
   return (
     <button
@@ -21,6 +22,7 @@ export const Button = ({
         styles && styles,
       )}
       disabled={disabled}
+      onClick={onClick && onClick}
     >
       {loading ? (
         <>

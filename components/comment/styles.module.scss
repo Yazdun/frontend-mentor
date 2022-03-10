@@ -5,6 +5,7 @@
   margin: 1rem 0;
   border-radius: var(--radius);
   padding: 1rem;
+  position: relative;
 
   @include breakpoint-up(laptop) {
     display: flex;
@@ -20,4 +21,11 @@
 
 .body {
   width: 100%;
+}
+
+.replies {
+  padding-left: 1rem;
+  margin-left: 1rem;
+
+  border-left: 3px solid var(--background--2);
 }

@@ -1,0 +1,13 @@
+@import '../../scss/mixins';
+
+.actions {
+  position: absolute;
+  padding: 1rem;
+  bottom: 0.5rem;
+  right: 0;
+
+  @include breakpoint-up(laptop) {
+    bottom: auto;
+    top: 0.5rem;
+  }
+}
