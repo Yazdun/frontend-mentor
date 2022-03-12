@@ -30,8 +30,8 @@ export default function Home() {
   return (
     <Layout title="Homepage">
       <Container>
+        <h1 className="sr-only">homepage</h1>
         <Write updateThread={updateThread} />
-        <h1 className="sr-only">Homepage</h1>
         <Thread thread={thread} />
       </Container>
     </Layout>
