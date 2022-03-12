@@ -25,7 +25,17 @@
 
 .replies {
   padding-left: 1rem;
-  margin-left: 1rem;
-
   border-left: 3px solid var(--background--2);
+
+  @include breakpoint-up(laptop) {
+    margin-left: 1rem;
+
+    .replies {
+      margin-left: 0;
+    }
+  }
+}
+
+.textarea label {
+  background-color: var(--background--3);
 }

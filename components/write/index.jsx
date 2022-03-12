@@ -58,6 +58,7 @@ export const Write = ({ updateThread, isReply, commentId }) => {
           multiline
         />
         <RenderErrors errors={postErrors} />
+        <RenderErrors errors={patchErrors} />
 
         <div className={s.actions}>
           <div className={s.profile}>
@@ -70,8 +71,10 @@ export const Write = ({ updateThread, isReply, commentId }) => {
             />
           </div>
           <Button
-            disabled={isError(methods.formState.errors) || postLoading}
-            loading={postLoading}
+            disabled={
+              isError(methods.formState.errors) || postLoading || patchLoading
+            }
+            loading={postLoading || patchLoading}
           >
             {isReply ? 'reply' : 'send'}
           </Button>

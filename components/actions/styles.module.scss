@@ -5,9 +5,17 @@
   padding: 1rem;
   bottom: 0.5rem;
   right: 0;
+  // width: 100%;
+  // max-width: 8rem;
 
   @include breakpoint-up(laptop) {
     bottom: auto;
     top: 0.5rem;
   }
+}
+
+.owner {
+  display: flex;
+  width: 8rem;
+  justify-content: space-between;
 }

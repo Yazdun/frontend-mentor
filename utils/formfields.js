@@ -67,3 +67,18 @@ export const comment = {
     },
   },
 }
+
+export const editComment = {
+  name: 'content',
+  label: 'edit comment',
+  type: 'text',
+  id: 'edit',
+  placeholder: 'edit your comment',
+  key: 'n8clFX7mU7',
+  validation: {
+    required: {
+      value: true,
+      message: 'comment is required',
+    },
+  },
+}

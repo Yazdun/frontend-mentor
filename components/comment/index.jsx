@@ -1,10 +1,17 @@
 import { Vote, Author, Actions, Write } from 'components'
 import { useAuthContext } from 'context'
-import { useState } from 'react'
-
+import { Button, Formfield, RenderErrors } from 'elements'
+import { FormProvider, useForm } from 'react-hook-form'
+import { useEffect, useState } from 'react'
+import { editComment, isError } from 'utils'
 import s from './styles.module.scss'
+import { usePatch } from 'hooks'
+import { UPDATE_COMMENT } from 'services'
+import { placeholder } from './data'
 
-export const Comment = ({ comment }) => {
+export const Comment = ({ data }) => {
+  const [comment, setComment] = useState(data || placeholder)
+
   const {
     _id: commentId,
     author,
@@ -14,19 +21,36 @@ export const Comment = ({ comment }) => {
     votesCount,
     createdAt: time,
     owner,
-    parent,
     replies,
   } = comment
 
+  useEffect(() => {
+    setComment(data)
+  }, [data])
+
+  const methods = useForm()
+  const { patchRequest, patchLoading, patchErrors } = usePatch()
+
   const [isReply, setIsReply] = useState(false)
+  const [isEdit, setIsEdit] = useState(false)
   const [commentReplies, setCommentReplies] = useState(replies || [])
 
   const updateThread = comment => {
-    setCommentReplies([comment, ...commentReplies])
+    setCommentReplies([...commentReplies, comment])
     setIsReply(false)
   }
 
   const { token: isLoggedIn } = useAuthContext()
+
+  useEffect(() => {
+    methods.setValue('content', content)
+  }, [isEdit])
+
+  const handleData = data => {
+    setComment(data.comment)
+    setIsEdit(false)
+    // console.log(data.comment)
+  }
 
   return (
     <>
@@ -34,14 +58,34 @@ export const Comment = ({ comment }) => {
         <p className="sr-only">comment section</p>
         <div className={s.body}>
           <Author author={author} time={time} />
-          <p className={s.content}>{content}</p>
           {isLoggedIn && (
             <Actions
               isOwner={owner}
               setReply={setIsReply}
+              setEdit={setIsEdit}
               reply={isReply}
+              edit={isEdit}
               updateThread={setCommentReplies}
             />
+          )}
+          {isEdit ? (
+            <FormProvider {...methods}>
+              <form
+                onSubmit={methods.handleSubmit(data =>
+                  patchRequest(UPDATE_COMMENT(commentId), data, handleData),
+                )}
+              >
+                <Formfield {...editComment} styles={s.textarea} multiline />
+                <Button
+                  disabled={patchLoading || isError(methods.formState.errors)}
+                  loading={patchLoading}
+                >
+                  edit
+                </Button>
+              </form>
+            </FormProvider>
+          ) : (
+            <p className={s.content}>{content}</p>
           )}
         </div>
         <Vote
@@ -56,7 +100,7 @@ export const Comment = ({ comment }) => {
       )}
       <div className={s.replies}>
         {commentReplies.map(reply => {
-          return <Comment key={reply._id} comment={reply} />
+          return <Comment key={reply._id} data={reply} />
         })}
       </div>
     </>

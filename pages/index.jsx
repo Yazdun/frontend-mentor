@@ -10,7 +10,10 @@ export default function Home() {
 
   const updateThread = comment => setThread([comment, ...thread])
 
-  const handleData = data => setThread(data.comments)
+  const handleData = data => {
+    setThread(data.comments)
+  }
+
   useEffect(() => {
     getRequest(GET_ALL_COMMENTS, handleData)
   }, [])
