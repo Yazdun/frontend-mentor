@@ -13,6 +13,9 @@ export const Layout = ({ children, title }) => {
         />
         <title>Comments App | {title}</title>
       </Head>
+      <a className={s.skip} href="#main">
+        Skip to main content
+      </a>
       <Navigation />
       <main id="main" className={s.main}>
         {children}

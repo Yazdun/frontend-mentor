@@ -1,3 +1,28 @@
 .main {
   margin: 2rem 0;
 }
+.skip {
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+  transition: none;
+  background-color: var(--background--1);
+}
+.skip:focus,
+.skip:active {
+  height: auto;
+  top: 0.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 15rem;
+  padding: 5px;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 1001;
+}
