@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { AiFillLock } from 'react-icons/ai'
 import { usePatch, usePost } from 'hooks'
 import { CREATE_COMMENT, REPLY_COMMENT } from 'services'
+import { useState, useEffect } from 'react'
 
 export const Write = ({ updateThread, isReply, commentId, to }) => {
   const methods = useForm()
@@ -17,8 +18,9 @@ export const Write = ({ updateThread, isReply, commentId, to }) => {
   const { token } = useAuthContext()
   const { postRequest, postLoading, postErrors } = usePost()
   const { patchRequest, patchLoading, patchErrors } = usePatch()
+  const [mounted, setMounted] = useState(false)
 
-  console.log(isReply)
+  useEffect(() => setMounted(true), [])
 
   const handleData = data => {
     methods.reset()
@@ -37,6 +39,8 @@ export const Write = ({ updateThread, isReply, commentId, to }) => {
       </p>
     )
   }
+
+  if (!mounted) return null
 
   return (
     <FormProvider {...methods}>
