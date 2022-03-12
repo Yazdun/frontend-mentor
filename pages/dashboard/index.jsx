@@ -50,6 +50,7 @@ export default function Dashboard() {
   return (
     <Layout title="Dashboard">
       <Container>
+        <h1 className="sr-only">dashboard</h1>
         <Avatar userAvatar={avatar} fn={setAvatar} />
         <FormProvider {...methods}>
           <form
