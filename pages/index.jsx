@@ -9,7 +9,10 @@ export default function Home() {
   const [thread, setThread] = useState([])
   const [mounted, setMounted] = useState(false)
 
-  const updateThread = comment => setThread([comment, ...thread])
+  const updateThread = comment => {
+    setThread([comment, ...thread])
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const handleData = data => {
     setMounted(true)
