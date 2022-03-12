@@ -52,6 +52,7 @@ export const Modal = ({ commentId, deleteFn }) => {
               onClick={() => deleteRequest(DELETE_COMMENT(commentId), deleteFn)}
               disabled={deleteLoading}
               loading={deleteLoading}
+              styles={s.btn}
             >
               yes, delete
             </Button>
