@@ -8,9 +8,11 @@ import s from './styles.module.scss'
 import { usePatch } from 'hooks'
 import { UPDATE_COMMENT } from 'services'
 import { placeholder } from './data'
+import cn from 'classnames'
 
 export const Comment = ({ data }) => {
   const [comment, setComment] = useState(data || placeholder)
+  const [isDeleted, setIsDeleted] = useState(false)
 
   const {
     _id: commentId,
@@ -40,6 +42,8 @@ export const Comment = ({ data }) => {
     setIsReply(false)
   }
 
+  const deleteComment = () => setIsDeleted(true)
+
   const { token: isLoggedIn } = useAuthContext()
 
   useEffect(() => {
@@ -49,12 +53,11 @@ export const Comment = ({ data }) => {
   const handleData = data => {
     setComment(data.comment)
     setIsEdit(false)
-    // console.log(data.comment)
   }
 
   return (
     <>
-      <div className={s.comment}>
+      <div className={cn(s.comment, isDeleted && s.deleted)}>
         <p className="sr-only">comment section</p>
         <div className={s.body}>
           <Author author={author} time={time} />
@@ -66,6 +69,8 @@ export const Comment = ({ data }) => {
               reply={isReply}
               edit={isEdit}
               updateThread={setCommentReplies}
+              deleteFn={deleteComment}
+              commentId={commentId}
             />
           )}
           {isEdit ? (
@@ -76,6 +81,7 @@ export const Comment = ({ data }) => {
                 )}
               >
                 <Formfield {...editComment} styles={s.textarea} multiline />
+                <RenderErrors errors={patchErrors} />
                 <Button
                   disabled={patchLoading || isError(methods.formState.errors)}
                   loading={patchLoading}
@@ -98,7 +104,7 @@ export const Comment = ({ data }) => {
       {isReply && (
         <Write isReply commentId={commentId} updateThread={updateThread} />
       )}
-      <div className={s.replies}>
+      <div className={cn(s.replies, isDeleted && s.deleted)}>
         {commentReplies.map(reply => {
           return <Comment key={reply._id} data={reply} />
         })}

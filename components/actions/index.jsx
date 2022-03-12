@@ -1,16 +1,22 @@
 import { Button } from 'elements'
 import s from './styles.module.scss'
 import { HiOutlineReply } from 'react-icons/hi'
-import { MdEdit, MdDelete } from 'react-icons/md'
+import { Modal } from 'components'
 
-export const Actions = ({ reply, setReply, edit, setEdit, isOwner }) => {
+export const Actions = ({
+  reply,
+  setReply,
+  edit,
+  setEdit,
+  isOwner,
+  deleteFn,
+  commentId,
+}) => {
   return (
     <div className={s.actions}>
       {isOwner ? (
         <div className={s.owner}>
-          <Button transparent danger>
-            delete
-          </Button>
+          <Modal deleteFn={deleteFn} commentId={commentId} />
           <Button transparent onClick={() => setEdit(prev => !prev)}>
             {edit ? 'cancel' : 'edit'}
           </Button>
