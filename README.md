@@ -29,6 +29,14 @@
 
 ![Preview of the solution](./public/screenshot.jpg)
 
+## About this project
+
+Frontend mentor Interactive comments, built with NextJS, also I created an API
+for this app, you can check it out following the link below 👇
+
+🔗
+[Interactive comments API ](https://github.com/Yazdun/nodejs-interactive-comments)
+
 ## Contributing
 
 Thank you for browsing this repo. Any contributions you make are **greatly
