@@ -18,9 +18,6 @@ export const Write = ({ updateThread, isReply, commentId, to }) => {
   const { token } = useAuthContext()
   const { postRequest, postLoading, postErrors } = usePost()
   const { patchRequest, patchLoading, patchErrors } = usePatch()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => setMounted(true), [])
 
   const handleData = data => {
     methods.reset()
@@ -39,8 +36,6 @@ export const Write = ({ updateThread, isReply, commentId, to }) => {
       </p>
     )
   }
-
-  if (!mounted) return null
 
   return (
     <FormProvider {...methods}>

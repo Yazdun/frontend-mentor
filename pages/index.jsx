@@ -7,10 +7,12 @@ import { GET_ALL_COMMENTS } from 'services'
 export default function Home() {
   const { getRequest, getLoading } = useGet()
   const [thread, setThread] = useState([])
+  const [mounted, setMounted] = useState(false)
 
   const updateThread = comment => setThread([comment, ...thread])
 
   const handleData = data => {
+    setMounted(true)
     setThread(data.comments)
   }
 
@@ -18,7 +20,7 @@ export default function Home() {
     getRequest(GET_ALL_COMMENTS, handleData)
   }, [])
 
-  if (getLoading) {
+  if (getLoading || !mounted) {
     return <Loading />
   }
 
