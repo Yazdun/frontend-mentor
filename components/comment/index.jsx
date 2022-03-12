@@ -1,6 +1,6 @@
 import { Vote, Author, Actions, Write } from 'components'
 import { useAuthContext } from 'context'
-import { Button, Formfield, RenderErrors } from 'elements'
+import { Button, Formfield, RenderErrors, RenderText } from 'elements'
 import { FormProvider, useForm } from 'react-hook-form'
 import { useEffect, useState } from 'react'
 import { editComment, isError } from 'utils'
@@ -91,7 +91,7 @@ export const Comment = ({ data }) => {
               </form>
             </FormProvider>
           ) : (
-            <p className={s.content}>{content}</p>
+            <RenderText text={content.split('\n')} />
           )}
         </div>
         <Vote
