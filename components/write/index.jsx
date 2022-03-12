@@ -11,12 +11,14 @@ import { AiFillLock } from 'react-icons/ai'
 import { usePatch, usePost } from 'hooks'
 import { CREATE_COMMENT, REPLY_COMMENT } from 'services'
 
-export const Write = ({ updateThread, isReply, commentId }) => {
+export const Write = ({ updateThread, isReply, commentId, to }) => {
   const methods = useForm()
   const { avatar } = useAuthContext()
   const { token } = useAuthContext()
   const { postRequest, postLoading, postErrors } = usePost()
   const { patchRequest, patchLoading, patchErrors } = usePatch()
+
+  console.log(isReply)
 
   const handleData = data => {
     methods.reset()
@@ -50,7 +52,9 @@ export const Write = ({ updateThread, isReply, commentId }) => {
         })}
         className={s.form}
       >
-        <p className="sr-only">use textbox to write a new comment</p>
+        <p className="sr-only">
+          {isReply ? `reply to ${to}` : 'use textbox to write a new comment'}
+        </p>
         <Formfield
           {...comment}
           label={isReply ? 'Reply' : 'add a comment'}

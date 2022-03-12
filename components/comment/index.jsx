@@ -102,7 +102,12 @@ export const Comment = ({ data }) => {
         />
       </div>
       {isReply && (
-        <Write isReply commentId={commentId} updateThread={updateThread} />
+        <Write
+          isReply
+          commentId={commentId}
+          updateThread={updateThread}
+          to={author.username}
+        />
       )}
       <div className={cn(s.replies, isDeleted && s.deleted)}>
         {commentReplies.map(reply => {
