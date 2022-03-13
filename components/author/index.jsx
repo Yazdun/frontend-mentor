@@ -30,7 +30,7 @@ export const Author = ({ author, time }) => {
           src={avatars[author.avatar ? author.avatar : 0].source}
           placeholder="blur"
           quality={100}
-          alt={`user's avatar is ${
+          alt={`${author.username} - ${
             avatars[author.avatar ? author.avatar : 0].alt
           }`}
         />
