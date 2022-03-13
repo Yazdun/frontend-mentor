@@ -4,7 +4,7 @@ import s from './styles.module.scss'
 
 export const Layout = ({ children, title }) => {
   return (
-    <html lang="en">
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -20,6 +20,6 @@ export const Layout = ({ children, title }) => {
       <main id="main" className={s.main}>
         {children}
       </main>
-    </html>
+    </>
   )
 }
