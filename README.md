@@ -12,7 +12,7 @@
   <p align="center">
     intermediate frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/full-stack-interactive-comments-4zvPUHeJV"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://yazdun-interactive-comment-section.netlify.app/">View Demo</a>
