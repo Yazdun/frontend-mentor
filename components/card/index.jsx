@@ -11,7 +11,7 @@ export const Card = ({ country }) => {
           <h2 className={s.name}>{name}</h2>
           <ul className={s.list}>
             <li>
-              Population : <span>{population}</span>
+              Population : <span>{population.toLocaleString('en-US')}</span>
             </li>
             <li>
               Region : <span>{region}</span>

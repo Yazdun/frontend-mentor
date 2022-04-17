@@ -9,7 +9,7 @@
 
   @include breakpoint-up(laptop) {
     &:hover {
-      transform: scale(1.04) translateY(-8px);
+      transform: scale(1.02) translateY(-8px);
     }
   }
 }
