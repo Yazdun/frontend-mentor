@@ -1,19 +1,21 @@
 :root {
   --background--1: hsl(0, 0%, 98%);
   --background--2: hsl(0, 0%, 100%);
+  --background--3: rgba(255, 255, 255, 0.6);
   --foreground--1: hsl(200, 15%, 8%);
   --foreground--2: hsl(0, 0%, 52%);
   --shadow--1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --max--width: 55rem;
   --border--radius--1: 0.4rem;
   --font--main: 'Nunito Sans', sans-serif;
-  --max--width: 60rem;
+  --max--width: 80rem;
 }
 
 [data-theme='dark'] {
   --background--1: hsl(207, 26%, 17%);
   --background--2: hsl(209, 23%, 22%);
+  --background--3: rgba(43, 57, 69, 0.4);
   --foreground--1: hsl(0, 0%, 100%);
-  --foreground--2: hsl(0, 0%, 98%);
+  --foreground--2: hsl(0, 0%, 80%);
   --shadow--1: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }

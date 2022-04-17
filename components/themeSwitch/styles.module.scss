@@ -1,10 +1,18 @@
+@import '../../scss/mixins';
+
 .btn {
   display: flex;
   align-items: center;
   font-size: 1rem;
   padding: 0.5rem 0;
+
+  transition: 0.3s;
+  border-radius: var(--border--radius--1);
+
   svg {
     margin-right: 0.5rem;
     font-size: 1.2rem;
   }
+
+  @include focus-visible;
 }

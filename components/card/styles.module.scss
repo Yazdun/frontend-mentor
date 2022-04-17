@@ -1,0 +1,44 @@
+@import '../../scss/mixins';
+
+.card {
+  width: 100%;
+  border-radius: var(--border--radius--1);
+  overflow: hidden;
+  background-color: var(--background--2);
+  box-shadow: var(--shadow--1);
+
+  @include breakpoint-up(laptop) {
+    &:hover {
+      transform: scale(1.04) translateY(-8px);
+    }
+  }
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+
+  @include breakpoint-up(tablet) {
+    height: 10rem;
+  }
+}
+
+.text {
+  padding: 1rem;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
+
+.list {
+  li {
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  li span {
+    color: var(--foreground--2);
+    font-weight: 500;
+  }
+}
