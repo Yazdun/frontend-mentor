@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(107, 107, 107);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background--1);
+  color: var(--foreground--1);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+button:disabled,
+button:disabled:hover,
+button[disabled]:hover {
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  all: unset;
+  transition: 0.3s;
+  border-radius: var(--border--radius--1);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include focus-visible;
+}
+
+p {
+  line-height: 2.2rem;
+}
+
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.link {
+  color: var(--clr--active--1);
+  font-weight: 600;
+}
+
+.hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid var(--clr--transparent--1);
+  border-bottom: 1px solid var(--clr--transparent--1);
+  margin: var(--gap) 0;
+}
+
+// ngproccess bar
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: var(--clr--active--1);
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px var(--clr--active--1), 0 0 5px var(--clr--active--1);
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: none;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@include breakpoint-up(laptop) {
+  .link {
+    position: relative;
+    border-radius: 5px;
+    width: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -0.2rem;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--clr--active--1);
+      transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+  }
+
+  .link:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

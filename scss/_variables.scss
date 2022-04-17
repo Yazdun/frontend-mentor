@@ -1,0 +1,17 @@
+:root {
+  --background--1: hsl(0, 0%, 98%);
+  --background--2: hsl(0, 0%, 100%);
+  --foreground--1: hsl(200, 15%, 8%);
+  --foreground--2: hsl(0, 0%, 52%);
+
+  --max--width: 55rem;
+  --border--radius--1: 0.4rem;
+  --font--main: "Nunito Sans", sans-serif;
+}
+
+[data-theme="dark"] {
+  --background--1: hsl(207, 26%, 17%);
+  --background--2: hsl(209, 23%, 22%);
+  --foreground--1: hsl(0, 0%, 100%);
+  --foreground--2: hsl(0, 0%, 98%);
+}
