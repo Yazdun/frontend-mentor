@@ -6,10 +6,11 @@
 
   --max--width: 55rem;
   --border--radius--1: 0.4rem;
-  --font--main: "Nunito Sans", sans-serif;
+  --font--main: 'Nunito Sans', sans-serif;
+  --max--width: 60rem;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --background--1: hsl(207, 26%, 17%);
   --background--2: hsl(209, 23%, 22%);
   --foreground--1: hsl(0, 0%, 100%);
