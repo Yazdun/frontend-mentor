@@ -1,0 +1,15 @@
+.nav {
+  box-shadow: var(--shadow--1);
+  background-color: var(--background--2);
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin-right: 1rem;
+}

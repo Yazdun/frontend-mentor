@@ -3,7 +3,7 @@
   --background--2: hsl(0, 0%, 100%);
   --foreground--1: hsl(200, 15%, 8%);
   --foreground--2: hsl(0, 0%, 52%);
-
+  --shadow--1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --max--width: 55rem;
   --border--radius--1: 0.4rem;
   --font--main: 'Nunito Sans', sans-serif;
@@ -15,4 +15,5 @@
   --background--2: hsl(209, 23%, 22%);
   --foreground--1: hsl(0, 0%, 100%);
   --foreground--2: hsl(0, 0%, 98%);
+  --shadow--1: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
