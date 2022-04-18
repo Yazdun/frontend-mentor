@@ -61,3 +61,7 @@
 
   @include focus-visible;
 }
+
+.active {
+  background-color: var(--background--1);
+}

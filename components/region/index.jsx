@@ -30,7 +30,7 @@ export const Region = ({ fn, reset }) => {
           return (
             <li key={index}>
               <button
-                className={s.item}
+                className={cn(s.item, text === region && s.active)}
                 onClick={() => {
                   fn(region)
                   setText(region)
