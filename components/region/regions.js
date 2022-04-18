@@ -1,17 +1,30 @@
+import {
+  FaGlobeAfrica,
+  FaGlobeAmericas,
+  FaGlobeAsia,
+  FaGlobeEurope,
+} from 'react-icons/fa'
+import { GiEarthAsiaOceania } from 'react-icons/gi'
+
 export const data = [
   {
-    region: 'africa',
+    region: 'Africa',
+    icon: <FaGlobeAfrica />,
   },
   {
-    region: 'america',
+    region: 'America',
+    icon: <FaGlobeAmericas />,
   },
   {
-    region: 'asia',
+    region: 'Asia',
+    icon: <FaGlobeAsia />,
   },
   {
-    region: 'europe',
+    region: 'Europe',
+    icon: <FaGlobeEurope />,
   },
   {
-    region: 'oceania',
+    region: 'Oceania',
+    icon: <GiEarthAsiaOceania />,
   },
 ]

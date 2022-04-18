@@ -5,32 +5,50 @@ import { data } from './regions'
 import { motion } from 'framer-motion'
 import cn from 'classnames'
 import { useOnClickOutside } from 'hooks'
+import { BsCircleFill } from 'react-icons/bs'
 
-export const Region = () => {
+export const Region = ({ fn, reset }) => {
   const [active, setActive] = useState(false)
+  const [text, setText] = useState(null)
   const ref = useRef()
   useOnClickOutside(ref, () => setActive(false))
 
   return (
-    <div className={s.wrapper}>
+    <div className={s.wrapper} ref={ref}>
       <button className={s.select} onClick={() => setActive(prev => !prev)}>
-        Filter by Region
+        {text ? text : 'Filter by Region'}
         <BiChevronDown className={cn(s.status, active && s.rotate)} />
       </button>
 
-      <motion.ul
-        animate={{ scale: active ? 1 : 0 }}
-        className={s.list}
-        ref={ref}
-      >
+      <motion.ul animate={{ scale: active ? 1 : 0 }} className={s.list}>
         {data.map((i, index) => {
-          const { region } = i
+          const { region, icon } = i
           return (
             <li key={index}>
-              <button className={s.item}>{region}</button>
+              <button
+                className={s.item}
+                onClick={() => {
+                  fn(region)
+                  setText(region)
+                }}
+              >
+                {region} {icon}
+              </button>
             </li>
           )
         })}
+        <li>
+          <button
+            className={s.item}
+            onClick={() => {
+              reset()
+              setText(null)
+            }}
+          >
+            None
+            <BsCircleFill />
+          </button>
+        </li>
       </motion.ul>
     </div>
   )

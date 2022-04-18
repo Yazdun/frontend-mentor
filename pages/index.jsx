@@ -15,11 +15,26 @@ export async function getStaticProps() {
 
 export default function Home({ countries }) {
   const [filtered, setFiltered] = useState(null)
+  const [disableSearch, setDisableSearch] = useState(false)
 
-  const handleFilter = value => {
+  const search = value => {
     setFiltered(() =>
       countries.filter(c => c.name.toLowerCase().includes(value.toLowerCase())),
     )
+  }
+
+  const filter = value => {
+    setFiltered(() =>
+      countries.filter(c =>
+        c.region.toLowerCase().includes(value.toLowerCase()),
+      ),
+    )
+    setDisableSearch(true)
+  }
+
+  const reset = () => {
+    setFiltered(null)
+    setDisableSearch(false)
   }
 
   return (
@@ -28,8 +43,8 @@ export default function Home({ countries }) {
       desc="Rest countries api with color theme switcher"
     >
       <div className={s.cta}>
-        <Search fn={handleFilter} />
-        <Region />
+        <Search fn={search} disable={disableSearch} />
+        <Region fn={filter} reset={reset} />
       </div>
       <Countries countries={filtered ? filtered : countries} />
     </Layout>

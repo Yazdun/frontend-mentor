@@ -46,6 +46,8 @@
   color: var(--foreground--2);
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: 0.3s;
 
   &:hover {
