@@ -2,9 +2,9 @@ import Link from 'next/link'
 import s from './styles.module.scss'
 
 export const Card = ({ country }) => {
-  const { name, population, region, capital, flags } = country
+  const { name, population, region, capital, flags, alpha3Code } = country
   return (
-    <Link href={`/${name}`}>
+    <Link href={`/${alpha3Code}`}>
       <a className={s.card}>
         <img className={s.img} src={flags.svg} alt={name} />
         <div className={s.text}>

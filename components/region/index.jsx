@@ -20,7 +20,11 @@ export const Region = ({ fn, reset }) => {
         <BiChevronDown className={cn(s.status, active && s.rotate)} />
       </button>
 
-      <motion.ul animate={{ scale: active ? 1 : 0 }} className={s.list}>
+      <motion.ul
+        layout
+        animate={{ scaleY: active ? 1 : 0, y: active ? 0 : -120 }}
+        className={s.list}
+      >
         {data.map((i, index) => {
           const { region, icon } = i
           return (
