@@ -1,7 +1,9 @@
 import { Borders, Details } from 'components'
 import { Layout } from 'elements'
-import Image from 'next/image'
+import { useRouter } from 'next/router'
 import s from './styles.module.scss'
+import { IoReturnUpBack } from 'react-icons/io5'
+import { motion } from 'framer-motion'
 
 export const getStaticPaths = async () => {
   const res = await fetch('https://restcountries.com/v2/all')
@@ -32,15 +34,27 @@ export const getStaticProps = async context => {
 
 export default function Country({ country }) {
   const { name, flags, borders } = country
+  const router = useRouter()
 
   return (
     <Layout
       title={`Countries | ${name}`}
       desc={`Learn more about ${name} here`}
       image={flags.png}
-      noPadding
     >
       <div className={s.country}>
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.1 },
+          }}
+          whileTap={{ scale: 0.9 }}
+          className={s.btn}
+          onClick={() => router.back()}
+        >
+          <IoReturnUpBack />
+          Back
+        </motion.button>
         <div className={s.card}>
           <div className={s.flag}>
             <img src={flags.png} alt={name} className={s.img} />

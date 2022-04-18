@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import s from './styles.module.scss'
+import { motion } from 'framer-motion'
 
 export const Borders = ({ borders }) => {
   if (!borders || borders.length < 1) {

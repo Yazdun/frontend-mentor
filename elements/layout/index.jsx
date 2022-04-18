@@ -1,4 +1,4 @@
-import { Navigation } from 'components'
+import { Footer, Navigation } from 'components'
 import { NextSeo } from 'next-seo'
 import s from './styles.module.scss'
 import cn from 'classnames'
@@ -39,6 +39,7 @@ export const Layout = ({ children, title, desc, image, url, noPadding }) => {
       <main id="main" className={cn(s.main, noPadding && s.noPadding)}>
         {children}
       </main>
+      <Footer />
     </>
   )
 }

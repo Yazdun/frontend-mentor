@@ -40,28 +40,26 @@
   width: 100%;
   object-fit: cover;
   display: flex;
+  border-radius: var(--border--radius--1);
+
+  @include breakpoint-up(tablet) {
+    border-radius: 0;
+    object-fit: contain;
+  }
 
   @include breakpoint-up(desktop) {
     object-fit: contain;
   }
 }
 
-.country {
-  @include breakpoint-up(tablet) {
-    padding: 1rem;
-    margin: 5rem 0;
-  }
-}
-
 .card {
-  box-shadow: var(--shadow--1);
-
   @include breakpoint-up(tablet) {
     border-radius: var(--border--radius--1);
     overflow: hidden;
     width: 100%;
     max-width: 35rem;
     margin: auto;
+    box-shadow: var(--shadow--1);
   }
 
   @include breakpoint-up(desktop) {
@@ -73,8 +71,12 @@
 }
 
 .info {
-  padding: 1rem;
   width: 100%;
+  padding: 1rem 0;
+
+  @include breakpoint-up(tablet) {
+    padding: 1rem;
+  }
 
   @include breakpoint-up(desktop) {
     padding: 2rem;
@@ -83,4 +85,26 @@
 
 .title {
   margin-bottom: var(--gap);
+}
+
+.btn {
+  padding: 1rem;
+  box-shadow: var(--shadow--2);
+  border-radius: var(--border--radius--1);
+  margin: var(--gap) 0;
+  width: 100%;
+  max-width: 7rem;
+  background-color: var(--background--2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: 0.3s;
+
+  svg {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  @include focus-visible;
 }

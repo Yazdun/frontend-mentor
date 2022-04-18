@@ -6,10 +6,15 @@
   overflow: hidden;
   background-color: var(--background--2);
   box-shadow: var(--shadow--1);
+  transition: 0.3s;
 
-  @include breakpoint-up(laptop) {
-    &:hover {
-      transform: translateY(-8px);
+  &:focus-within {
+    box-shadow: 0px 0px 0px 3px var(--foreground--1);
+  }
+
+  a {
+    &:focus-visible {
+      box-shadow: none;
     }
   }
 }
