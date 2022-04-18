@@ -8,6 +8,10 @@
   &::placeholder {
     color: var(--foreground--3);
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 .wrapper {
@@ -42,4 +46,5 @@
 
 .disable {
   opacity: 0.4;
+  cursor: not-allowed;
 }

@@ -1,0 +1,29 @@
+.border {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--shadow--2);
+  color: var(--foreground--2);
+  background-color: var(--background--2);
+}
+
+.borders {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.no {
+  font-weight: normal;
+  color: var(--foreground--2);
+}

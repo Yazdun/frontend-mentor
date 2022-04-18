@@ -4,9 +4,9 @@ import s from './styles.module.scss'
 export const Card = ({ country }) => {
   const { name, population, region, capital, flags, alpha3Code } = country
   return (
-    <Link href={`/${alpha3Code}`}>
+    <Link href={`/country/${alpha3Code}`}>
       <a className={s.card}>
-        <img className={s.img} src={flags.svg} alt={name} />
+        <img className={s.img} src={flags.png} alt={name} />
         <div className={s.text}>
           <h2 className={s.name}>{name}</h2>
           <ul className={s.list}>

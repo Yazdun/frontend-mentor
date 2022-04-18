@@ -1,0 +1,30 @@
+@import '../../scss/mixins';
+
+.info {
+  text-transform: capitalize;
+
+  span {
+    color: var(--foreground--2);
+    font-weight: 500;
+  }
+
+  li {
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+
+  @include breakpoint-up(desktop) {
+    width: 50%;
+  }
+}
+
+.lists {
+  @include breakpoint-up(laptop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.domain {
+  text-transform: lowercase;
+}

@@ -1,8 +1,9 @@
 import { Navigation } from 'components'
 import { NextSeo } from 'next-seo'
 import s from './styles.module.scss'
+import cn from 'classnames'
 
-export const Layout = ({ children, title, desc, image, url }) => {
+export const Layout = ({ children, title, desc, image, url, noPadding }) => {
   return (
     <>
       <NextSeo
@@ -35,7 +36,7 @@ export const Layout = ({ children, title, desc, image, url }) => {
         Skip to main content
       </a>
       <Navigation />
-      <main id="main" className={s.main}>
+      <main id="main" className={cn(s.main, noPadding && s.noPadding)}>
         {children}
       </main>
     </>

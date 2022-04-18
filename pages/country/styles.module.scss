@@ -1,0 +1,86 @@
+@import '../../scss/mixins';
+
+.flag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.over {
+  display: none;
+  @include breakpoint-up(desktop) {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: -1;
+    transform: scale(1.4) rotate(100deg);
+  }
+}
+
+.overlay {
+  display: none;
+  @include breakpoint-up(desktop) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10rem;
+    right: -10rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5rem);
+    z-index: -1;
+  }
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+
+  @include breakpoint-up(desktop) {
+    object-fit: contain;
+  }
+}
+
+.country {
+  @include breakpoint-up(tablet) {
+    padding: 1rem;
+    margin: 5rem 0;
+  }
+}
+
+.card {
+  box-shadow: var(--shadow--1);
+
+  @include breakpoint-up(tablet) {
+    border-radius: var(--border--radius--1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 35rem;
+    margin: auto;
+  }
+
+  @include breakpoint-up(desktop) {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.info {
+  padding: 1rem;
+  width: 100%;
+
+  @include breakpoint-up(desktop) {
+    padding: 2rem;
+  }
+}
+
+.title {
+  margin-bottom: var(--gap);
+}

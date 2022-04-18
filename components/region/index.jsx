@@ -22,7 +22,7 @@ export const Region = ({ fn, reset }) => {
 
       <motion.ul
         layout
-        animate={{ scaleY: active ? 1 : 0, y: active ? 0 : -120 }}
+        animate={{ scaleY: active ? 1 : 0, y: active ? 0 : -140 }}
         className={s.list}
       >
         {data.map((i, index) => {
@@ -35,6 +35,7 @@ export const Region = ({ fn, reset }) => {
                   fn(region)
                   setText(region)
                 }}
+                disabled={!active}
               >
                 {region} {icon}
               </button>
@@ -44,6 +45,7 @@ export const Region = ({ fn, reset }) => {
         <li>
           <button
             className={s.item}
+            disabled={!active}
             onClick={() => {
               reset()
               setText(null)
