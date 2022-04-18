@@ -1,0 +1,21 @@
+@import '../../scss/mixins';
+
+.select {
+  padding: 1.2rem;
+  background-color: var(--background--2);
+  border-radius: var(--border--radius--1);
+  box-shadow: var(--shadow--1);
+  color: var(--foreground--2);
+  width: 100%;
+  max-width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+
+  @include focus-visible;
+}
+
+.status {
+  font-size: 1.3rem;
+}

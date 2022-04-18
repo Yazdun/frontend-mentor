@@ -1,12 +1,12 @@
 .input {
   border: none;
   outline: none;
-  padding: 1rem;
-  background-color: var(--background--2);
+  padding: 1.3rem;
+  background-color: transparent;
   width: 100%;
 
   &::placeholder {
-    color: var(--foreground--2);
+    color: var(--foreground--3);
   }
 }
 
@@ -15,12 +15,13 @@
   padding-left: 3rem;
   border-radius: var(--border--radius--1);
   background-color: var(--background--2);
-  margin: 3rem 0;
   width: 100%;
   overflow: hidden;
   max-width: 28rem;
   transition: 0.3s;
   box-shadow: var(--shadow--1);
+  margin-right: 2rem;
+  margin: 1rem 2rem 1rem 0;
 
   &:focus-within {
     box-shadow: 0px 0px 0px 2px var(--foreground--1);
@@ -36,4 +37,5 @@
   bottom: 0;
   margin: auto;
   font-size: 1.5rem;
+  color: var(--foreground--3);
 }
