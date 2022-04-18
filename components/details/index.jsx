@@ -34,16 +34,16 @@ export const Details = ({ country }) => {
         <li>
           top level domain: <span className={s.domain}>{topLevelDomain}</span>
         </li>
-        <li>
+        <li className={s.arr}>
           currencies:{' '}
           {currencies.map((cur, index) => (
             <span key={index}>{cur.name}</span>
           ))}
         </li>
-        <li>
-          languages:{' '}
+        <li className={s.arr}>
+          languages:
           {languages.map((lang, index) => (
-            <span key={index}>{lang.name}</span>
+            <span key={index}> {lang.name}</span>
           ))}
         </li>
       </ul>

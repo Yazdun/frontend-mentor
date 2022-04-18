@@ -28,3 +28,16 @@
 .domain {
   text-transform: lowercase;
 }
+
+.arr {
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    margin-right: 0.5rem;
+
+    &:first-child {
+      margin-left: 0.3rem;
+    }
+  }
+}
