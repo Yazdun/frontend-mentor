@@ -36,13 +36,13 @@ export const Details = ({ country }) => {
         </li>
         <li className={s.arr}>
           currencies:{' '}
-          {currencies.map((cur, index) => (
+          {currencies?.map((cur, index) => (
             <span key={index}>{cur.name}</span>
           ))}
         </li>
         <li className={s.arr}>
           languages:
-          {languages.map((lang, index) => (
+          {languages?.map((lang, index) => (
             <span key={index}> {lang.name}</span>
           ))}
         </li>
