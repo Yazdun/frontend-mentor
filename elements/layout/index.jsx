@@ -2,7 +2,6 @@ import { Footer, Navigation } from 'components'
 import { NextSeo } from 'next-seo'
 import s from './styles.module.scss'
 import cn from 'classnames'
-import image from '/public/og.jpg'
 
 export const Layout = ({ children, title, desc, url, noPadding }) => {
   return (
@@ -12,13 +11,13 @@ export const Layout = ({ children, title, desc, url, noPadding }) => {
         description={desc}
         additionalLinkTags={[{ rel: 'icon', href: '/favicon.png' }]}
         openGraph={{
-          url: `https://example.com${url}`,
+          url: `https://yazdun-countries.netlify.app/${url}`,
           title: title,
           description: desc,
           locale: 'en_us',
           images: [
             {
-              url: image,
+              url: 'https://res.cloudinary.com/dakts9ect/image/upload/v1650362695/opengraph/og_wm4jzj.jpg',
               width: 1200,
               height: 630,
               alt: title,

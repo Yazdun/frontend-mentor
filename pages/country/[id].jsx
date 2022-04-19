@@ -33,13 +33,14 @@ export const getStaticProps = async context => {
 }
 
 export default function Country({ country }) {
-  const { name, flags, borders } = country
+  const { name, flags, borders, alpha3Code } = country
   const router = useRouter()
 
   return (
     <Layout
       title={`Countries | ${name}`}
       desc={`Learn more about ${name} here`}
+      url={`/countries/${alpha3Code}`}
     >
       <h1 className="sr-only">Learn about {name}</h1>
       <div className={s.country}>

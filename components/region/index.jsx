@@ -9,6 +9,7 @@ import { BsCircleFill } from 'react-icons/bs'
 
 export const Region = ({ fn, reset }) => {
   const [active, setActive] = useState(false)
+  const [touched, setTouched] = useState(false)
   const [text, setText] = useState(null)
   const ref = useRef()
   useOnClickOutside(ref, () => setActive(false))
@@ -22,7 +23,10 @@ export const Region = ({ fn, reset }) => {
             : 'filtering options are closed'
         }
         className={s.select}
-        onClick={() => setActive(prev => !prev)}
+        onClick={() => {
+          setActive(prev => !prev)
+          setTouched(true)
+        }}
       >
         {text ? text : 'Filter by Region'}
         <BiChevronDown className={cn(s.status, active && s.rotate)} />
@@ -31,7 +35,7 @@ export const Region = ({ fn, reset }) => {
       <motion.ul
         layout
         animate={{ scaleY: active ? 1 : 0, y: active ? 0 : -140 }}
-        className={s.list}
+        className={cn(s.list, !touched && s.hide)}
       >
         {data.map((i, index) => {
           const { region, icon } = i
