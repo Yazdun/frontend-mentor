@@ -7,12 +7,12 @@
     <img src="./public/fem.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">rest countries api</h3>
+<h3 align="center">Rest Countries API</h3>
 
   <p align="center">
     advanced frontend mentor challenge
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/countries-app-built-with-next-HyGjiQhN9"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="#">View Demo</a>
