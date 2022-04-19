@@ -2,9 +2,11 @@ import s from './styles.module.scss'
 import { MdSearch } from 'react-icons/md'
 import cn from 'classnames'
 import { useRef, useEffect } from 'react'
+import { useMount } from 'hooks'
 
 export const Search = ({ fn, disable }) => {
   const ref = useRef()
+  const mounted = useMount()
 
   useEffect(() => {
     ref.current.value = ''

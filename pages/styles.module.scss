@@ -5,3 +5,24 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.error {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    font-size: 5rem;
+    color: rgb(248, 47, 107);
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+.errinfo {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid var(--clr--border--1);
+}
