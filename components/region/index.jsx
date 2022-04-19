@@ -15,7 +15,15 @@ export const Region = ({ fn, reset }) => {
 
   return (
     <div className={s.wrapper} ref={ref}>
-      <button className={s.select} onClick={() => setActive(prev => !prev)}>
+      <button
+        aria-label={
+          active
+            ? 'filtering options are opened'
+            : 'filtering options are closed'
+        }
+        className={s.select}
+        onClick={() => setActive(prev => !prev)}
+      >
         {text ? text : 'Filter by Region'}
         <BiChevronDown className={cn(s.status, active && s.rotate)} />
       </button>
@@ -27,10 +35,12 @@ export const Region = ({ fn, reset }) => {
       >
         {data.map((i, index) => {
           const { region, icon } = i
+          const isActive = text === region
           return (
             <li key={index}>
               <button
-                className={cn(s.item, text === region && s.active)}
+                aria-label={isActive ? `${region} is active filter` : region}
+                className={cn(s.item, isActive && s.active)}
                 onClick={() => {
                   fn(region)
                   setText(region)
@@ -46,6 +56,7 @@ export const Region = ({ fn, reset }) => {
           <button
             className={s.item}
             disabled={!active}
+            aria-label="remove filters"
             onClick={() => {
               reset()
               setText(null)

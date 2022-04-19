@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import s from './styles.module.scss'
-import { motion } from 'framer-motion'
 
 export const Borders = ({ borders }) => {
   if (!borders || borders.length < 1) {
@@ -15,7 +14,10 @@ export const Borders = ({ borders }) => {
 
   return (
     <div className={s.container}>
-      <p className={s.title}>Border Countries:</p>
+      <p className={s.title}>
+        Border Countries<span className="sr-only">presented in alpha3Code</span>
+        :
+      </p>
       <div className={s.borders}>
         {borders.map(b => {
           return (

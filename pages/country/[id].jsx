@@ -42,6 +42,7 @@ export default function Country({ country }) {
       desc={`Learn more about ${name} here`}
       image={flags.png}
     >
+      <h1 className="sr-only">Learn about {name}</h1>
       <div className={s.country}>
         <motion.button
           whileHover={{
@@ -57,8 +58,13 @@ export default function Country({ country }) {
         </motion.button>
         <div className={s.card}>
           <div className={s.flag}>
-            <img src={flags.png} alt={name} className={s.img} />
-            <img src={flags.png} alt={name} className={s.over} />
+            <img src={flags.png} alt={`${name}'s flag`} className={s.img} />
+            <img
+              src={flags.png}
+              role="presentation"
+              alt=""
+              className={s.over}
+            />
             <div className={s.overlay}></div>
           </div>
           <div className={s.info}>

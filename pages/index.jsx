@@ -42,6 +42,7 @@ export default function Home({ countries }) {
       title="Countries | Homepage"
       desc="Rest countries api with color theme switcher"
     >
+      <h1 className="sr-only">countries app</h1>
       <div className={s.cta}>
         <Search fn={search} disable={disableSearch} />
         <Region fn={filter} reset={reset} />

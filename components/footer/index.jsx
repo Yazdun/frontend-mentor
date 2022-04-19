@@ -1,4 +1,3 @@
-import { Container } from 'elements'
 import s from './styles.module.scss'
 import cn from 'classnames'
 
