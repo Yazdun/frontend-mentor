@@ -6,7 +6,12 @@ export const Footer = () => {
 
   return (
     <footer className={cn(s.footer)}>
-      <p>{year} © Built with Nextjs ❤️</p>
+      <p>
+        {year} ©{' '}
+        <a href="https://yazdun.com/" target="_blank" rel="noreferrer">
+          Yazdun.com
+        </a>
+      </p>
     </footer>
   )
 }
