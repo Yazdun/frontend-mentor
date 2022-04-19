@@ -2,8 +2,9 @@ import { Footer, Navigation } from 'components'
 import { NextSeo } from 'next-seo'
 import s from './styles.module.scss'
 import cn from 'classnames'
+import image from '/public/og.jpg'
 
-export const Layout = ({ children, title, desc, image, url, noPadding }) => {
+export const Layout = ({ children, title, desc, url, noPadding }) => {
   return (
     <>
       <NextSeo

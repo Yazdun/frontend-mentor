@@ -40,7 +40,6 @@ export default function Country({ country }) {
     <Layout
       title={`Countries | ${name}`}
       desc={`Learn more about ${name} here`}
-      image={flags.png}
     >
       <h1 className="sr-only">Learn about {name}</h1>
       <div className={s.country}>
