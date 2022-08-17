@@ -23,7 +23,7 @@
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
   
-  [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fyazdun-clipboard-landing-page.netlify.app/%2F)](https://shalva-clipboard-landing-page.netlify.app/)
+  [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fshalva-clipboard-landing-page.netlify.app/%2F)](https://shalva-clipboard-landing-page.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blueviolet&down_message=junior&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blueviolet&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
   
 </div>
