@@ -16,14 +16,14 @@
     <a href="https://www.frontendmentor.io/solutions/clipboard-landing-page-9u2GHtx8-"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="https://shalva-clipboard-landing-page.netlify.app/">View Demo</a>
+    <a href="https://clipbooard.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Report Bug</a>
     ·
     <a href="https://github.com/Yazdun/frontend_mentor/issues">Request Feature</a>
   </p>
   
-  [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fshalva-clipboard-landing-page.netlify.app/%2F)](https://shalva-clipboard-landing-page.netlify.app/)
+  [![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=netlify&logo=netlify&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Fclipbooard.netlify.app/%2F)](https://clipbooard.netlify.app/)
 ![Website](https://img.shields.io/website?down_color=blueviolet&down_message=junior&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=blueviolet&up_message=junior&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
   
 </div>
